@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>OTCN | OTC Navigator</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+        :root {
+            --primary: #818cf8;
+            --primary-dark: #6366f1;
+            --primary-light: rgba(129, 140, 248, 0.15);
+            --bg-surface: #0f172a;
+            --glass-bg: rgba(30, 41, 59, 0.7);
+            --glass-border: rgba(255, 255, 255, 0.1);
+            --text-main: #f8fafc;
+            --text-sec: #94a3b8;
+            --danger: #f87171;
+            --success: #34d399;
+            --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+        }
+
+        * { 
+            box-sizing: border-box; 
+            -webkit-tap-highlight-color: transparent; 
+            font-family: 'Inter', -apple-system, sans-serif;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-surface);
+            background-image: 
+                radial-gradient(at 0% 0%, hsla(222, 47%, 11%, 1) 0, transparent 50%), 
+                radial-gradient(at 100% 0%, hsla(244, 55%, 15%, 1) 0, transparent 50%),
+                radial-gradient(at 50% 100%, hsla(220, 40%, 10%, 1) 0, transparent 50%);
+            min-height: 100vh;
+            color: var(--text-main);
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden;
+        }
+
+        /* --- UI COMPONENTS --- */
+        .glass-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-radius: 24px;
+            border: 1px solid var(--glass-border);
+            box-shadow: var(--shadow);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 24px;
+            flex: 1;
+        }
+
+        h1 { font-size: 28px; font-weight: 700; letter-spacing: -0.5px; color: var(--text-main); }
+        h2 { font-size: 20px; font-weight: 600; color: var(--text-main); }
+        p { font-size: 15px; line-height: 1.6; color: var(--text-sec); }
+
+        /* --- BUTTONS --- */
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 16px;
+            border-radius: 16px;
+            font-size: 16px;
+            font-weight: 600;
+            width: 100%;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            transition: all 0.2s ease;
+        }
+        .btn-primary:active { transform: scale(0.97); background: var(--primary-dark); }
+
+        /* --- LANGUAGE SCREEN --- */
+        .lang-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 12px;
+            margin-top: 30px;
+        }
+        .lang-btn {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 18px 24px;
+            border-radius: 18px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            border: 1px solid var(--glass-border);
+            transition: all 0.2s ease;
+        }
+        .lang-btn:hover { border-color: var(--primary); background: rgba(255, 255, 255, 0.1); }
+        .lang-name { font-weight: 600; font-size: 17px; }
+        .lang-sub { font-size: 13px; color: var(--text-sec); font-weight: 400; }
+
+        /* --- MODALS --- */
+        .modal-overlay {
+            position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+            z-index: 2000;
+            background: rgba(0, 0, 0, 0.8);
+            display: flex; align-items: center; justify-content: center;
+            padding: 24px;
+            backdrop-filter: blur(12px);
+        }
+        .modal-content {
+            padding: 32px;
+            text-align: center;
+            max-width: 400px;
+            animation: modalPop 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        @keyframes modalPop { from { opacity: 0; transform: scale(0.9); } to { opacity: 1; transform: scale(1); } }
+
+        /* --- HEADER & NAVIGATION --- */
+        .step-header {
+            margin-top: 20px;
+            margin-bottom: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #main-header {
+            cursor: pointer;
+            user-select: none;
+            transition: opacity 0.2s;
+        }
+        #main-header:hover { opacity: 0.8; }
+        
+        .back-btn {
+            background: rgba(255, 255, 255, 0.1);
+            border: none;
+            color: var(--text-main);
+            font-size: 14px;
+            font-weight: 600;
+            padding: 8px 14px;
+            border-radius: 10px;
+            cursor: pointer;
+            display: inline-flex; align-items: center; gap: 8px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            transition: all 0.3s ease;
+        }
+        .services-grid.sharing {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        .service-btn {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--glass-border);
+            padding: 10px;
+            border-radius: 14px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+        .service-btn:active { transform: scale(0.95); }
+        .service-btn i { font-size: 14px; }
+        .service-btn.pharmacy i { color: #34d399; }
+        .service-btn.hospital i { color: #f87171; }
+        .service-btn.share i { color: #818cf8; }
+        .service-btn span { font-size: 11px; font-weight: 600; color: var(--text-sec); }
+
+        /* --- WIZARD --- */
+        .option-card {
+            display: flex;
+            align-items: center;
+            padding: 16px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            border: 1px solid var(--glass-border);
+            background: rgba(255, 255, 255, 0.03);
+        }
+        .option-card:hover { border-color: var(--primary); background: rgba(255, 255, 255, 0.07); }
+        
+        .icon-box {
+            width: 48px; height: 48px;
+            border-radius: 14px;
+            background: var(--primary-light);
+            color: var(--primary);
+            display: flex; align-items: center; justify-content: center;
+            font-size: 20px;
+            margin-right: 16px;
+            flex-shrink: 0;
+        }
+
+        /* --- RESULTS --- */
+        .med-item { margin-bottom: 12px; border: 1px solid var(--glass-border); overflow: hidden; background: rgba(255,255,255,0.02); }
+        .med-header {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 18px;
+            cursor: pointer;
+        }
+        .med-name { font-weight: 600; font-size: 16px; color: var(--text-main); display: block; }
+        .med-cat { font-size: 11px; color: var(--text-sec); text-transform: uppercase; font-weight: 700; letter-spacing: 0.8px; }
+        .med-price { font-weight: 700; color: var(--primary); font-size: 15px; }
+        
+        .med-details {
+            max-height: 0; overflow: hidden;
+            transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            background: rgba(0, 0, 0, 0.2);
+        }
+        .med-details-inner { padding: 20px; font-size: 14px; border-top: 1px solid var(--glass-border); }
+        .warning-text { 
+            color: #fca5a5; 
+            background: rgba(239, 68, 68, 0.1);
+            padding: 12px; border-radius: 10px;
+            margin-top: 12px; display: block; font-weight: 500;
+            border: 1px solid rgba(239, 68, 68, 0.2);
+        }
+
+        /* --- FOOTER --- */
+        .sticky-footer {
+            position: fixed; bottom: 24px; left: 24px; right: 24px;
+            max-width: 452px; margin: 0 auto;
+            z-index: 1000;
+        }
+        .result-count-btn {
+            background: var(--primary);
+            color: white;
+            border: none;
+            width: 100%;
+            padding: 18px 24px;
+            border-radius: 20px;
+            font-size: 15px;
+            font-weight: 600;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+            cursor: pointer;
+            display: flex; justify-content: space-between; align-items: center;
+        }
+        .count-badge { background: white; color: var(--primary); padding: 4px 10px; border-radius: 8px; font-size: 12px; font-weight: 700; }
+
+        .hidden { display: none !important; }
+        .fade-in { animation: fadeIn 0.4s ease-out forwards; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+
+        /* Notification Toast */
+        #toast {
+            position: fixed; bottom: 100px; left: 50%; transform: translateX(-50%);
+            background: #334155; color: white; padding: 12px 24px; border-radius: 12px;
+            font-size: 14px; font-weight: 500; z-index: 3000; transition: opacity 0.3s;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+</head>
+<body>
+
+    <!-- STARTUP INTRO MODAL -->
+    <div id="intro-modal" class="modal-overlay">
+        <div class="modal-content glass-card">
+            <div style="background: var(--primary-light); width: 64px; height: 64px; border-radius: 20px; display: inline-flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                <i class="fas fa-shield-virus" style="color: var(--primary); font-size: 28px;"></i>
+            </div>
+            <h1>OTC Navigator</h1>
+            <p style="margin-bottom: 24px;">OTC Navigator (OTCN) is a multilingual assistant designed to help access information regarding over-the-counter medications. It provides symptom-based guidance but doesnt constitute medical advice.</p>
+            <button class="btn-primary" onclick="closeIntro()">Get Started</button>
+        </div>
+    </div>
+
+    <div id="language-view" class="container fade-in hidden">
+        <div style="text-align:center; margin-top:60px;">
+            <h1>Select Language</h1>
+            <p>Choose your preferred language to begin</p>
+        </div>
+        
+        <div class="lang-grid">
+            <div class="lang-btn" onclick="selectLanguage('english')">
+                <span class="lang-name">English</span>
+                <span class="lang-sub">EN</span>
+            </div>
+            <div class="lang-btn" onclick="selectLanguage('hindi')">
+                <span class="lang-name">हिंदी</span>
+                <span class="lang-sub">Hindi</span>
+            </div>
+            <div class="lang-btn" onclick="selectLanguage('arabic')">
+                <span class="lang-name">عربي</span>
+                <span class="lang-sub">Arabic</span>
+            </div>
+            <div class="lang-btn" onclick="selectLanguage('malayalam')">
+                <span class="lang-name">മലയാളം</span>
+                <span class="lang-sub">Malayalam</span>
+            </div>
+            <div class="lang-btn" onclick="selectLanguage('tagalog')">
+                <span class="lang-name">Tagalog</span>
+                <span class="lang-sub">Tagalog</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="disclaimer-modal" class="modal-overlay hidden">
+        <div class="modal-content glass-card">
+            <div style="width: 50px; height: 50px; background: rgba(249, 115, 22, 0.1); color: #f97316; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; font-size: 20px;">
+                <i class="fas fa-exclamation-triangle"></i>
+            </div>
+            <h2 id="disclaimer-title">Medical Disclaimer</h2>
+            <p id="disclaimer-text" style="font-size: 14px; margin-bottom: 24px;"></p>
+            <button id="disclaimer-btn" class="btn-primary" onclick="acceptDisclaimer()">I Understand</button>
+        </div>
+    </div>
+
+    <div class="container hidden" id="app-container">
+        <div class="step-header">
+            <div class="header-top">
+                <h1 id="main-header" onclick="resetApp()">OTCN</h1>
+                <button id="back-btn" class="back-btn hidden" onclick="goBack()">
+                    <i class="fas fa-arrow-left"></i> <span id="back-text">Back</span>
+                </button>
+            </div>
+            <div class="services-grid" id="header-nav">
+                <div class="service-btn pharmacy" onclick="navigateTo('pharmacy')">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span id="near-pharmacy-text">Pharmacy</span>
+                </div>
+                <div class="service-btn hospital" onclick="navigateTo('hospital')">
+                    <i class="fas fa-hospital-alt"></i>
+                    <span id="near-hospital-text">Hospital</span>
+                </div>
+                <div class="service-btn share hidden" id="share-btn" onclick="shareResults()">
+                    <i class="fas fa-share-alt"></i>
+                    <span id="share-text">Share</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="wizard-view" class="fade-in">
+            <h2 id="question-text" style="margin-bottom: 24px; line-height: 1.3;">Loading...</h2>
+            <div id="options-container"></div>
+        </div>
+
+        <div id="list-view" class="hidden fade-in">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px;">
+                <h2 id="results-title">Results</h2>
+                <button onclick="resetApp()" style="background:none; border:none; color:var(--primary); font-weight:600; cursor:pointer;">Restart</button>
+            </div>
+            <ul id="medication-list" style="list-style: none; padding: 0; margin: 0;"></ul>
+        </div>
+    </div>
+
+    <div class="sticky-footer hidden" id="footer-bar">
+        <button class="result-count-btn" onclick="showResults()">
+            <span id="show-results-text">Show Medications</span>
+            <span id="count-badge" class="count-badge">0</span>
+        </button>
+    </div>
+
+    <div id="toast" class="hidden"></div>
+
+    <script>
+        const LANG_CONFIG = {
+            english: {
+                json: 'question_tree_english.json', csvValue: 'English',
+                disclaimerTitle: "Important Notice",
+                disclaimerText: "This information is for educational purposes only and does <strong>not</strong> constitute medical advice. Always consult a doctor for serious symptoms.",
+                btnText: "I Understand", showResultsText: "Show Medications", backText: "Back", resultsTitle: "Recommended OTC",
+                nearPharmacyText: "Pharmacy", nearHospitalText: "Hospital", shareText: "Share", shareCopied: "List copied to clipboard!"
+            },
+            hindi: {
+                json: 'question_tree_hindi.json', csvValue: 'Hindi',
+                disclaimerTitle: "महत्वपूर्ण सूचना",
+                disclaimerText: "यह जानकारी केवल शैक्षिक उद्देश्यों के लिए है और चिकित्सा सलाह नहीं है। गंभीर लक्षणों के लिए हमेशा डॉक्टर से परामर्श लें।",
+                btnText: "मैं समझता हूँ", showResultsText: "दवाएं देखें", backText: "पीछे", resultsTitle: "परिणाम",
+                nearPharmacyText: "फार्मेसी", nearHospitalText: "अस्पताल", shareText: "साझा करें", shareCopied: "सूची क्लिपबोर्ड पर कॉपी की गई!"
+            },
+            arabic: {
+                json: 'question_tree_arabic.json', csvValue: 'Arabic',
+                disclaimerTitle: "ملاحظة هامة",
+                disclaimerText: "هذه المعلومات للأغراض التعليمية فقط ولا تعتبر نصيحة طبية. استشر الطبيب دائمًا في حالة وجود أعراض خطيرة.",
+                btnText: "أنا أفهم", showResultsText: "عرض الأدوية", backText: "عودة", resultsTitle: "النتائج",
+                nearPharmacyText: "صيدلية", nearHospitalText: "مستشفى", shareText: "مشاركة", shareCopied: "تم نسخ القائمة!"
+            },
+            malayalam: {
+                json: 'question_tree_malayalam.json', csvValue: 'Malayalam',
+                disclaimerTitle: "പ്രധാന അറിയിപ്പ്",
+                disclaimerText: "ഈ വിവരങ്ങൾ വിദ്യാഭ്യാസപരമായ ആവശ്യങ്ങൾക്ക് മാത്രമുള്ളതാണ്, വൈദ്യോപദേശമല്ല. ഗുരുതരമായ ലക്ഷണങ്ങൾ ഉണ്ടെങ്കിൽ ഡോക്ടറെ സമീപിക്കുക.",
+                btnText: "എനിക്ക് മനസ്സിലായി", showResultsText: "മരുന്നുകൾ കാണുക", backText: "തിരികെ", resultsTitle: "ഫലങ്ങൾ",
+                nearPharmacyText: "ഫാർമസി", nearHospitalText: "ആശുപത്രി", shareText: "പങ്കിടുക", shareCopied: "പട്ടിക പകർത്തി!"
+            },
+            tagalog: {
+                json: 'question_tree_tagalog.json', csvValue: 'Tagalog',
+                disclaimerTitle: "Mahalagang Paunawa",
+                disclaimerText: "Ang impormasyong ito ay para sa layuning pang-edukasyon lamang at hindi medikal na payo. Laging kumunsulta sa doktor para sa malubhang sintomas.",
+                btnText: "Naiintindihan ko", showResultsText: "Ipakita ang mga Gamot", backText: "Bumalik", resultsTitle: "Mga Resulta",
+                nearPharmacyText: "Botika", nearHospitalText: "Ospital", shareText: "Ibahagi", shareCopied: "Listahan ay nakopya!"
+            }
+        };
+
+        let currentLanguage = 'english';
+        let csvData = [];
+        let questionTree = {};
+        let currentStepNode = null;
+        let historyStack = [];
+        let currentFilters = { cat1: null, cat2: null, cat3: null };
+
+        function showToast(msg) {
+            const toast = document.getElementById('toast');
+            toast.innerText = msg;
+            toast.classList.remove('hidden');
+            setTimeout(() => toast.classList.add('hidden'), 2000);
+        }
+
+        function closeIntro() {
+            document.getElementById('intro-modal').classList.add('hidden');
+            document.getElementById('language-view').classList.remove('hidden');
+        }
+
+        function selectLanguage(lang) {
+            currentLanguage = lang;
+            const config = LANG_CONFIG[lang];
+            document.getElementById('disclaimer-title').innerText = config.disclaimerTitle;
+            document.getElementById('disclaimer-text').innerHTML = config.disclaimerText;
+            document.getElementById('disclaimer-btn').innerText = config.btnText;
+            document.getElementById('show-results-text').innerText = config.showResultsText;
+            document.getElementById('back-text').innerText = config.backText;
+            document.getElementById('results-title').innerText = config.resultsTitle;
+            document.getElementById('near-pharmacy-text').innerText = config.nearPharmacyText;
+            document.getElementById('near-hospital-text').innerText = config.nearHospitalText;
+            document.getElementById('share-text').innerText = config.shareText;
+
+            document.getElementById('language-view').classList.add('hidden');
+            document.getElementById('disclaimer-modal').classList.remove('hidden');
+        }
+
+        function acceptDisclaimer() {
+            document.getElementById('disclaimer-modal').classList.add('hidden');
+            document.getElementById('app-container').classList.remove('hidden');
+            loadData();
+        }
+
+        async function loadData() {
+            try {
+                const config = LANG_CONFIG[currentLanguage];
+                const resJson = await fetch(config.json);
+                questionTree = await resJson.json();
+
+                Papa.parse('medication_master_multilingual_final.csv', {
+                    download: true,
+                    header: true,
+                    complete: function(results) {
+                        csvData = results.data.filter(r => 
+                            r.Name && r.Price && r.Language === config.csvValue
+                        );
+                        initWizard();
+                    }
+                });
+            } catch (e) {
+                document.getElementById('question-text').innerText = "Error loading files. Check connectivity and file names.";
+                console.error(e);
+            }
+        }
+
+        function initWizard() {
+            const rootNode = questionTree.options ? questionTree : questionTree;
+            renderStep(rootNode);
+            updateFooter();
+            document.getElementById('footer-bar').classList.remove('hidden');
+        }
+
+        function renderStep(nodeData) {
+            currentStepNode = nodeData;
+            document.getElementById('question-text').innerText = nodeData.question || "Select an option";
+            const container = document.getElementById('options-container');
+            container.innerHTML = '';
+
+            if (nodeData.options) {
+                nodeData.options.forEach(opt => {
+                    const card = document.createElement('div');
+                    card.className = 'glass-card option-card fade-in';
+                    const iconClass = getIconForLabel(opt.label);
+                    
+                    card.innerHTML = `
+                        <div class="icon-box"><i class="${iconClass}"></i></div>
+                        <div style="flex:1">
+                            <div style="font-weight:600; font-size:16px; color:var(--text-main)">${opt.label}</div>
+                            <div style="font-size:13px; color:var(--text-sec); margin-top:2px;">${opt.description || ""}</div>
+                        </div>
+                        <i class="fas fa-chevron-right" style="color:#475569; font-size:14px"></i>
+                    `;
+                    card.onclick = () => handleSelection(opt);
+                    container.appendChild(card);
+                });
+            }
+
+            const backBtn = document.getElementById('back-btn');
+            historyStack.length > 0 ? backBtn.classList.remove('hidden') : backBtn.classList.add('hidden');
+            
+            // Hide share button when moving back/away from results
+            toggleShareButtonVisibility(false);
+        }
+
+        function handleSelection(option) {
+            historyStack.push({ node: currentStepNode, filters: { ...currentFilters } });
+            const depth = historyStack.length;
+            if (depth === 1) currentFilters.cat1 = option.value;
+            if (depth === 2) currentFilters.cat2 = option.value;
+            if (depth === 3) currentFilters.cat3 = option.value;
+
+            if (option.is_final || !option.next_step) {
+                showResults();
+            } else {
+                renderStep(option.next_step);
+                updateFooter();
+            }
+        }
+
+        function goBack() {
+            if (historyStack.length === 0) return;
+            const prevState = historyStack.pop();
+            currentStepNode = prevState.node;
+            currentFilters = prevState.filters;
+            document.getElementById('list-view').classList.add('hidden');
+            document.getElementById('wizard-view').classList.remove('hidden');
+            renderStep(currentStepNode);
+            updateFooter();
+            toggleShareButtonVisibility(false);
+        }
+
+        function updateFooter() {
+            const count = getFilteredData().length;
+            document.getElementById('count-badge').innerText = count;
+        }
+
+        function getFilteredData() {
+            return csvData.filter(row => {
+                if (currentFilters.cat1 && row['Category 1'] !== currentFilters.cat1) return false;
+                if (currentFilters.cat2 && row['Category 2'] !== currentFilters.cat2) return false;
+                if (currentFilters.cat3 && row['Category 3'] !== currentFilters.cat3) return false;
+                return true;
+            });
+        }
+
+        function toggleShareButtonVisibility(visible) {
+            const shareBtn = document.getElementById('share-btn');
+            const navGrid = document.getElementById('header-nav');
+            if (visible) {
+                shareBtn.classList.remove('hidden');
+                navGrid.classList.add('sharing');
+            } else {
+                shareBtn.classList.add('hidden');
+                navGrid.classList.remove('sharing');
+            }
+        }
+
+        function showResults() {
+            const results = getFilteredData();
+            results.sort((a, b) => {
+                const pA = parseFloat(a.Price.replace(/[^0-9.]/g, '')) || 0;
+                const pB = parseFloat(b.Price.replace(/[^0-9.]/g, '')) || 0;
+                return pA - pB;
+            });
+
+            const listContainer = document.getElementById('medication-list');
+            listContainer.innerHTML = '';
+
+            if (results.length === 0) {
+                listContainer.innerHTML = '<div style="text-align:center; padding:40px; color:var(--text-sec)">No medications found.</div>';
+            } else {
+                results.forEach(item => {
+                    const li = document.createElement('li');
+                    li.className = 'glass-card med-item fade-in';
+                    const warningHtml = item.Warnings ? `<span class="warning-text"><i class="fas fa-exclamation-circle"></i> ${item.Warnings}</span>` : '';
+
+                    li.innerHTML = `
+                        <div class="med-header" onclick="toggleDetails(this)">
+                            <div>
+                                <span class="med-cat">${item['Category 1']}</span>
+                                <span class="med-name">${item.Name}</span>
+                            </div>
+                            <div style="text-align:right">
+                                <div class="med-price">AED ${item.Price}</div>
+                                <i class="fas fa-chevron-down" style="font-size:12px; color:#475569; margin-top:4px"></i>
+                            </div>
+                        </div>
+                        <div class="med-details">
+                            <div class="med-details-inner">
+                                <p style="margin-bottom:10px"><strong>Indications:</strong><br>${item.Description}</p>
+                                ${warningHtml}
+                            </div>
+                        </div>
+                    `;
+                    listContainer.appendChild(li);
+                });
+            }
+
+            document.getElementById('wizard-view').classList.add('hidden');
+            document.getElementById('list-view').classList.remove('hidden');
+            
+            // Show share button when results are visible
+            toggleShareButtonVisibility(results.length > 0);
+        }
+
+        function shareResults() {
+            const results = getFilteredData();
+            if (results.length === 0) return;
+
+            let shareText = `*OTCN - Medication Recommendations*\n\n`;
+            results.forEach((item, index) => {
+                shareText += `${index + 1}. *${item.Name}* - AED ${item.Price}\n`;
+                shareText += `Indications: ${item.Description}\n`;
+                if (item.Warnings) shareText += `⚠️ Warning: ${item.Warnings}\n`;
+                shareText += `\n`;
+            });
+            shareText += `_Provided by OTC Navigator_`;
+
+            if (navigator.share) {
+                navigator.share({
+                    title: 'OTCN Recommendations',
+                    text: shareText.replace(/\\n/g, '\n')
+                }).catch(err => console.log('Share error:', err));
+            } else {
+                // Fallback: Copy to clipboard
+                const textArea = document.createElement("textarea");
+                textArea.value = shareText.replace(/\\n/g, '\n');
+                document.body.appendChild(textArea);
+                textArea.select();
+                try {
+                    document.execCommand('copy');
+                    showToast(LANG_CONFIG[currentLanguage].shareCopied);
+                } catch (err) {
+                    console.error('Fallback copy error', err);
+                }
+                document.body.removeChild(textArea);
+            }
+        }
+
+        function navigateTo(type) {
+            const query = type === 'pharmacy' ? 'pharmacy+near+me' : 'hospital+near+me';
+            const url = `https://www.google.com/maps/search/?api=1&query=${query}`;
+            window.open(url, '_blank');
+        }
+
+        function toggleDetails(headerEl) {
+            const details = headerEl.nextElementSibling;
+            const icon = headerEl.querySelector('.fa-chevron-down');
+            if (details.style.maxHeight) {
+                details.style.maxHeight = null;
+                icon.style.transform = 'rotate(0deg)';
+            } else {
+                details.style.maxHeight = details.scrollHeight + "px";
+                icon.style.transform = 'rotate(180deg)';
+            }
+        }
+
+        function resetApp() {
+            historyStack = [];
+            currentFilters = { cat1: null, cat2: null, cat3: null };
+            document.getElementById('list-view').classList.add('hidden');
+            document.getElementById('wizard-view').classList.remove('hidden');
+            document.getElementById('app-container').classList.add('hidden');
+            document.getElementById('footer-bar').classList.add('hidden');
+            document.getElementById('language-view').classList.remove('hidden');
+            toggleShareButtonVisibility(false);
+        }
+
+        function getIconForLabel(label) {
+            const l = label.toLowerCase();
+            if (l.includes('fever') || l.includes('temp') || l.includes('बुखार')) return 'fas fa-thermometer-half';
+            if (l.includes('pain') || l.includes('head') || l.includes('दर्द')) return 'fas fa-head-side-virus';
+            if (l.includes('stomach') || l.includes('digest') || l.includes('पेट')) return 'fas fa-bacteria';
+            if (l.includes('skin') || l.includes('rash') || l.includes('त्वचा')) return 'fas fa-allergies';
+            if (l.includes('cough') || l.includes('cold') || l.includes('खांसी')) return 'fas fa-wind';
+            if (l.includes('baby') || l.includes('kid') || l.includes('बच्चा')) return 'fas fa-child';
+            if (l.includes('eye') || l.includes('आंख')) return 'fas fa-eye';
+            return 'fas fa-pills'; 
+        }
+    </script>
+</body>
+</html>
