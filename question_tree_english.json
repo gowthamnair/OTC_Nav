@@ -4,13 +4,13 @@
   "options": [
     {
       "label": "Allergies & Sinus",
-      "value": "allergies_&_sinus",
+      "value": "Allergies & Sinus",
       "next_step": {
         "question": "Select a specific category:",
         "options": [
           {
             "label": "Allergies",
-            "value": "allergies",
+            "value": "Allergies",
             "medications": [
               {
                 "Name": "Predo Syrup",
@@ -43,7 +43,7 @@
           },
           {
             "label": "General",
-            "value": "general",
+            "value": "General",
             "medications": [
               {
                 "Name": "Symbicort Turbuhaler",
@@ -58,7 +58,7 @@
           },
           {
             "label": "Hay Fever (Allergic Rhinitis)",
-            "value": "hay_fever_(allergic_rhinitis)",
+            "value": "Hay Fever (Allergic Rhinitis)",
             "medications": [
               {
                 "Name": "Finallerg Tablets",
@@ -613,7 +613,7 @@
           },
           {
             "label": "Hives (Urticaria)",
-            "value": "hives_(urticaria)",
+            "value": "Hives (Urticaria)",
             "medications": [
               {
                 "Name": "Boiron Apis Mellifica 30 CH",
@@ -646,7 +646,7 @@
           },
           {
             "label": "Itchy Eyes (Allergic Conjunctivitis)",
-            "value": "itchy_eyes_(allergic_conjunctivitis)",
+            "value": "Itchy Eyes (Allergic Conjunctivitis)",
             "medications": [
               {
                 "Name": "Zyrtec 10mg Tablets",
@@ -679,7 +679,7 @@
           },
           {
             "label": "Nasal Congestion",
-            "value": "nasal_congestion",
+            "value": "Nasal Congestion",
             "medications": [
               {
                 "Name": "ClariSpray Menthol Nasal Spray",
@@ -1351,7 +1351,7 @@
           },
           {
             "label": "Runny Nose (Rhinorrhea)",
-            "value": "runny_nose_(rhinorrhea)",
+            "value": "Runny Nose (Rhinorrhea)",
             "medications": [
               {
                 "Name": "Histaloc Syrup",
@@ -1429,7 +1429,7 @@
           },
           {
             "label": "Sinus Pressure/Pain",
-            "value": "sinus_pressure/pain",
+            "value": "Sinus Pressure/Pain",
             "medications": [
               {
                 "Name": "Hevert Sinusitis Tablets",
@@ -1465,13 +1465,13 @@
     },
     {
       "label": "Children's Health",
-      "value": "children's_health",
+      "value": "Children's Health",
       "next_step": {
         "question": "Select a specific category:",
         "options": [
           {
             "label": "Allergies",
-            "value": "allergies",
+            "value": "Allergies",
             "medications": [
               {
                 "Name": "Children's Claritin Grape Syrup",
@@ -1540,7 +1540,7 @@
           },
           {
             "label": "Constipation",
-            "value": "constipation",
+            "value": "Constipation",
             "medications": [
               {
                 "Name": "Les Zamis Constipation Oral Solution",
@@ -1618,7 +1618,7 @@
           },
           {
             "label": "Cough",
-            "value": "cough",
+            "value": "Cough",
             "medications": [
               {
                 "Name": "Nurse Harvey’s BabyRub Balm",
@@ -1696,7 +1696,7 @@
           },
           {
             "label": "Dehydration",
-            "value": "dehydration",
+            "value": "Dehydration",
             "medications": [
               {
                 "Name": "Orsalit With Banana Flavour Sachet",
@@ -1810,7 +1810,7 @@
           },
           {
             "label": "Diarrhea",
-            "value": "diarrhea",
+            "value": "Diarrhea",
             "medications": [
               {
                 "Name": "Hidrasec Children",
@@ -1852,7 +1852,7 @@
           },
           {
             "label": "Digestive Health",
-            "value": "digestive_health",
+            "value": "Digestive Health",
             "medications": [
               {
                 "Name": "Proflora Kids Plus",
@@ -1867,7 +1867,7 @@
           },
           {
             "label": "Earache",
-            "value": "earache",
+            "value": "Earache",
             "medications": [
               {
                 "Name": "Kids 0-9 Earache Oral Drops",
@@ -1954,7 +1954,7 @@
           },
           {
             "label": "Fever",
-            "value": "fever",
+            "value": "Fever",
             "medications": [
               {
                 "Name": "Nurofen Junior Fever & Pain Relief Strawberry",
@@ -2122,7 +2122,7 @@
           },
           {
             "label": "General",
-            "value": "general",
+            "value": "General",
             "medications": [
               {
                 "Name": "NZ Health Manuka Honey for Kids UMF 8+ & MGO 180+",
@@ -2137,7 +2137,7 @@
           },
           {
             "label": "Infections",
-            "value": "infections",
+            "value": "Infections",
             "medications": [
               {
                 "Name": "Augmentin ES 600 Syrup",
@@ -2152,7 +2152,7 @@
           },
           {
             "label": "Nasal Congestion",
-            "value": "nasal_congestion",
+            "value": "Nasal Congestion",
             "medications": [
               {
                 "Name": "Otosan Nasal Spray for Baby",
@@ -2257,7 +2257,7 @@
           },
           {
             "label": "Oral Care",
-            "value": "oral_care",
+            "value": "Oral Care",
             "medications": [
               {
                 "Name": "Dentinox Teething Gel",
@@ -2272,7 +2272,7 @@
           },
           {
             "label": "Restlessness/Agitation",
-            "value": "restlessness/agitation",
+            "value": "Restlessness/Agitation",
             "medications": [
               {
                 "Name": "Kids 0-9 Teething",
@@ -2332,7 +2332,7 @@
           },
           {
             "label": "Skin Irritation",
-            "value": "skin_irritation",
+            "value": "Skin Irritation",
             "medications": [
               {
                 "Name": "Nexcare Animals Kids Bandages",
@@ -2365,7 +2365,7 @@
           },
           {
             "label": "Sore Throat",
-            "value": "sore_throat",
+            "value": "Sore Throat",
             "medications": [
               {
                 "Name": "Homeocan Kids Throat Ease Syrup",
@@ -2389,7 +2389,7 @@
           },
           {
             "label": "Tonsillitis",
-            "value": "tonsillitis",
+            "value": "Tonsillitis",
             "medications": [
               {
                 "Name": "Boiron Baryta Carbonica 200CH",
@@ -2407,13 +2407,13 @@
     },
     {
       "label": "Cough, Cold & Flu",
-      "value": "cough,_cold_&_flu",
+      "value": "Cough, Cold & Flu",
       "next_step": {
         "question": "Select a specific category:",
         "options": [
           {
             "label": "Cold",
-            "value": "cold",
+            "value": "Cold",
             "medications": [
               {
                 "Name": "Panadol Cold And Flu Vapour Release + Decongestant Hot Lemon & Honey Sachets",
@@ -2563,7 +2563,7 @@
           },
           {
             "label": "Cough",
-            "value": "cough",
+            "value": "Cough",
             "medications": [
               {
                 "Name": "Vicks VapoDrops + Cough Lozenges Honey Lemon Menthol",
@@ -3649,7 +3649,7 @@
           },
           {
             "label": "Flu",
-            "value": "flu",
+            "value": "Flu",
             "medications": [
               {
                 "Name": "Tamiflu 75mg Capsules",
@@ -3754,7 +3754,7 @@
           },
           {
             "label": "Nasal Congestion",
-            "value": "nasal_congestion",
+            "value": "Nasal Congestion",
             "medications": [
               {
                 "Name": "Olbas Inhalant Oil 12ml",
@@ -4066,7 +4066,7 @@
           },
           {
             "label": "Sinus Pressure",
-            "value": "sinus_pressure",
+            "value": "Sinus Pressure",
             "medications": [
               {
                 "Name": "Gelomyrtol Forte Capsules",
@@ -4162,7 +4162,7 @@
           },
           {
             "label": "Sore Throat",
-            "value": "sore_throat",
+            "value": "Sore Throat",
             "medications": [
               {
                 "Name": "Strepsils Honey & Lemon Lozenges",
@@ -5161,13 +5161,13 @@
     },
     {
       "label": "Digestive Health",
-      "value": "digestive_health",
+      "value": "Digestive Health",
       "next_step": {
         "question": "Select a specific category:",
         "options": [
           {
             "label": "Acid Reflux/Heartburn",
-            "value": "acid_reflux/heartburn",
+            "value": "Acid Reflux/Heartburn",
             "medications": [
               {
                 "Name": "Protomax MUPS 40mg Tablets",
@@ -5650,7 +5650,7 @@
           },
           {
             "label": "Constipation",
-            "value": "constipation",
+            "value": "Constipation",
             "medications": [
               {
                 "Name": "Fybogel Orange Drink Sachets",
@@ -6016,7 +6016,7 @@
           },
           {
             "label": "Cramps",
-            "value": "cramps",
+            "value": "Cramps",
             "medications": [
               {
                 "Name": "Buscopan Tablets",
@@ -6094,7 +6094,7 @@
           },
           {
             "label": "Dehydration",
-            "value": "dehydration",
+            "value": "Dehydration",
             "medications": [
               {
                 "Name": "ORS Lemon Soluble Tablets",
@@ -6109,7 +6109,7 @@
           },
           {
             "label": "Diarrhea",
-            "value": "diarrhea",
+            "value": "Diarrhea",
             "medications": [
               {
                 "Name": "O.R.S Hydration New Orange",
@@ -6259,7 +6259,7 @@
           },
           {
             "label": "Digestive Health",
-            "value": "digestive_health",
+            "value": "Digestive Health",
             "medications": [
               {
                 "Name": "Prebiotic Soluble Powder",
@@ -6274,7 +6274,7 @@
           },
           {
             "label": "Gas/Bloating",
-            "value": "gas/bloating",
+            "value": "Gas/Bloating",
             "medications": [
               {
                 "Name": "Lactacol 30Mg",
@@ -6505,7 +6505,7 @@
           },
           {
             "label": "Hemorrhoids",
-            "value": "hemorrhoids",
+            "value": "Hemorrhoids",
             "medications": [
               {
                 "Name": "Anodesyn Ointment",
@@ -6619,7 +6619,7 @@
           },
           {
             "label": "Indigestion",
-            "value": "indigestion",
+            "value": "Indigestion",
             "medications": [
               {
                 "Name": "Ursofalk 250mg Capsules",
@@ -6733,7 +6733,7 @@
           },
           {
             "label": "Inflammation/Irritation",
-            "value": "inflammation/irritation",
+            "value": "Inflammation/Irritation",
             "medications": [
               {
                 "Name": "Salazopyrin EN 500mg Tablet",
@@ -6748,7 +6748,7 @@
           },
           {
             "label": "Nausea/Vomiting",
-            "value": "nausea/vomiting",
+            "value": "Nausea/Vomiting",
             "medications": [
               {
                 "Name": "Dompy Domperidone 10mg Tablets",
@@ -6856,13 +6856,13 @@
     },
     {
       "label": "Eye Care",
-      "value": "eye_care",
+      "value": "Eye Care",
       "next_step": {
         "question": "Select a specific category:",
         "options": [
           {
             "label": "Allergies",
-            "value": "allergies",
+            "value": "Allergies",
             "medications": [
               {
                 "Name": "Pataday 0.2% Eye Drops",
@@ -6958,7 +6958,7 @@
           },
           {
             "label": "Contact Lens Related Issues",
-            "value": "contact_lens_related_issues",
+            "value": "Contact Lens Related Issues",
             "medications": [
               {
                 "Name": "Bella Contact Lenses One Day Platinum Gray",
@@ -7369,7 +7369,7 @@
           },
           {
             "label": "Dry Eyes",
-            "value": "dry_eyes",
+            "value": "Dry Eyes",
             "medications": [
               {
                 "Name": "Hyfresh Gel",
@@ -8005,7 +8005,7 @@
           },
           {
             "label": "Eye Allergies",
-            "value": "eye_allergies",
+            "value": "Eye Allergies",
             "medications": [
               {
                 "Name": "Apisal Children Eye/Nose Drops",
@@ -8020,7 +8020,7 @@
           },
           {
             "label": "Eyelid Problems",
-            "value": "eyelid_problems",
+            "value": "Eyelid Problems",
             "medications": [
               {
                 "Name": "Systane Lid Wipes",
@@ -8071,7 +8071,7 @@
           },
           {
             "label": "General",
-            "value": "general",
+            "value": "General",
             "medications": [
               {
                 "Name": "3M Opticlude Comfort Mini Orthoptic Eye Patch",
@@ -8095,7 +8095,7 @@
           },
           {
             "label": "Headache",
-            "value": "headache",
+            "value": "Headache",
             "medications": [
               {
                 "Name": "Boiron Argentum Nitricum 200 CH",
@@ -8110,7 +8110,7 @@
           },
           {
             "label": "Infection/Inflammation",
-            "value": "infection/inflammation",
+            "value": "Infection/Inflammation",
             "medications": [
               {
                 "Name": "Optidex T Sterile Ophthalmic Suspension",
@@ -8206,7 +8206,7 @@
           },
           {
             "label": "Nasal Congestion",
-            "value": "nasal_congestion",
+            "value": "Nasal Congestion",
             "medications": [
               {
                 "Name": "Tonimer Lab Single Dose",
@@ -8221,7 +8221,7 @@
           },
           {
             "label": "Redness",
-            "value": "redness",
+            "value": "Redness",
             "medications": [
               {
                 "Name": "Cosopt Eye Drops",
@@ -8383,13 +8383,13 @@
     },
     {
       "label": "Feminine & Sexual Health",
-      "value": "feminine_&_sexual_health",
+      "value": "Feminine & Sexual Health",
       "next_step": {
         "question": "Select a specific category:",
         "options": [
           {
             "label": "Contraception",
-            "value": "contraception",
+            "value": "Contraception",
             "medications": [
               {
                 "Name": "Gynera Tablet",
@@ -8422,7 +8422,7 @@
           },
           {
             "label": "Erectile Dysfunction",
-            "value": "erectile_dysfunction",
+            "value": "Erectile Dysfunction",
             "medications": [
               {
                 "Name": "Wafi",
@@ -8563,7 +8563,7 @@
           },
           {
             "label": "Hormonal Imbalance",
-            "value": "hormonal_imbalance",
+            "value": "Hormonal Imbalance",
             "medications": [
               {
                 "Name": "Nolvadex",
@@ -8623,7 +8623,7 @@
           },
           {
             "label": "Vaginal Dryness",
-            "value": "vaginal_dryness",
+            "value": "Vaginal Dryness",
             "medications": [
               {
                 "Name": "Vaginom Vaginal Moisturiser Gel",
@@ -8647,7 +8647,7 @@
           },
           {
             "label": "Vaginal Infection",
-            "value": "vaginal_infection",
+            "value": "Vaginal Infection",
             "medications": [
               {
                 "Name": "Candivast 150 Mg Capsule",
@@ -8755,13 +8755,13 @@
     },
     {
       "label": "First Aid",
-      "value": "first_aid",
+      "value": "First Aid",
       "next_step": {
         "question": "Select a specific category:",
         "options": [
           {
             "label": "Burn Relief",
-            "value": "burn_relief",
+            "value": "Burn Relief",
             "medications": [
               {
                 "Name": "Nexcare ColdHot Therapy Pack Comfort",
@@ -8901,7 +8901,7 @@
           },
           {
             "label": "Dehydration",
-            "value": "dehydration",
+            "value": "Dehydration",
             "medications": [
               {
                 "Name": "Normal Saline Sodium Chloride 0.9% Solution For Infusion",
@@ -8916,7 +8916,7 @@
           },
           {
             "label": "Earache",
-            "value": "earache",
+            "value": "Earache",
             "medications": [
               {
                 "Name": "Cetraxal Plus Ear Drops",
@@ -8940,7 +8940,7 @@
           },
           {
             "label": "First Aid",
-            "value": "first_aid",
+            "value": "First Aid",
             "medications": [
               {
                 "Name": "Isomar Daily Hygiene Spray",
@@ -8955,7 +8955,7 @@
           },
           {
             "label": "General Antiseptic",
-            "value": "general_antiseptic",
+            "value": "General Antiseptic",
             "medications": [
               {
                 "Name": "Azi-Once Azithromycin Capsules",
@@ -9447,7 +9447,7 @@
           },
           {
             "label": "Hearing Assistance",
-            "value": "hearing_assistance",
+            "value": "Hearing Assistance",
             "medications": [
               {
                 "Name": "Clinere Ear Cleaner",
@@ -9516,7 +9516,7 @@
           },
           {
             "label": "Hemorrhoids",
-            "value": "hemorrhoids",
+            "value": "Hemorrhoids",
             "medications": [
               {
                 "Name": "Neo Healar Rectal Ointment",
@@ -9540,7 +9540,7 @@
           },
           {
             "label": "Infections",
-            "value": "infections",
+            "value": "Infections",
             "medications": [
               {
                 "Name": "Augmentin 375mg Tablets",
@@ -9591,7 +9591,7 @@
           },
           {
             "label": "Insect Repellent",
-            "value": "insect_repellent",
+            "value": "Insect Repellent",
             "medications": [
               {
                 "Name": "Beurer BR 60 Insect Bite Healer",
@@ -9723,7 +9723,7 @@
           },
           {
             "label": "Muscle Pain",
-            "value": "muscle_pain",
+            "value": "Muscle Pain",
             "medications": [
               {
                 "Name": "3M Nexcare Cold Hot Pack",
@@ -9747,7 +9747,7 @@
           },
           {
             "label": "Oral Care",
-            "value": "oral_care",
+            "value": "Oral Care",
             "medications": [
               {
                 "Name": "Lidonstrum Gele",
@@ -9942,7 +9942,7 @@
           },
           {
             "label": "Wound Care",
-            "value": "wound_care",
+            "value": "Wound Care",
             "medications": [
               {
                 "Name": "Hemagel Gel",
@@ -11031,13 +11031,13 @@
     },
     {
       "label": "Pain & Fever",
-      "value": "pain_&_fever",
+      "value": "Pain & Fever",
       "next_step": {
         "question": "Select a specific category:",
         "options": [
           {
             "label": "Back Pain",
-            "value": "back_pain",
+            "value": "Back Pain",
             "medications": [
               {
                 "Name": "Thermo Relax Self Heating Patch For Back & Shoulder Pain",
@@ -11070,7 +11070,7 @@
           },
           {
             "label": "Fever Type",
-            "value": "fever_type",
+            "value": "Fever Type",
             "medications": [
               {
                 "Name": "Aspirin-C Effervescent Tablets",
@@ -11175,7 +11175,7 @@
           },
           {
             "label": "Headache",
-            "value": "headache",
+            "value": "Headache",
             "medications": [
               {
                 "Name": "Zomig",
@@ -11757,7 +11757,7 @@
           },
           {
             "label": "Joint Pain",
-            "value": "joint_pain",
+            "value": "Joint Pain",
             "medications": [
               {
                 "Name": "Rub A535 Arthritis Gel",
@@ -11952,7 +11952,7 @@
           },
           {
             "label": "Menstrual Pain",
-            "value": "menstrual_pain",
+            "value": "Menstrual Pain",
             "medications": [
               {
                 "Name": "Ponstan Forte Tablets",
@@ -12057,7 +12057,7 @@
           },
           {
             "label": "Muscle Pain",
-            "value": "muscle_pain",
+            "value": "Muscle Pain",
             "medications": [
               {
                 "Name": "Rub A535 No Odour Cream",
@@ -13512,7 +13512,7 @@
           },
           {
             "label": "Toothache",
-            "value": "toothache",
+            "value": "Toothache",
             "medications": [
               {
                 "Name": "Oki 0.16% Oral Spray",
@@ -13539,13 +13539,13 @@
     },
     {
       "label": "Skin Care",
-      "value": "skin_care",
+      "value": "Skin Care",
       "next_step": {
         "question": "Select a specific category:",
         "options": [
           {
             "label": "Burns",
-            "value": "burns",
+            "value": "Burns",
             "medications": [
               {
                 "Name": "Boiron Causticum 200CH",
@@ -13560,7 +13560,7 @@
           },
           {
             "label": "Dryness/Cracking",
-            "value": "dryness/cracking",
+            "value": "Dryness/Cracking",
             "medications": [
               {
                 "Name": "Bioderma Atoderm Intensive Ultra-soothing Anti-Itch Balm",
@@ -13782,7 +13782,7 @@
           },
           {
             "label": "Infections",
-            "value": "infections",
+            "value": "Infections",
             "medications": [
               {
                 "Name": "Bactocine 2% Ointment",
@@ -14283,7 +14283,7 @@
           },
           {
             "label": "Inflammation/Irritation",
-            "value": "inflammation/irritation",
+            "value": "Inflammation/Irritation",
             "medications": [
               {
                 "Name": "B.D Atoderm Sos Spray",
@@ -15108,7 +15108,7 @@
           },
           {
             "label": "Scarring",
-            "value": "scarring",
+            "value": "Scarring",
             "medications": [
               {
                 "Name": "Martiderm Shots Retinol Renew",
@@ -15338,7 +15338,7 @@
           },
           {
             "label": "Skin Care",
-            "value": "skin_care",
+            "value": "Skin Care",
             "medications": [
               {
                 "Name": "Boiron Graphites 30CH",
@@ -15353,7 +15353,7 @@
           },
           {
             "label": "Skin Irritation",
-            "value": "skin_irritation",
+            "value": "Skin Irritation",
             "medications": [
               {
                 "Name": "Sudocrem Antiseptic Cream",
@@ -15368,7 +15368,7 @@
           },
           {
             "label": "Wound Care",
-            "value": "wound_care",
+            "value": "Wound Care",
             "medications": [
               {
                 "Name": "Mebo Herbal & Natural Ointment",
@@ -15476,13 +15476,13 @@
     },
     {
       "label": "Vitamins & Supplements",
-      "value": "vitamins_&_supplements",
+      "value": "Vitamins & Supplements",
       "next_step": {
         "question": "Select a specific category:",
         "options": [
           {
             "label": "Calcium Supplements",
-            "value": "calcium_supplements",
+            "value": "Calcium Supplements",
             "medications": [
               {
                 "Name": "Dr. Reckeweg calcarea carbonica 30x",
@@ -15497,7 +15497,7 @@
           },
           {
             "label": "Digestive Health",
-            "value": "digestive_health",
+            "value": "Digestive Health",
             "medications": [
               {
                 "Name": "Herbamed Berberis Vulgaris Mother Tincture",
@@ -15512,7 +15512,7 @@
           },
           {
             "label": "General",
-            "value": "general",
+            "value": "General",
             "medications": [
               {
                 "Name": "Nebilet",
@@ -15995,7 +15995,7 @@
           },
           {
             "label": "Headache",
-            "value": "headache",
+            "value": "Headache",
             "medications": [
               {
                 "Name": "Boiron Cocculus Indicus 30 CH",
@@ -16010,7 +16010,7 @@
           },
           {
             "label": "Herbal Supplements",
-            "value": "herbal_supplements",
+            "value": "Herbal Supplements",
             "medications": [
               {
                 "Name": "Innermost The Rise Blend Coffee Sachets",
@@ -16232,7 +16232,7 @@
           },
           {
             "label": "Hormonal Imbalance",
-            "value": "hormonal_imbalance",
+            "value": "Hormonal Imbalance",
             "medications": [
               {
                 "Name": "Euthyrox 150 mcg Tablets",
@@ -16274,7 +16274,7 @@
           },
           {
             "label": "Iron Supplements",
-            "value": "iron_supplements",
+            "value": "Iron Supplements",
             "medications": [
               {
                 "Name": "Tardyferon",
@@ -16289,7 +16289,7 @@
           },
           {
             "label": "Lack of Concentration and Forgetfulness",
-            "value": "lack_of_concentration_and_forgetfulness",
+            "value": "Lack of Concentration and Forgetfulness",
             "medications": [
               {
                 "Name": "Heel Vertigoheel Tablets",
@@ -16304,7 +16304,7 @@
           },
           {
             "label": "Liver and Gall Bladder Stimulant",
-            "value": "liver_and_gall_bladder_stimulant",
+            "value": "Liver and Gall Bladder Stimulant",
             "medications": [
               {
                 "Name": "Adler Schussler Salt No.10 Natrium Sulfuricum 6X",
@@ -16319,7 +16319,7 @@
           },
           {
             "label": "Minerals",
-            "value": "minerals",
+            "value": "Minerals",
             "medications": [
               {
                 "Name": "Tenormin Atenolol Tablets",
@@ -16721,7 +16721,7 @@
           },
           {
             "label": "Multivitamins",
-            "value": "multivitamins",
+            "value": "Multivitamins",
             "medications": [
               {
                 "Name": "Pharmax Celera",
@@ -16754,7 +16754,7 @@
           },
           {
             "label": "Muscle Pain",
-            "value": "muscle_pain",
+            "value": "Muscle Pain",
             "medications": [
               {
                 "Name": "Dr. Reckeweg Thuja 30x",
@@ -16778,7 +16778,7 @@
           },
           {
             "label": "Nervous Exhaustion",
-            "value": "nervous_exhaustion",
+            "value": "Nervous Exhaustion",
             "medications": [
               {
                 "Name": "Boiron Argentum Nitricum 30 CH",
@@ -16793,7 +16793,7 @@
           },
           {
             "label": "Omega-3 Fatty Acids",
-            "value": "omega-3_fatty_acids",
+            "value": "Omega-3 Fatty Acids",
             "medications": [
               {
                 "Name": "Lipanthyl 145mg Tablets",
@@ -16808,7 +16808,7 @@
           },
           {
             "label": "Probiotics",
-            "value": "probiotics",
+            "value": "Probiotics",
             "medications": [
               {
                 "Name": "Hexbio Sachet",
@@ -16823,7 +16823,7 @@
           },
           {
             "label": "Restlessness/Agitation",
-            "value": "restlessness/agitation",
+            "value": "Restlessness/Agitation",
             "medications": [
               {
                 "Name": "Boiron Ignatia Amara 30CH",
@@ -16838,7 +16838,7 @@
           },
           {
             "label": "Urinary Tract Infections",
-            "value": "urinary_tract_infections",
+            "value": "Urinary Tract Infections",
             "medications": [
               {
                 "Name": "Bionorica Canephron Tablets",
@@ -16853,7 +16853,7 @@
           },
           {
             "label": "Vitamin B12",
-            "value": "vitamin_b12",
+            "value": "Vitamin B12",
             "medications": [
               {
                 "Name": "Methycobal Methylcobalamin Tablets",
@@ -16913,7 +16913,7 @@
           },
           {
             "label": "Vitamin D",
-            "value": "vitamin_d",
+            "value": "Vitamin D",
             "medications": [
               {
                 "Name": "Devit-3 Injection",
@@ -16964,7 +16964,7 @@
           },
           {
             "label": "Vitamins & Supplements",
-            "value": "vitamins_&_supplements",
+            "value": "Vitamins & Supplements",
             "medications": [
               {
                 "Name": "Eltroxin 50Mcg Tablets",

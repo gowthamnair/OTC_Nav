@@ -3,14 +3,14 @@
   "question": "आप किस प्रकार के लक्षण या उत्पाद की तलाश कर रहे हैं?",
   "options": [
     {
-      "label": "आंखों की देखभाल",
-      "value": "eye_care",
+      "label": "आँखों की देखभाल",
+      "value": "Eye Care",
       "next_step": {
         "question": "एक विशिष्ट श्रेणी चुनें:",
         "options": [
           {
-            "label": "आंखों की एलर्जी",
-            "value": "eye_allergies",
+            "label": "आँख की एलर्जी",
+            "value": "Eye Allergies",
             "medications": [
               {
                 "Name": "Apisal Children Eye/Nose Drops",
@@ -25,7 +25,7 @@
           },
           {
             "label": "एलर्जी",
-            "value": "allergies",
+            "value": "Allergies",
             "medications": [
               {
                 "Name": "Pataday 0.2% Eye Drops",
@@ -120,8 +120,8 @@
             ]
           },
           {
-            "label": "कॉन्टैक्ट लेंस से संबंधित समस्याएं",
-            "value": "contact_lens_related_issues",
+            "label": "कॉन्टैक्ट लेंस संबंधी समस्याएं",
+            "value": "Contact Lens Related Issues",
             "medications": [
               {
                 "Name": "Bella Contact Lenses One Day Platinum Gray",
@@ -531,8 +531,8 @@
             ]
           },
           {
-            "label": "नाक बंद होना",
-            "value": "nasal_congestion",
+            "label": "नाक बंद",
+            "value": "Nasal Congestion",
             "medications": [
               {
                 "Name": "Tonimer Lab Single Dose",
@@ -546,8 +546,8 @@
             ]
           },
           {
-            "label": "पलकों की समस्याएँ",
-            "value": "eyelid_problems",
+            "label": "पलकों की समस्याएं",
+            "value": "Eyelid Problems",
             "medications": [
               {
                 "Name": "Systane Lid Wipes",
@@ -597,8 +597,8 @@
             ]
           },
           {
-            "label": "लालिमा",
-            "value": "redness",
+            "label": "लाल होना",
+            "value": "Redness",
             "medications": [
               {
                 "Name": "Cosopt Eye Drops",
@@ -757,7 +757,7 @@
           },
           {
             "label": "संक्रमण/सूजन",
-            "value": "infection/inflammation",
+            "value": "Infection/Inflammation",
             "medications": [
               {
                 "Name": "Optidex T Sterile Ophthalmic Suspension",
@@ -852,8 +852,23 @@
             ]
           },
           {
+            "label": "सरदर्द",
+            "value": "Headache",
+            "medications": [
+              {
+                "Name": "Boiron Argentum Nitricum 200 CH",
+                "Price": 49.0,
+                "Description": "Relieves headache, emotional disturbances, and conjunctivitis symptoms.",
+                "Warnings": "Consult a healthcare professional if symptoms persist or worsen.",
+                "Category 1": "Eye Care",
+                "Category 2": "Headache",
+                "Category 3": "Pellets"
+              }
+            ]
+          },
+          {
             "label": "सामान्य",
-            "value": "general",
+            "value": "General",
             "medications": [
               {
                 "Name": "3M Opticlude Comfort Mini Orthoptic Eye Patch",
@@ -876,23 +891,8 @@
             ]
           },
           {
-            "label": "सिरदर्द",
-            "value": "headache",
-            "medications": [
-              {
-                "Name": "Boiron Argentum Nitricum 200 CH",
-                "Price": 49.0,
-                "Description": "Relieves headache, emotional disturbances, and conjunctivitis symptoms.",
-                "Warnings": "Consult a healthcare professional if symptoms persist or worsen.",
-                "Category 1": "Eye Care",
-                "Category 2": "Headache",
-                "Category 3": "Pellets"
-              }
-            ]
-          },
-          {
             "label": "सूखी आंखें",
-            "value": "dry_eyes",
+            "value": "Dry Eyes",
             "medications": [
               {
                 "Name": "Hyfresh Gel",
@@ -1531,13 +1531,13 @@
     },
     {
       "label": "एलर्जी और साइनस",
-      "value": "allergies_&_sinus",
+      "value": "Allergies & Sinus",
       "next_step": {
         "question": "एक विशिष्ट श्रेणी चुनें:",
         "options": [
           {
             "label": "एलर्जी",
-            "value": "allergies",
+            "value": "Allergies",
             "medications": [
               {
                 "Name": "Predo Syrup",
@@ -1569,8 +1569,8 @@
             ]
           },
           {
-            "label": "खुजली वाली आंखें (एलर्जिक कंजंक्टिवाइटिस)",
-            "value": "itchy_eyes_(allergic_conjunctivitis)",
+            "label": "खुजली वाली आंखें (एलर्जी कंजंक्टिवाइटिस)",
+            "value": "Itchy Eyes (Allergic Conjunctivitis)",
             "medications": [
               {
                 "Name": "Zyrtec 10mg Tablets",
@@ -1602,8 +1602,8 @@
             ]
           },
           {
-            "label": "नाक बंद होना",
-            "value": "nasal_congestion",
+            "label": "नाक बंद",
+            "value": "Nasal Congestion",
             "medications": [
               {
                 "Name": "ClariSpray Menthol Nasal Spray",
@@ -2274,41 +2274,8 @@
             ]
           },
           {
-            "label": "पित्ती (अर्टिकेरिया)",
-            "value": "hives_(urticaria)",
-            "medications": [
-              {
-                "Name": "Boiron Apis Mellifica 30 CH",
-                "Price": 33.0,
-                "Description": "Homeopathic remedy for swelling, heat stroke, frost bite, rashes, and inflammation from insect bites.",
-                "Warnings": "Consult a healthcare professional if symptoms persist or worsen. Keep out of reach of children.",
-                "Category 1": "Allergies & Sinus",
-                "Category 2": "Hives (Urticaria)",
-                "Category 3": "Pellets"
-              },
-              {
-                "Name": "Omcet Tablet 10mg",
-                "Price": 46.0,
-                "Description": "Relieves year-round allergy symptoms and long-term hives.",
-                "Warnings": "Consult your doctor for appropriate use and dosage.",
-                "Category 1": "Allergies & Sinus",
-                "Category 2": "Hives (Urticaria)",
-                "Category 3": "Tablets"
-              },
-              {
-                "Name": "Fexolag 180mg Film Coated Tablets",
-                "Price": 37.5,
-                "Description": "Relieves symptoms of chronic allergic skin reactions like itching, swelling, and rashes.",
-                "Warnings": "Consult a doctor if symptoms persist. Keep out of reach of children.",
-                "Category 1": "Allergies & Sinus",
-                "Category 2": "Hives (Urticaria)",
-                "Category 3": "Tablets"
-              }
-            ]
-          },
-          {
-            "label": "बहती नाक (राइनोरिया)",
-            "value": "runny_nose_(rhinorrhea)",
+            "label": "नाक बहना (राइनोरिया)",
+            "value": "Runny Nose (Rhinorrhea)",
             "medications": [
               {
                 "Name": "Histaloc Syrup",
@@ -2385,8 +2352,41 @@
             ]
           },
           {
-            "label": "साइनस का दबाव/दर्द",
-            "value": "sinus_pressure/pain",
+            "label": "पित्ती (पित्ती)",
+            "value": "Hives (Urticaria)",
+            "medications": [
+              {
+                "Name": "Boiron Apis Mellifica 30 CH",
+                "Price": 33.0,
+                "Description": "Homeopathic remedy for swelling, heat stroke, frost bite, rashes, and inflammation from insect bites.",
+                "Warnings": "Consult a healthcare professional if symptoms persist or worsen. Keep out of reach of children.",
+                "Category 1": "Allergies & Sinus",
+                "Category 2": "Hives (Urticaria)",
+                "Category 3": "Pellets"
+              },
+              {
+                "Name": "Omcet Tablet 10mg",
+                "Price": 46.0,
+                "Description": "Relieves year-round allergy symptoms and long-term hives.",
+                "Warnings": "Consult your doctor for appropriate use and dosage.",
+                "Category 1": "Allergies & Sinus",
+                "Category 2": "Hives (Urticaria)",
+                "Category 3": "Tablets"
+              },
+              {
+                "Name": "Fexolag 180mg Film Coated Tablets",
+                "Price": 37.5,
+                "Description": "Relieves symptoms of chronic allergic skin reactions like itching, swelling, and rashes.",
+                "Warnings": "Consult a doctor if symptoms persist. Keep out of reach of children.",
+                "Category 1": "Allergies & Sinus",
+                "Category 2": "Hives (Urticaria)",
+                "Category 3": "Tablets"
+              }
+            ]
+          },
+          {
+            "label": "साइनस दबाव/दर्द",
+            "value": "Sinus Pressure/Pain",
             "medications": [
               {
                 "Name": "Hevert Sinusitis Tablets",
@@ -2419,7 +2419,7 @@
           },
           {
             "label": "सामान्य",
-            "value": "general",
+            "value": "General",
             "medications": [
               {
                 "Name": "Symbicort Turbuhaler",
@@ -2433,8 +2433,8 @@
             ]
           },
           {
-            "label": "हे फीवर (एलर्जिक राइनाइटिस)",
-            "value": "hay_fever_(allergic_rhinitis)",
+            "label": "हे फीवर (एलर्जी राइनाइटिस)",
+            "value": "Hay Fever (Allergic Rhinitis)",
             "medications": [
               {
                 "Name": "Finallerg Tablets",
@@ -2992,13 +2992,13 @@
     },
     {
       "label": "खांसी, सर्दी और फ्लू",
-      "value": "cough,_cold_&_flu",
+      "value": "Cough, Cold & Flu",
       "next_step": {
         "question": "एक विशिष्ट श्रेणी चुनें:",
         "options": [
           {
             "label": "खांसी",
-            "value": "cough",
+            "value": "Cough",
             "medications": [
               {
                 "Name": "Vicks VapoDrops + Cough Lozenges Honey Lemon Menthol",
@@ -4084,7 +4084,7 @@
           },
           {
             "label": "गले में खराश",
-            "value": "sore_throat",
+            "value": "Sore Throat",
             "medications": [
               {
                 "Name": "Strepsils Honey & Lemon Lozenges",
@@ -5079,8 +5079,8 @@
             ]
           },
           {
-            "label": "नाक बंद होना",
-            "value": "nasal_congestion",
+            "label": "नाक बंद",
+            "value": "Nasal Congestion",
             "medications": [
               {
                 "Name": "Olbas Inhalant Oil 12ml",
@@ -5392,7 +5392,7 @@
           },
           {
             "label": "फ्लू",
-            "value": "flu",
+            "value": "Flu",
             "medications": [
               {
                 "Name": "Tamiflu 75mg Capsules",
@@ -5497,7 +5497,7 @@
           },
           {
             "label": "सर्दी",
-            "value": "cold",
+            "value": "Cold",
             "medications": [
               {
                 "Name": "Panadol Cold And Flu Vapour Release + Decongestant Hot Lemon & Honey Sachets",
@@ -5646,8 +5646,8 @@
             ]
           },
           {
-            "label": "साइनस का दबाव",
-            "value": "sinus_pressure",
+            "label": "साइनस दबाव",
+            "value": "Sinus Pressure",
             "medications": [
               {
                 "Name": "Gelomyrtol Forte Capsules",
@@ -5746,13 +5746,13 @@
     },
     {
       "label": "त्वचा की देखभाल",
-      "value": "skin_care",
+      "value": "Skin Care",
       "next_step": {
         "question": "एक विशिष्ट श्रेणी चुनें:",
         "options": [
           {
-            "label": "घावों की देखभाल",
-            "value": "wound_care",
+            "label": "घाव की देखभाल",
+            "value": "Wound Care",
             "medications": [
               {
                 "Name": "Mebo Herbal & Natural Ointment",
@@ -5856,8 +5856,8 @@
             ]
           },
           {
-            "label": "जला हुआ",
-            "value": "burns",
+            "label": "जलता है",
+            "value": "Burns",
             "medications": [
               {
                 "Name": "Boiron Causticum 200CH",
@@ -5871,23 +5871,8 @@
             ]
           },
           {
-            "label": "त्वचा की देखभाल",
-            "value": "skin_care",
-            "medications": [
-              {
-                "Name": "Boiron Graphites 30CH",
-                "Price": 33.0,
-                "Description": "Homeopathic medicine for skin disorders, digestive problems, and painful corns.",
-                "Warnings": "Consult a healthcare practitioner before use. Keep out of reach of children.",
-                "Category 1": "Skin Care",
-                "Category 2": "Skin Care",
-                "Category 3": "Tablets"
-              }
-            ]
-          },
-          {
-            "label": "त्वचा में जलन",
-            "value": "skin_irritation",
+            "label": "त्वचा की जलन",
+            "value": "Skin Irritation",
             "medications": [
               {
                 "Name": "Sudocrem Antiseptic Cream",
@@ -5901,8 +5886,23 @@
             ]
           },
           {
+            "label": "त्वचा की देखभाल",
+            "value": "Skin Care",
+            "medications": [
+              {
+                "Name": "Boiron Graphites 30CH",
+                "Price": 33.0,
+                "Description": "Homeopathic medicine for skin disorders, digestive problems, and painful corns.",
+                "Warnings": "Consult a healthcare practitioner before use. Keep out of reach of children.",
+                "Category 1": "Skin Care",
+                "Category 2": "Skin Care",
+                "Category 3": "Tablets"
+              }
+            ]
+          },
+          {
             "label": "निशान",
-            "value": "scarring",
+            "value": "Scarring",
             "medications": [
               {
                 "Name": "Martiderm Shots Retinol Renew",
@@ -6132,7 +6132,7 @@
           },
           {
             "label": "संक्रमण",
-            "value": "infections",
+            "value": "Infections",
             "medications": [
               {
                 "Name": "Bactocine 2% Ointment",
@@ -6632,8 +6632,8 @@
             ]
           },
           {
-            "label": "सूखापन/फटना",
-            "value": "dryness/cracking",
+            "label": "सूखापन/दरार",
+            "value": "Dryness/Cracking",
             "medications": [
               {
                 "Name": "Bioderma Atoderm Intensive Ultra-soothing Anti-Itch Balm",
@@ -6855,7 +6855,7 @@
           },
           {
             "label": "सूजन/जलन",
-            "value": "inflammation/irritation",
+            "value": "Inflammation/Irritation",
             "medications": [
               {
                 "Name": "B.D Atoderm Sos Spray",
@@ -7683,13 +7683,13 @@
     },
     {
       "label": "दर्द और बुखार",
-      "value": "pain_&_fever",
+      "value": "Pain & Fever",
       "next_step": {
         "question": "एक विशिष्ट श्रेणी चुनें:",
         "options": [
           {
             "label": "जोड़ों का दर्द",
-            "value": "joint_pain",
+            "value": "Joint Pain",
             "medications": [
               {
                 "Name": "Rub A535 Arthritis Gel",
@@ -7883,8 +7883,8 @@
             ]
           },
           {
-            "label": "दांत दर्द",
-            "value": "toothache",
+            "label": "दांत का दर्द",
+            "value": "Toothache",
             "medications": [
               {
                 "Name": "Oki 0.16% Oral Spray",
@@ -7908,7 +7908,7 @@
           },
           {
             "label": "पीठ दर्द",
-            "value": "back_pain",
+            "value": "Back Pain",
             "medications": [
               {
                 "Name": "Thermo Relax Self Heating Patch For Back & Shoulder Pain",
@@ -7941,7 +7941,7 @@
           },
           {
             "label": "बुखार का प्रकार",
-            "value": "fever_type",
+            "value": "Fever Type",
             "medications": [
               {
                 "Name": "Aspirin-C Effervescent Tablets",
@@ -8045,8 +8045,8 @@
             ]
           },
           {
-            "label": "मांसपेशियों में दर्द",
-            "value": "muscle_pain",
+            "label": "मांसपेशी में दर्द",
+            "value": "Muscle Pain",
             "medications": [
               {
                 "Name": "Rub A535 No Odour Cream",
@@ -9501,7 +9501,7 @@
           },
           {
             "label": "मासिक धर्म का दर्द",
-            "value": "menstrual_pain",
+            "value": "Menstrual Pain",
             "medications": [
               {
                 "Name": "Ponstan Forte Tablets",
@@ -9605,8 +9605,8 @@
             ]
           },
           {
-            "label": "सिरदर्द",
-            "value": "headache",
+            "label": "सरदर्द",
+            "value": "Headache",
             "medications": [
               {
                 "Name": "Zomig",
@@ -10191,13 +10191,13 @@
     },
     {
       "label": "पाचन स्वास्थ्य",
-      "value": "digestive_health",
+      "value": "Digestive Health",
       "next_step": {
         "question": "एक विशिष्ट श्रेणी चुनें:",
         "options": [
           {
             "label": "अपच",
-            "value": "indigestion",
+            "value": "Indigestion",
             "medications": [
               {
                 "Name": "Ursofalk 250mg Capsules",
@@ -10310,8 +10310,8 @@
             ]
           },
           {
-            "label": "एसिड रिफ्लक्स/सीने में जलन",
-            "value": "acid_reflux/heartburn",
+            "label": "एसिड रिफ्लक्स/हार्टबर्न",
+            "value": "Acid Reflux/Heartburn",
             "medications": [
               {
                 "Name": "Protomax MUPS 40mg Tablets",
@@ -10794,7 +10794,7 @@
           },
           {
             "label": "ऐंठन",
-            "value": "cramps",
+            "value": "Cramps",
             "medications": [
               {
                 "Name": "Buscopan Tablets",
@@ -10871,8 +10871,8 @@
             ]
           },
           {
-            "label": "कब्ज",
-            "value": "constipation",
+            "label": "कब्ज़",
+            "value": "Constipation",
             "medications": [
               {
                 "Name": "Fybogel Orange Drink Sachets",
@@ -11237,8 +11237,8 @@
             ]
           },
           {
-            "label": "गैस/पेट फूलना",
-            "value": "gas/bloating",
+            "label": "गैस/सूजन",
+            "value": "Gas/Bloating",
             "medications": [
               {
                 "Name": "Lactacol 30Mg",
@@ -11469,7 +11469,7 @@
           },
           {
             "label": "दस्त",
-            "value": "diarrhea",
+            "value": "Diarrhea",
             "medications": [
               {
                 "Name": "O.R.S Hydration New Orange",
@@ -11619,7 +11619,7 @@
           },
           {
             "label": "निर्जलीकरण",
-            "value": "dehydration",
+            "value": "Dehydration",
             "medications": [
               {
                 "Name": "ORS Lemon Soluble Tablets",
@@ -11634,7 +11634,7 @@
           },
           {
             "label": "पाचन स्वास्थ्य",
-            "value": "digestive_health",
+            "value": "Digestive Health",
             "medications": [
               {
                 "Name": "Prebiotic Soluble Powder",
@@ -11649,7 +11649,7 @@
           },
           {
             "label": "बवासीर",
-            "value": "hemorrhoids",
+            "value": "Hemorrhoids",
             "medications": [
               {
                 "Name": "Anodesyn Ointment",
@@ -11763,7 +11763,7 @@
           },
           {
             "label": "मतली/उल्टी",
-            "value": "nausea/vomiting",
+            "value": "Nausea/Vomiting",
             "medications": [
               {
                 "Name": "Dompy Domperidone 10mg Tablets",
@@ -11868,7 +11868,7 @@
           },
           {
             "label": "सूजन/जलन",
-            "value": "inflammation/irritation",
+            "value": "Inflammation/Irritation",
             "medications": [
               {
                 "Name": "Salazopyrin EN 500mg Tablet",
@@ -11885,14 +11885,14 @@
       }
     },
     {
-      "label": "प्राथमिक चिकित्सा",
-      "value": "first_aid",
+      "label": "प्राथमिक उपचार",
+      "value": "First Aid",
       "next_step": {
         "question": "एक विशिष्ट श्रेणी चुनें:",
         "options": [
           {
             "label": "कान का दर्द",
-            "value": "earache",
+            "value": "Earache",
             "medications": [
               {
                 "Name": "Cetraxal Plus Ear Drops",
@@ -11916,7 +11916,7 @@
           },
           {
             "label": "कीट विकर्षक",
-            "value": "insect_repellent",
+            "value": "Insect Repellent",
             "medications": [
               {
                 "Name": "Beurer BR 60 Insect Bite Healer",
@@ -12047,8 +12047,8 @@
             ]
           },
           {
-            "label": "घावों की देखभाल",
-            "value": "wound_care",
+            "label": "घाव की देखभाल",
+            "value": "Wound Care",
             "medications": [
               {
                 "Name": "Hemagel Gel",
@@ -13134,7 +13134,7 @@
           },
           {
             "label": "जलन से राहत",
-            "value": "burn_relief",
+            "value": "Burn Relief",
             "medications": [
               {
                 "Name": "Nexcare ColdHot Therapy Pack Comfort",
@@ -13274,7 +13274,7 @@
           },
           {
             "label": "निर्जलीकरण",
-            "value": "dehydration",
+            "value": "Dehydration",
             "medications": [
               {
                 "Name": "Normal Saline Sodium Chloride 0.9% Solution For Infusion",
@@ -13288,8 +13288,8 @@
             ]
           },
           {
-            "label": "प्राथमिक चिकित्सा",
-            "value": "first_aid",
+            "label": "प्राथमिक उपचार",
+            "value": "First Aid",
             "medications": [
               {
                 "Name": "Isomar Daily Hygiene Spray",
@@ -13304,7 +13304,7 @@
           },
           {
             "label": "बवासीर",
-            "value": "hemorrhoids",
+            "value": "Hemorrhoids",
             "medications": [
               {
                 "Name": "Neo Healar Rectal Ointment",
@@ -13327,8 +13327,8 @@
             ]
           },
           {
-            "label": "मांसपेशियों में दर्द",
-            "value": "muscle_pain",
+            "label": "मांसपेशी में दर्द",
+            "value": "Muscle Pain",
             "medications": [
               {
                 "Name": "3M Nexcare Cold Hot Pack",
@@ -13351,8 +13351,8 @@
             ]
           },
           {
-            "label": "मौखिक देखभाल (ओरल केयर)",
-            "value": "oral_care",
+            "label": "मौखिक स्वास्थ्य",
+            "value": "Oral Care",
             "medications": [
               {
                 "Name": "Lidonstrum Gele",
@@ -13547,7 +13547,7 @@
           },
           {
             "label": "संक्रमण",
-            "value": "infections",
+            "value": "Infections",
             "medications": [
               {
                 "Name": "Augmentin 375mg Tablets",
@@ -13598,7 +13598,7 @@
           },
           {
             "label": "सामान्य एंटीसेप्टिक",
-            "value": "general_antiseptic",
+            "value": "General Antiseptic",
             "medications": [
               {
                 "Name": "Azi-Once Azithromycin Capsules",
@@ -14090,7 +14090,7 @@
           },
           {
             "label": "सुनने में सहायता",
-            "value": "hearing_assistance",
+            "value": "Hearing Assistance",
             "medications": [
               {
                 "Name": "Clinere Ear Cleaner",
@@ -14162,13 +14162,13 @@
     },
     {
       "label": "बच्चों का स्वास्थ्य",
-      "value": "children's_health",
+      "value": "Children's Health",
       "next_step": {
         "question": "एक विशिष्ट श्रेणी चुनें:",
         "options": [
           {
             "label": "एलर्जी",
-            "value": "allergies",
+            "value": "Allergies",
             "medications": [
               {
                 "Name": "Children's Claritin Grape Syrup",
@@ -14236,8 +14236,8 @@
             ]
           },
           {
-            "label": "कब्ज",
-            "value": "constipation",
+            "label": "कब्ज़",
+            "value": "Constipation",
             "medications": [
               {
                 "Name": "Les Zamis Constipation Oral Solution",
@@ -14315,7 +14315,7 @@
           },
           {
             "label": "कान का दर्द",
-            "value": "earache",
+            "value": "Earache",
             "medications": [
               {
                 "Name": "Kids 0-9 Earache Oral Drops",
@@ -14402,7 +14402,7 @@
           },
           {
             "label": "खांसी",
-            "value": "cough",
+            "value": "Cough",
             "medications": [
               {
                 "Name": "Nurse Harvey’s BabyRub Balm",
@@ -14480,7 +14480,7 @@
           },
           {
             "label": "गले में खराश",
-            "value": "sore_throat",
+            "value": "Sore Throat",
             "medications": [
               {
                 "Name": "Homeocan Kids Throat Ease Syrup",
@@ -14504,7 +14504,7 @@
           },
           {
             "label": "टॉन्सिलिटिस",
-            "value": "tonsillitis",
+            "value": "Tonsillitis",
             "medications": [
               {
                 "Name": "Boiron Baryta Carbonica 200CH",
@@ -14518,8 +14518,8 @@
             ]
           },
           {
-            "label": "त्वचा में जलन",
-            "value": "skin_irritation",
+            "label": "त्वचा की जलन",
+            "value": "Skin Irritation",
             "medications": [
               {
                 "Name": "Nexcare Animals Kids Bandages",
@@ -14552,7 +14552,7 @@
           },
           {
             "label": "दस्त",
-            "value": "diarrhea",
+            "value": "Diarrhea",
             "medications": [
               {
                 "Name": "Hidrasec Children",
@@ -14593,8 +14593,8 @@
             ]
           },
           {
-            "label": "नाक बंद होना",
-            "value": "nasal_congestion",
+            "label": "नाक बंद",
+            "value": "Nasal Congestion",
             "medications": [
               {
                 "Name": "Otosan Nasal Spray for Baby",
@@ -14699,7 +14699,7 @@
           },
           {
             "label": "निर्जलीकरण",
-            "value": "dehydration",
+            "value": "Dehydration",
             "medications": [
               {
                 "Name": "Orsalit With Banana Flavour Sachet",
@@ -14813,7 +14813,7 @@
           },
           {
             "label": "पाचन स्वास्थ्य",
-            "value": "digestive_health",
+            "value": "Digestive Health",
             "medications": [
               {
                 "Name": "Proflora Kids Plus",
@@ -14828,7 +14828,7 @@
           },
           {
             "label": "बुखार",
-            "value": "fever",
+            "value": "Fever",
             "medications": [
               {
                 "Name": "Nurofen Junior Fever & Pain Relief Strawberry",
@@ -14995,8 +14995,8 @@
             ]
           },
           {
-            "label": "बेचैनी/उत्तेजना",
-            "value": "restlessness/agitation",
+            "label": "बेचैनी/आंदोलन",
+            "value": "Restlessness/Agitation",
             "medications": [
               {
                 "Name": "Kids 0-9 Teething",
@@ -15055,8 +15055,8 @@
             ]
           },
           {
-            "label": "मौखिक देखभाल (ओरल केयर)",
-            "value": "oral_care",
+            "label": "मौखिक स्वास्थ्य",
+            "value": "Oral Care",
             "medications": [
               {
                 "Name": "Dentinox Teething Gel",
@@ -15071,7 +15071,7 @@
           },
           {
             "label": "संक्रमण",
-            "value": "infections",
+            "value": "Infections",
             "medications": [
               {
                 "Name": "Augmentin ES 600 Syrup",
@@ -15086,7 +15086,7 @@
           },
           {
             "label": "सामान्य",
-            "value": "general",
+            "value": "General",
             "medications": [
               {
                 "Name": "NZ Health Manuka Honey for Kids UMF 8+ & MGO 180+",
@@ -15104,28 +15104,13 @@
     },
     {
       "label": "विटामिन और सप्लीमेंट्स",
-      "value": "vitamins_&_supplements",
+      "value": "Vitamins & Supplements",
       "next_step": {
         "question": "एक विशिष्ट श्रेणी चुनें:",
         "options": [
           {
-            "label": "Omega-3 Fatty Acids",
-            "value": "omega-3_fatty_acids",
-            "medications": [
-              {
-                "Name": "Lipanthyl 145mg Tablets",
-                "Price": 45.0,
-                "Description": "Helps lower cholesterol and triglycerides.",
-                "Warnings": "Take as directed by your doctor. Regular blood tests are required. May interact with other medications.",
-                "Category 1": "Vitamins & Supplements",
-                "Category 2": "Omega-3 Fatty Acids",
-                "Category 3": "Tablets"
-              }
-            ]
-          },
-          {
             "label": "आयरन सप्लीमेंट्स",
-            "value": "iron_supplements",
+            "value": "Iron Supplements",
             "medications": [
               {
                 "Name": "Tardyferon",
@@ -15139,8 +15124,8 @@
             ]
           },
           {
-            "label": "एकाग्रता की कमी और भूलने की बीमारी",
-            "value": "lack_of_concentration_and_forgetfulness",
+            "label": "एकाग्रता और भूलने की कमी",
+            "value": "Lack of Concentration and Forgetfulness",
             "medications": [
               {
                 "Name": "Heel Vertigoheel Tablets",
@@ -15154,8 +15139,23 @@
             ]
           },
           {
+            "label": "ओमेगा-3 फैटी एसिड",
+            "value": "Omega-3 Fatty Acids",
+            "medications": [
+              {
+                "Name": "Lipanthyl 145mg Tablets",
+                "Price": 45.0,
+                "Description": "Helps lower cholesterol and triglycerides.",
+                "Warnings": "Take as directed by your doctor. Regular blood tests are required. May interact with other medications.",
+                "Category 1": "Vitamins & Supplements",
+                "Category 2": "Omega-3 Fatty Acids",
+                "Category 3": "Tablets"
+              }
+            ]
+          },
+          {
             "label": "कैल्शियम सप्लीमेंट्स",
-            "value": "calcium_supplements",
+            "value": "Calcium Supplements",
             "medications": [
               {
                 "Name": "Dr. Reckeweg calcarea carbonica 30x",
@@ -15170,7 +15170,7 @@
           },
           {
             "label": "खनिज",
-            "value": "minerals",
+            "value": "Minerals",
             "medications": [
               {
                 "Name": "Tenormin Atenolol Tablets",
@@ -15572,7 +15572,7 @@
           },
           {
             "label": "पाचन स्वास्थ्य",
-            "value": "digestive_health",
+            "value": "Digestive Health",
             "medications": [
               {
                 "Name": "Herbamed Berberis Vulgaris Mother Tincture",
@@ -15587,7 +15587,7 @@
           },
           {
             "label": "प्रोबायोटिक्स",
-            "value": "probiotics",
+            "value": "Probiotics",
             "medications": [
               {
                 "Name": "Hexbio Sachet",
@@ -15601,8 +15601,8 @@
             ]
           },
           {
-            "label": "बेचैनी/उत्तेजना",
-            "value": "restlessness/agitation",
+            "label": "बेचैनी/आंदोलन",
+            "value": "Restlessness/Agitation",
             "medications": [
               {
                 "Name": "Boiron Ignatia Amara 30CH",
@@ -15617,7 +15617,7 @@
           },
           {
             "label": "मल्टीविटामिन",
-            "value": "multivitamins",
+            "value": "Multivitamins",
             "medications": [
               {
                 "Name": "Pharmax Celera",
@@ -15649,8 +15649,8 @@
             ]
           },
           {
-            "label": "मांसपेशियों में दर्द",
-            "value": "muscle_pain",
+            "label": "मांसपेशी में दर्द",
+            "value": "Muscle Pain",
             "medications": [
               {
                 "Name": "Dr. Reckeweg Thuja 30x",
@@ -15674,7 +15674,7 @@
           },
           {
             "label": "मानसिक थकावट",
-            "value": "nervous_exhaustion",
+            "value": "Nervous Exhaustion",
             "medications": [
               {
                 "Name": "Boiron Argentum Nitricum 30 CH",
@@ -15689,7 +15689,7 @@
           },
           {
             "label": "मूत्र पथ के संक्रमण",
-            "value": "urinary_tract_infections",
+            "value": "Urinary Tract Infections",
             "medications": [
               {
                 "Name": "Bionorica Canephron Tablets",
@@ -15703,8 +15703,8 @@
             ]
           },
           {
-            "label": "लीवर और पित्ताशय उत्तेजक",
-            "value": "liver_and_gall_bladder_stimulant",
+            "label": "यकृत और पित्त मूत्राशय उत्तेजक",
+            "value": "Liver and Gall Bladder Stimulant",
             "medications": [
               {
                 "Name": "Adler Schussler Salt No.10 Natrium Sulfuricum 6X",
@@ -15719,7 +15719,7 @@
           },
           {
             "label": "विटामिन और सप्लीमेंट्स",
-            "value": "vitamins_&_supplements",
+            "value": "Vitamins & Supplements",
             "medications": [
               {
                 "Name": "Eltroxin 50Mcg Tablets",
@@ -15860,7 +15860,7 @@
           },
           {
             "label": "विटामिन डी",
-            "value": "vitamin_d",
+            "value": "Vitamin D",
             "medications": [
               {
                 "Name": "Devit-3 Injection",
@@ -15911,7 +15911,7 @@
           },
           {
             "label": "विटामिन बी12",
-            "value": "vitamin_b12",
+            "value": "Vitamin B12",
             "medications": [
               {
                 "Name": "Methycobal Methylcobalamin Tablets",
@@ -15970,8 +15970,23 @@
             ]
           },
           {
+            "label": "सरदर्द",
+            "value": "Headache",
+            "medications": [
+              {
+                "Name": "Boiron Cocculus Indicus 30 CH",
+                "Price": 33.0,
+                "Description": "Treats epilepsy, headache, limb deformities, stomach disorders, and painful periods.",
+                "Warnings": "Consult a healthcare professional if symptoms persist or worsen.",
+                "Category 1": "Vitamins & Supplements",
+                "Category 2": "Headache",
+                "Category 3": "Pellets"
+              }
+            ]
+          },
+          {
             "label": "सामान्य",
-            "value": "general",
+            "value": "General",
             "medications": [
               {
                 "Name": "Nebilet",
@@ -16453,23 +16468,8 @@
             ]
           },
           {
-            "label": "सिरदर्द",
-            "value": "headache",
-            "medications": [
-              {
-                "Name": "Boiron Cocculus Indicus 30 CH",
-                "Price": 33.0,
-                "Description": "Treats epilepsy, headache, limb deformities, stomach disorders, and painful periods.",
-                "Warnings": "Consult a healthcare professional if symptoms persist or worsen.",
-                "Category 1": "Vitamins & Supplements",
-                "Category 2": "Headache",
-                "Category 3": "Pellets"
-              }
-            ]
-          },
-          {
             "label": "हर्बल सप्लीमेंट्स",
-            "value": "herbal_supplements",
+            "value": "Herbal Supplements",
             "medications": [
               {
                 "Name": "Innermost The Rise Blend Coffee Sachets",
@@ -16691,7 +16691,7 @@
           },
           {
             "label": "हार्मोनल असंतुलन",
-            "value": "hormonal_imbalance",
+            "value": "Hormonal Imbalance",
             "medications": [
               {
                 "Name": "Euthyrox 150 mcg Tablets",
@@ -16736,13 +16736,13 @@
     },
     {
       "label": "स्त्री और यौन स्वास्थ्य",
-      "value": "feminine_&_sexual_health",
+      "value": "Feminine & Sexual Health",
       "next_step": {
         "question": "एक विशिष्ट श्रेणी चुनें:",
         "options": [
           {
             "label": "गर्भनिरोधक",
-            "value": "contraception",
+            "value": "Contraception",
             "medications": [
               {
                 "Name": "Gynera Tablet",
@@ -16775,7 +16775,7 @@
           },
           {
             "label": "योनि का सूखापन",
-            "value": "vaginal_dryness",
+            "value": "Vaginal Dryness",
             "medications": [
               {
                 "Name": "Vaginom Vaginal Moisturiser Gel",
@@ -16799,7 +16799,7 @@
           },
           {
             "label": "योनि संक्रमण",
-            "value": "vaginal_infection",
+            "value": "Vaginal Infection",
             "medications": [
               {
                 "Name": "Candivast 150 Mg Capsule",
@@ -16904,7 +16904,7 @@
           },
           {
             "label": "स्तंभन दोष",
-            "value": "erectile_dysfunction",
+            "value": "Erectile Dysfunction",
             "medications": [
               {
                 "Name": "Wafi",
@@ -17045,7 +17045,7 @@
           },
           {
             "label": "हार्मोनल असंतुलन",
-            "value": "hormonal_imbalance",
+            "value": "Hormonal Imbalance",
             "medications": [
               {
                 "Name": "Nolvadex",

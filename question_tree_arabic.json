@@ -4,13 +4,13 @@
   "options": [
     {
       "label": "الألم والحمى",
-      "value": "pain_&_fever",
+      "value": "Pain & Fever",
       "next_step": {
         "question": "حدد فئة معينة:",
         "options": [
           {
             "label": "آلام الدورة الشهرية",
-            "value": "menstrual_pain",
+            "value": "Menstrual Pain",
             "medications": [
               {
                 "Name": "Ponstan Forte Tablets",
@@ -115,7 +115,7 @@
           },
           {
             "label": "آلام الظهر",
-            "value": "back_pain",
+            "value": "Back Pain",
             "medications": [
               {
                 "Name": "Thermo Relax Self Heating Patch For Back & Shoulder Pain",
@@ -148,7 +148,7 @@
           },
           {
             "label": "آلام العضلات",
-            "value": "muscle_pain",
+            "value": "Muscle Pain",
             "medications": [
               {
                 "Name": "Rub A535 No Odour Cream",
@@ -1603,7 +1603,7 @@
           },
           {
             "label": "آلام المفاصل",
-            "value": "joint_pain",
+            "value": "Joint Pain",
             "medications": [
               {
                 "Name": "Rub A535 Arthritis Gel",
@@ -1798,7 +1798,7 @@
           },
           {
             "label": "ألم الأسنان",
-            "value": "toothache",
+            "value": "Toothache",
             "medications": [
               {
                 "Name": "Oki 0.16% Oral Spray",
@@ -1822,7 +1822,7 @@
           },
           {
             "label": "الصداع",
-            "value": "headache",
+            "value": "Headache",
             "medications": [
               {
                 "Name": "Zomig",
@@ -2404,7 +2404,7 @@
           },
           {
             "label": "نوع الحمى",
-            "value": "fever_type",
+            "value": "Fever Type",
             "medications": [
               {
                 "Name": "Aspirin-C Effervescent Tablets",
@@ -2512,13 +2512,13 @@
     },
     {
       "label": "الإسعافات الأولية",
-      "value": "first_aid",
+      "value": "First Aid",
       "next_step": {
         "question": "حدد فئة معينة:",
         "options": [
           {
             "label": "آلام العضلات",
-            "value": "muscle_pain",
+            "value": "Muscle Pain",
             "medications": [
               {
                 "Name": "3M Nexcare Cold Hot Pack",
@@ -2542,7 +2542,7 @@
           },
           {
             "label": "ألم الأذن",
-            "value": "earache",
+            "value": "Earache",
             "medications": [
               {
                 "Name": "Cetraxal Plus Ear Drops",
@@ -2566,7 +2566,7 @@
           },
           {
             "label": "الإسعافات الأولية",
-            "value": "first_aid",
+            "value": "First Aid",
             "medications": [
               {
                 "Name": "Isomar Daily Hygiene Spray",
@@ -2580,47 +2580,8 @@
             ]
           },
           {
-            "label": "البواسير",
-            "value": "hemorrhoids",
-            "medications": [
-              {
-                "Name": "Neo Healar Rectal Ointment",
-                "Price": 58.0,
-                "Description": "Relieves pain, itching, swelling, and bleeding associated with hemorrhoids and anal fissures.",
-                "Warnings": "Consult your doctor before use. Apply as directed.",
-                "Category 1": "First Aid",
-                "Category 2": "Hemorrhoids",
-                "Category 3": "Cream/Ointment"
-              },
-              {
-                "Name": "Hemagel Procto Suppository",
-                "Price": 96.0,
-                "Description": "Accelerates healing of acute and chronic wounds and skin defects of the rectum.",
-                "Warnings": "Suitable for all age categories, breastfeeding and pregnant women, as well as children from 0 months of age or seniors with additional medication.",
-                "Category 1": "First Aid",
-                "Category 2": "Hemorrhoids",
-                "Category 3": "Suppository"
-              }
-            ]
-          },
-          {
-            "label": "الجفاف",
-            "value": "dehydration",
-            "medications": [
-              {
-                "Name": "Normal Saline Sodium Chloride 0.9% Solution For Infusion",
-                "Price": 4.5,
-                "Description": "Provides fluid and electrolyte replenishment.",
-                "Warnings": "Administer under medical supervision. Monitor fluid balance.",
-                "Category 1": "First Aid",
-                "Category 2": "Dehydration",
-                "Category 3": "Syrup/Liquid"
-              }
-            ]
-          },
-          {
-            "label": "العدوى",
-            "value": "infections",
+            "label": "الالتهابات",
+            "value": "Infections",
             "medications": [
               {
                 "Name": "Augmentin 375mg Tablets",
@@ -2670,8 +2631,47 @@
             ]
           },
           {
+            "label": "البواسير",
+            "value": "Hemorrhoids",
+            "medications": [
+              {
+                "Name": "Neo Healar Rectal Ointment",
+                "Price": 58.0,
+                "Description": "Relieves pain, itching, swelling, and bleeding associated with hemorrhoids and anal fissures.",
+                "Warnings": "Consult your doctor before use. Apply as directed.",
+                "Category 1": "First Aid",
+                "Category 2": "Hemorrhoids",
+                "Category 3": "Cream/Ointment"
+              },
+              {
+                "Name": "Hemagel Procto Suppository",
+                "Price": 96.0,
+                "Description": "Accelerates healing of acute and chronic wounds and skin defects of the rectum.",
+                "Warnings": "Suitable for all age categories, breastfeeding and pregnant women, as well as children from 0 months of age or seniors with additional medication.",
+                "Category 1": "First Aid",
+                "Category 2": "Hemorrhoids",
+                "Category 3": "Suppository"
+              }
+            ]
+          },
+          {
+            "label": "الجفاف",
+            "value": "Dehydration",
+            "medications": [
+              {
+                "Name": "Normal Saline Sodium Chloride 0.9% Solution For Infusion",
+                "Price": 4.5,
+                "Description": "Provides fluid and electrolyte replenishment.",
+                "Warnings": "Administer under medical supervision. Monitor fluid balance.",
+                "Category 1": "First Aid",
+                "Category 2": "Dehydration",
+                "Category 3": "Syrup/Liquid"
+              }
+            ]
+          },
+          {
             "label": "العناية بالجروح",
-            "value": "wound_care",
+            "value": "Wound Care",
             "medications": [
               {
                 "Name": "Hemagel Gel",
@@ -3757,7 +3757,7 @@
           },
           {
             "label": "العناية بالفم",
-            "value": "oral_care",
+            "value": "Oral Care",
             "medications": [
               {
                 "Name": "Lidonstrum Gele",
@@ -3951,77 +3951,8 @@
             ]
           },
           {
-            "label": "المساعدة السمعية",
-            "value": "hearing_assistance",
-            "medications": [
-              {
-                "Name": "Clinere Ear Cleaner",
-                "Price": 49.0,
-                "Description": "Flexible plastic earwax cleaners.",
-                "Warnings": "Use with caution. Do not insert too deeply into the ear canal.",
-                "Category 1": "First Aid",
-                "Category 2": "Hearing Assistance",
-                "Category 3": "Other"
-              },
-              {
-                "Name": "Beurer HA 50 Hearing Aid Amplifier",
-                "Price": 126.75,
-                "Description": "Amplifies sound for individuals with hearing impairment.",
-                "Warnings": "Consult a hearing specialist before use. Keep out of reach of children. Small parts may be a choking hazard.",
-                "Category 1": "First Aid",
-                "Category 2": "Hearing Assistance",
-                "Category 3": "Other"
-              },
-              {
-                "Name": "Beurer HA 20 Hearing Aid Amplifier",
-                "Price": 96.75,
-                "Description": "Amplifies sound for improved hearing.",
-                "Warnings": "Consult an audiologist before use.",
-                "Category 1": "First Aid",
-                "Category 2": "Hearing Assistance",
-                "Category 3": "Tablets"
-              },
-              {
-                "Name": "Otiblock Ear Spray",
-                "Price": 68.0,
-                "Description": "Cleans and helps relieve earwax buildup.",
-                "Warnings": "Consult a doctor if you have ear pain, infection, or a perforated eardrum. Keep out of reach of children.",
-                "Category 1": "First Aid",
-                "Category 2": "Hearing Assistance",
-                "Category 3": "Spray"
-              },
-              {
-                "Name": "Otidry MD Ear Spray",
-                "Price": 69.0,
-                "Description": "Dries excess moisture in the ear canal to prevent swimmer's ear.",
-                "Warnings": "Consult a doctor if you have ear pain, infection, or a perforated eardrum. Keep out of reach of children.",
-                "Category 1": "First Aid",
-                "Category 2": "Hearing Assistance",
-                "Category 3": "Spray"
-              },
-              {
-                "Name": "Otosan Natural Ear Drops",
-                "Price": 49.0,
-                "Description": "Natural ear drops for ear hygiene.",
-                "Warnings": "Consult a doctor if irritation occurs.",
-                "Category 1": "First Aid",
-                "Category 2": "Hearing Assistance",
-                "Category 3": "Drops"
-              },
-              {
-                "Name": "Dewax Ear Drops",
-                "Price": 4.5,
-                "Description": "Aids in the removal of ear wax.",
-                "Warnings": "Consult a doctor if pain or irritation occurs. Do not use if eardrum is perforated.",
-                "Category 1": "First Aid",
-                "Category 2": "Hearing Assistance",
-                "Category 3": "Drops"
-              }
-            ]
-          },
-          {
             "label": "تخفيف الحروق",
-            "value": "burn_relief",
+            "value": "Burn Relief",
             "medications": [
               {
                 "Name": "Nexcare ColdHot Therapy Pack Comfort",
@@ -4161,7 +4092,7 @@
           },
           {
             "label": "طارد الحشرات",
-            "value": "insect_repellent",
+            "value": "Insect Repellent",
             "medications": [
               {
                 "Name": "Beurer BR 60 Insect Bite Healer",
@@ -4292,8 +4223,77 @@
             ]
           },
           {
+            "label": "مساعدة السمع",
+            "value": "Hearing Assistance",
+            "medications": [
+              {
+                "Name": "Clinere Ear Cleaner",
+                "Price": 49.0,
+                "Description": "Flexible plastic earwax cleaners.",
+                "Warnings": "Use with caution. Do not insert too deeply into the ear canal.",
+                "Category 1": "First Aid",
+                "Category 2": "Hearing Assistance",
+                "Category 3": "Other"
+              },
+              {
+                "Name": "Beurer HA 50 Hearing Aid Amplifier",
+                "Price": 126.75,
+                "Description": "Amplifies sound for individuals with hearing impairment.",
+                "Warnings": "Consult a hearing specialist before use. Keep out of reach of children. Small parts may be a choking hazard.",
+                "Category 1": "First Aid",
+                "Category 2": "Hearing Assistance",
+                "Category 3": "Other"
+              },
+              {
+                "Name": "Beurer HA 20 Hearing Aid Amplifier",
+                "Price": 96.75,
+                "Description": "Amplifies sound for improved hearing.",
+                "Warnings": "Consult an audiologist before use.",
+                "Category 1": "First Aid",
+                "Category 2": "Hearing Assistance",
+                "Category 3": "Tablets"
+              },
+              {
+                "Name": "Otiblock Ear Spray",
+                "Price": 68.0,
+                "Description": "Cleans and helps relieve earwax buildup.",
+                "Warnings": "Consult a doctor if you have ear pain, infection, or a perforated eardrum. Keep out of reach of children.",
+                "Category 1": "First Aid",
+                "Category 2": "Hearing Assistance",
+                "Category 3": "Spray"
+              },
+              {
+                "Name": "Otidry MD Ear Spray",
+                "Price": 69.0,
+                "Description": "Dries excess moisture in the ear canal to prevent swimmer's ear.",
+                "Warnings": "Consult a doctor if you have ear pain, infection, or a perforated eardrum. Keep out of reach of children.",
+                "Category 1": "First Aid",
+                "Category 2": "Hearing Assistance",
+                "Category 3": "Spray"
+              },
+              {
+                "Name": "Otosan Natural Ear Drops",
+                "Price": 49.0,
+                "Description": "Natural ear drops for ear hygiene.",
+                "Warnings": "Consult a doctor if irritation occurs.",
+                "Category 1": "First Aid",
+                "Category 2": "Hearing Assistance",
+                "Category 3": "Drops"
+              },
+              {
+                "Name": "Dewax Ear Drops",
+                "Price": 4.5,
+                "Description": "Aids in the removal of ear wax.",
+                "Warnings": "Consult a doctor if pain or irritation occurs. Do not use if eardrum is perforated.",
+                "Category 1": "First Aid",
+                "Category 2": "Hearing Assistance",
+                "Category 3": "Drops"
+              }
+            ]
+          },
+          {
             "label": "مطهر عام",
-            "value": "general_antiseptic",
+            "value": "General Antiseptic",
             "medications": [
               {
                 "Name": "Azi-Once Azithromycin Capsules",
@@ -4788,13 +4788,13 @@
     },
     {
       "label": "الحساسية والجيوب الأنفية",
-      "value": "allergies_&_sinus",
+      "value": "Allergies & Sinus",
       "next_step": {
         "question": "حدد فئة معينة:",
         "options": [
           {
             "label": "احتقان الأنف",
-            "value": "nasal_congestion",
+            "value": "Nasal Congestion",
             "medications": [
               {
                 "Name": "ClariSpray Menthol Nasal Spray",
@@ -5466,7 +5466,7 @@
           },
           {
             "label": "الحساسية",
-            "value": "allergies",
+            "value": "Allergies",
             "medications": [
               {
                 "Name": "Predo Syrup",
@@ -5498,8 +5498,8 @@
             ]
           },
           {
-            "label": "الشرى (الارتكاريا)",
-            "value": "hives_(urticaria)",
+            "label": "الشرى (طفح جلدي)",
+            "value": "Hives (Urticaria)",
             "medications": [
               {
                 "Name": "Boiron Apis Mellifica 30 CH",
@@ -5531,8 +5531,8 @@
             ]
           },
           {
-            "label": "حكة العين (التهاب الملتحمة التحسسي)",
-            "value": "itchy_eyes_(allergic_conjunctivitis)",
+            "label": "حكة العينين (التهاب الملتحمة التحسسي)",
+            "value": "Itchy Eyes (Allergic Conjunctivitis)",
             "medications": [
               {
                 "Name": "Zyrtec 10mg Tablets",
@@ -5565,7 +5565,7 @@
           },
           {
             "label": "حمى القش (التهاب الأنف التحسسي)",
-            "value": "hay_fever_(allergic_rhinitis)",
+            "value": "Hay Fever (Allergic Rhinitis)",
             "medications": [
               {
                 "Name": "Finallerg Tablets",
@@ -6119,8 +6119,8 @@
             ]
           },
           {
-            "label": "سيلان الأنف (الرينوريا)",
-            "value": "runny_nose_(rhinorrhea)",
+            "label": "سيلان الأنف",
+            "value": "Runny Nose (Rhinorrhea)",
             "medications": [
               {
                 "Name": "Histaloc Syrup",
@@ -6198,7 +6198,7 @@
           },
           {
             "label": "ضغط/ألم الجيوب الأنفية",
-            "value": "sinus_pressure/pain",
+            "value": "Sinus Pressure/Pain",
             "medications": [
               {
                 "Name": "Hevert Sinusitis Tablets",
@@ -6231,7 +6231,7 @@
           },
           {
             "label": "عام",
-            "value": "general",
+            "value": "General",
             "medications": [
               {
                 "Name": "Symbicort Turbuhaler",
@@ -6248,14 +6248,14 @@
       }
     },
     {
-      "label": "السعال والبرد والإنفلونزا",
-      "value": "cough,_cold_&_flu",
+      "label": "السعال ونزلات البرد والإنفلونزا",
+      "value": "Cough, Cold & Flu",
       "next_step": {
         "question": "حدد فئة معينة:",
         "options": [
           {
             "label": "احتقان الأنف",
-            "value": "nasal_congestion",
+            "value": "Nasal Congestion",
             "medications": [
               {
                 "Name": "Olbas Inhalant Oil 12ml",
@@ -6567,7 +6567,7 @@
           },
           {
             "label": "الإنفلونزا",
-            "value": "flu",
+            "value": "Flu",
             "medications": [
               {
                 "Name": "Tamiflu 75mg Capsules",
@@ -6672,7 +6672,7 @@
           },
           {
             "label": "التهاب الحلق",
-            "value": "sore_throat",
+            "value": "Sore Throat",
             "medications": [
               {
                 "Name": "Strepsils Honey & Lemon Lozenges",
@@ -7668,7 +7668,7 @@
           },
           {
             "label": "الزكام",
-            "value": "cold",
+            "value": "Cold",
             "medications": [
               {
                 "Name": "Panadol Cold And Flu Vapour Release + Decongestant Hot Lemon & Honey Sachets",
@@ -7818,7 +7818,7 @@
           },
           {
             "label": "السعال",
-            "value": "cough",
+            "value": "Cough",
             "medications": [
               {
                 "Name": "Vicks VapoDrops + Cough Lozenges Honey Lemon Menthol",
@@ -8904,7 +8904,7 @@
           },
           {
             "label": "ضغط الجيوب الأنفية",
-            "value": "sinus_pressure",
+            "value": "Sinus Pressure",
             "medications": [
               {
                 "Name": "Gelomyrtol Forte Capsules",
@@ -9003,13 +9003,13 @@
     },
     {
       "label": "العناية بالبشرة",
-      "value": "skin_care",
+      "value": "Skin Care",
       "next_step": {
         "question": "حدد فئة معينة:",
         "options": [
           {
-            "label": "التهاب/تهيج",
-            "value": "inflammation/irritation",
+            "label": "الالتهاب/التهيج",
+            "value": "Inflammation/Irritation",
             "medications": [
               {
                 "Name": "B.D Atoderm Sos Spray",
@@ -9833,245 +9833,8 @@
             ]
           },
           {
-            "label": "الجفاف/التشقق",
-            "value": "dryness/cracking",
-            "medications": [
-              {
-                "Name": "Bioderma Atoderm Intensive Ultra-soothing Anti-Itch Balm",
-                "Price": 88.0,
-                "Description": "Ultra-soothing balm for atopic dry skin, relieves itching.",
-                "Warnings": "For external use only. Avoid contact with eyes. Keep out of reach of children.",
-                "Category 1": "Skin Care",
-                "Category 2": "Dryness/Cracking",
-                "Category 3": "Cream/Ointment"
-              },
-              {
-                "Name": "Bioderma Atoderm Intensive Ultra-soothing Anti-Itch Balm",
-                "Price": 94.5,
-                "Description": "Ultra-soothing balm for atopic dry skin, relieves itching.",
-                "Warnings": "For external use only. Avoid contact with eyes. Keep out of reach of children.",
-                "Category 1": "Skin Care",
-                "Category 2": "Dryness/Cracking",
-                "Category 3": "Cream/Ointment"
-              },
-              {
-                "Name": "Eucerin Aquaphor Soothing Ointment Spray",
-                "Price": 96.6,
-                "Description": "Relieves dry and rough skin with a soothing ointment spray.",
-                "Warnings": "For external use only. Avoid contact with eyes. Keep out of reach of children.",
-                "Category 1": "Skin Care",
-                "Category 2": "Dryness/Cracking",
-                "Category 3": "Spray"
-              },
-              {
-                "Name": "Uriage Xemose Anti Itch Soothing Oil Balm",
-                "Price": 210.0,
-                "Description": "Soothes and nourishes very dry, itchy skin with shea butter.",
-                "Warnings": "Avoid contact with eyes. Keep out of reach of children. For external use only.",
-                "Category 1": "Skin Care",
-                "Category 2": "Dryness/Cracking",
-                "Category 3": "Cream/Ointment"
-              },
-              {
-                "Name": "Hansaplast Foot Sooth Foot Cream",
-                "Price": 42.0,
-                "Description": "Soothes and moisturizes dry, cracked feet.",
-                "Warnings": "For external use only. Keep out of reach of children. Discontinue use if irritation occurs.",
-                "Category 1": "Skin Care",
-                "Category 2": "Dryness/Cracking",
-                "Category 3": "Cream/Ointment"
-              },
-              {
-                "Name": "Benostan Diabetherb Cream",
-                "Price": 89.0,
-                "Description": "Specialized cream for diabetic skin care.",
-                "Warnings": "For external use only. Consult a healthcare professional if you have any concerns. Keep out of reach of children.",
-                "Category 1": "Skin Care",
-                "Category 2": "Dryness/Cracking",
-                "Category 3": "Cream/Ointment"
-              },
-              {
-                "Name": "Pharmamed Dermavit Panthenol Cream",
-                "Price": 25.0,
-                "Description": "Panthenol cream for skin hydration and soothing.",
-                "Warnings": "For external use only. Avoid contact with eyes.",
-                "Category 1": "Skin Care",
-                "Category 2": "Dryness/Cracking",
-                "Category 3": "Cream/Ointment"
-              },
-              {
-                "Name": "Bell's Glycerin B.P",
-                "Price": 17.0,
-                "Description": "A versatile moisturizer for skin and a mild laxative.",
-                "Warnings": "For external use only as a moisturizer. Consult a doctor before using as a laxative.",
-                "Category 1": "Skin Care",
-                "Category 2": "Dryness/Cracking",
-                "Category 3": "Syrup/Liquid"
-              },
-              {
-                "Name": "Bell's Almond Oil",
-                "Price": 12.0,
-                "Description": "Gentle and soothing oil for skin and hair.",
-                "Warnings": "For external use only. Avoid contact with eyes.",
-                "Category 1": "Skin Care",
-                "Category 2": "Dryness/Cracking",
-                "Category 3": "Oil"
-              },
-              {
-                "Name": "Nutraplus 10% Urea Cream",
-                "Price": 52.0,
-                "Description": "Intensely moisturizes and softens dry, rough skin.",
-                "Warnings": "For external use only. Avoid contact with eyes. Discontinue use if irritation occurs. Keep out of reach of children.",
-                "Category 1": "Skin Care",
-                "Category 2": "Dryness/Cracking",
-                "Category 3": "Cream/Ointment"
-              },
-              {
-                "Name": "Hansaplast Foot Protect 2in1 Spray",
-                "Price": 29.4,
-                "Description": "Protects feet from friction and blisters.",
-                "Warnings": "Avoid spraying into eyes. Keep out of reach of children.",
-                "Category 1": "Skin Care",
-                "Category 2": "Dryness/Cracking",
-                "Category 3": "Spray"
-              },
-              {
-                "Name": "Hansaplast Foot Callus Intensive Cream",
-                "Price": 42.0,
-                "Description": "Reduces calluses and softens rough skin on feet.",
-                "Warnings": "For external use only. Avoid contact with eyes.",
-                "Category 1": "Skin Care",
-                "Category 2": "Dryness/Cracking",
-                "Category 3": "Cream/Ointment"
-              },
-              {
-                "Name": "Dexeryl Cream",
-                "Price": 67.0,
-                "Description": "Moisturizes and protects dry skin.",
-                "Warnings": "For external use only. Avoid contact with eyes.",
-                "Category 1": "Skin Care",
-                "Category 2": "Dryness/Cracking",
-                "Category 3": "Cream/Ointment"
-              },
-              {
-                "Name": "Nutraderm Dry Skin Cream",
-                "Price": 45.0,
-                "Description": "Intensely moisturizes and relieves dry skin.",
-                "Warnings": "For external use only. Avoid contact with eyes.",
-                "Category 1": "Skin Care",
-                "Category 2": "Dryness/Cracking",
-                "Category 3": "Cream/Ointment"
-              },
-              {
-                "Name": "Footness Rough Skin & Callus Cream",
-                "Price": 19.5,
-                "Description": "Effectively softens rough skin and calluses on feet.",
-                "Warnings": "For external use only. Avoid contact with eyes. Keep out of reach of children.",
-                "Category 1": "Skin Care",
-                "Category 2": "Dryness/Cracking",
-                "Category 3": "Cream/Ointment"
-              },
-              {
-                "Name": "Bell Glycerine Bp",
-                "Price": 17.5,
-                "Description": "For skin care and suitable for food preparation.",
-                "Warnings": "For external use only. Keep out of reach of children.",
-                "Category 1": "Skin Care",
-                "Category 2": "Dryness/Cracking",
-                "Category 3": "Liquid"
-              },
-              {
-                "Name": "Bell Glycerine BP",
-                "Price": 12.0,
-                "Description": "Treats dry, rough, and itchy skin by providing intense moisturization.",
-                "Warnings": "For external use only. Avoid contact with eyes. Discontinue use if irritation occurs.",
-                "Category 1": "Skin Care",
-                "Category 2": "Dryness/Cracking",
-                "Category 3": "Liquid"
-              },
-              {
-                "Name": "Boiron Petroleum 30CH",
-                "Price": 33.0,
-                "Description": "Homeopathic medicine effective for chapped or cracked fingertips.",
-                "Warnings": "If symptoms persist or worsen, consult a healthcare professional. Consult a doctor before using on children under 2 years.",
-                "Category 1": "Skin Care",
-                "Category 2": "Dryness/Cracking",
-                "Category 3": "Pellets"
-              },
-              {
-                "Name": "Eucerin Atopicontrol Acute Care Cream 40ml",
-                "Price": 100.95,
-                "Description": "Soothes and cools itchy skin caused by dryness, suitable for atopic skin.",
-                "Warnings": "Suitable for adults, children, and babies three months or over. Avoid contact with eyes.",
-                "Category 1": "Skin Care",
-                "Category 2": "Dryness/Cracking",
-                "Category 3": "Cream/Ointment"
-              },
-              {
-                "Name": "Uriage Xemose Lipid Replenishing Cream",
-                "Price": 155.0,
-                "Description": "Soothes itching and dryness, providing long-lasting comfort with a non-sticky texture.",
-                "Warnings": "For external use only. Avoid contact with eyes.",
-                "Category 1": "Skin Care",
-                "Category 2": "Dryness/Cracking",
-                "Category 3": "Cream/Ointment"
-              },
-              {
-                "Name": "Isis Urelia 50 Balm",
-                "Price": 155.0,
-                "Description": "Intensely moisturizes and reduces thick, dry, scaly patches with 50% urea and AHA.",
-                "Warnings": "For external use only. Avoid contact with eyes.",
-                "Category 1": "Skin Care",
-                "Category 2": "Dryness/Cracking",
-                "Category 3": "Cream/Ointment"
-              },
-              {
-                "Name": "Isis Urelia 10 Exfoliating Moisturizing Cream",
-                "Price": 140.0,
-                "Description": "Exfoliates, moisturizes, and repairs dry, flaky skin with urea and postbiotics.",
-                "Warnings": "Avoid contact with eyes. For external use only.",
-                "Category 1": "Skin Care",
-                "Category 2": "Dryness/Cracking",
-                "Category 3": "Cream/Ointment"
-              },
-              {
-                "Name": "Allergika 5% Urea Cream",
-                "Price": 152.0,
-                "Description": "Intensive care for dry skin, strengthens the skin barrier with vegetable glycerin.",
-                "Warnings": "For external use only. Avoid contact with eyes. Discontinue use if irritation occurs.",
-                "Category 1": "Skin Care",
-                "Category 2": "Dryness/Cracking",
-                "Category 3": "Cream/Ointment"
-              },
-              {
-                "Name": "Adler Schuessler No. 11 Moisturizing Cream Gel",
-                "Price": 48.32,
-                "Description": "Hydrates and plumps skin with Silicea and antioxidants for glowing, firm skin.",
-                "Warnings": "For external use only. Avoid contact with eyes.",
-                "Category 1": "Skin Care",
-                "Category 2": "Dryness/Cracking",
-                "Category 3": "Gel"
-              }
-            ]
-          },
-          {
-            "label": "الحروق",
-            "value": "burns",
-            "medications": [
-              {
-                "Name": "Boiron Causticum 200CH",
-                "Price": 49.0,
-                "Description": "Homeopathic remedy for skin conditions, cough, muscle tremors, urinary complaints, and burns.",
-                "Warnings": "Consult a healthcare professional before use. Keep out of reach of children.",
-                "Category 1": "Skin Care",
-                "Category 2": "Burns",
-                "Category 3": "Tablets"
-              }
-            ]
-          },
-          {
-            "label": "العدوى",
-            "value": "infections",
+            "label": "الالتهابات",
+            "value": "Infections",
             "medications": [
               {
                 "Name": "Bactocine 2% Ointment",
@@ -10571,128 +10334,8 @@
             ]
           },
           {
-            "label": "العناية بالبشرة",
-            "value": "skin_care",
-            "medications": [
-              {
-                "Name": "Boiron Graphites 30CH",
-                "Price": 33.0,
-                "Description": "Homeopathic medicine for skin disorders, digestive problems, and painful corns.",
-                "Warnings": "Consult a healthcare practitioner before use. Keep out of reach of children.",
-                "Category 1": "Skin Care",
-                "Category 2": "Skin Care",
-                "Category 3": "Tablets"
-              }
-            ]
-          },
-          {
-            "label": "العناية بالجروح",
-            "value": "wound_care",
-            "medications": [
-              {
-                "Name": "Mebo Herbal & Natural Ointment",
-                "Price": 66.0,
-                "Description": "Promotes skin healing with herbal ingredients.",
-                "Warnings": "For external use only. Avoid contact with eyes. Discontinue if irritation occurs.",
-                "Category 1": "Skin Care",
-                "Category 2": "Wound Care",
-                "Category 3": "Cream/Ointment"
-              },
-              {
-                "Name": "Mebo Ointment",
-                "Price": 35.5,
-                "Description": "Natural ointment to promote skin regeneration and wound healing.",
-                "Warnings": "For external use only. Consult a doctor for deep or infected wounds.",
-                "Category 1": "Skin Care",
-                "Category 2": "Wound Care",
-                "Category 3": "Cream/Ointment"
-              },
-              {
-                "Name": "Mebo Herbal & Natural Ointment",
-                "Price": 109.0,
-                "Description": "Promotes natural healing of burns, wounds, and skin ulcers.",
-                "Warnings": "For external use only. Consult a doctor if condition worsens.",
-                "Category 1": "Skin Care",
-                "Category 2": "Wound Care",
-                "Category 3": "Cream/Ointment"
-              },
-              {
-                "Name": "Fito Cream",
-                "Price": 66.0,
-                "Description": "Aids in wound healing and skin regeneration.",
-                "Warnings": "For external use only. Avoid contact with eyes.",
-                "Category 1": "Skin Care",
-                "Category 2": "Wound Care",
-                "Category 3": "Cream/Ointment"
-              },
-              {
-                "Name": "Sudocrem Healing Cream",
-                "Price": 74.0,
-                "Description": "Soothes and protects skin with a thin layer application.",
-                "Warnings": "For external use only. Avoid contact with eyes.",
-                "Category 1": "Skin Care",
-                "Category 2": "Wound Care",
-                "Category 3": "Cream/Ointment"
-              },
-              {
-                "Name": "Sudocrem Antiseptic Cream",
-                "Price": 32.0,
-                "Description": "Healing cream for nappy rash, eczema, wounds, burns, acne, and bed sores.",
-                "Warnings": "For external use only. Avoid contact with eyes.",
-                "Category 1": "Skin Care",
-                "Category 2": "Wound Care",
-                "Category 3": "Cream/Ointment"
-              },
-              {
-                "Name": "Mebo Ointment",
-                "Price": 66.0,
-                "Description": "Herbal ointment to regenerate and maintain skin cells, protecting from inflammation.",
-                "Warnings": "Apply a thin layer to cover the burn or wound area 3-4 times daily.",
-                "Category 1": "Skin Care",
-                "Category 2": "Wound Care",
-                "Category 3": "Cream/Ointment"
-              },
-              {
-                "Name": "Mebo Ointment",
-                "Price": 35.5,
-                "Description": "Herbal ointment to regenerate and maintain skin cells, protecting from inflammation.",
-                "Warnings": "Apply a thin layer to cover the burn or wound area 3-4 times daily.",
-                "Category 1": "Skin Care",
-                "Category 2": "Wound Care",
-                "Category 3": "Cream/Ointment"
-              },
-              {
-                "Name": "Sudocrem Antiseptic Cream",
-                "Price": 20.0,
-                "Description": "Healing cream for nappy rash, eczema, surface wounds, sunburn, minor burns, acne, bed sores, and chilblains.",
-                "Warnings": "For external use only. Avoid contact with eyes.",
-                "Category 1": "Skin Care",
-                "Category 2": "Wound Care",
-                "Category 3": "Cream/Ointment"
-              },
-              {
-                "Name": "Uriage Bariederm Cica Cream",
-                "Price": 100.0,
-                "Description": "Protects and restores weakened, irritated skin for the whole family.",
-                "Warnings": "For external use only. Avoid contact with eyes.",
-                "Category 1": "Skin Care",
-                "Category 2": "Wound Care",
-                "Category 3": "Cream/Ointment"
-              },
-              {
-                "Name": "Heel Calendula Ointment",
-                "Price": 80.0,
-                "Description": "Provides anti-inflammatory and wound-healing properties.",
-                "Warnings": "For external use only. Avoid contact with eyes. Consult a doctor if symptoms persist.",
-                "Category 1": "Skin Care",
-                "Category 2": "Wound Care",
-                "Category 3": "Cream/Ointment"
-              }
-            ]
-          },
-          {
-            "label": "الندوب",
-            "value": "scarring",
+            "label": "التندب",
+            "value": "Scarring",
             "medications": [
               {
                 "Name": "Martiderm Shots Retinol Renew",
@@ -10921,8 +10564,365 @@
             ]
           },
           {
+            "label": "الجفاف/التشقق",
+            "value": "Dryness/Cracking",
+            "medications": [
+              {
+                "Name": "Bioderma Atoderm Intensive Ultra-soothing Anti-Itch Balm",
+                "Price": 88.0,
+                "Description": "Ultra-soothing balm for atopic dry skin, relieves itching.",
+                "Warnings": "For external use only. Avoid contact with eyes. Keep out of reach of children.",
+                "Category 1": "Skin Care",
+                "Category 2": "Dryness/Cracking",
+                "Category 3": "Cream/Ointment"
+              },
+              {
+                "Name": "Bioderma Atoderm Intensive Ultra-soothing Anti-Itch Balm",
+                "Price": 94.5,
+                "Description": "Ultra-soothing balm for atopic dry skin, relieves itching.",
+                "Warnings": "For external use only. Avoid contact with eyes. Keep out of reach of children.",
+                "Category 1": "Skin Care",
+                "Category 2": "Dryness/Cracking",
+                "Category 3": "Cream/Ointment"
+              },
+              {
+                "Name": "Eucerin Aquaphor Soothing Ointment Spray",
+                "Price": 96.6,
+                "Description": "Relieves dry and rough skin with a soothing ointment spray.",
+                "Warnings": "For external use only. Avoid contact with eyes. Keep out of reach of children.",
+                "Category 1": "Skin Care",
+                "Category 2": "Dryness/Cracking",
+                "Category 3": "Spray"
+              },
+              {
+                "Name": "Uriage Xemose Anti Itch Soothing Oil Balm",
+                "Price": 210.0,
+                "Description": "Soothes and nourishes very dry, itchy skin with shea butter.",
+                "Warnings": "Avoid contact with eyes. Keep out of reach of children. For external use only.",
+                "Category 1": "Skin Care",
+                "Category 2": "Dryness/Cracking",
+                "Category 3": "Cream/Ointment"
+              },
+              {
+                "Name": "Hansaplast Foot Sooth Foot Cream",
+                "Price": 42.0,
+                "Description": "Soothes and moisturizes dry, cracked feet.",
+                "Warnings": "For external use only. Keep out of reach of children. Discontinue use if irritation occurs.",
+                "Category 1": "Skin Care",
+                "Category 2": "Dryness/Cracking",
+                "Category 3": "Cream/Ointment"
+              },
+              {
+                "Name": "Benostan Diabetherb Cream",
+                "Price": 89.0,
+                "Description": "Specialized cream for diabetic skin care.",
+                "Warnings": "For external use only. Consult a healthcare professional if you have any concerns. Keep out of reach of children.",
+                "Category 1": "Skin Care",
+                "Category 2": "Dryness/Cracking",
+                "Category 3": "Cream/Ointment"
+              },
+              {
+                "Name": "Pharmamed Dermavit Panthenol Cream",
+                "Price": 25.0,
+                "Description": "Panthenol cream for skin hydration and soothing.",
+                "Warnings": "For external use only. Avoid contact with eyes.",
+                "Category 1": "Skin Care",
+                "Category 2": "Dryness/Cracking",
+                "Category 3": "Cream/Ointment"
+              },
+              {
+                "Name": "Bell's Glycerin B.P",
+                "Price": 17.0,
+                "Description": "A versatile moisturizer for skin and a mild laxative.",
+                "Warnings": "For external use only as a moisturizer. Consult a doctor before using as a laxative.",
+                "Category 1": "Skin Care",
+                "Category 2": "Dryness/Cracking",
+                "Category 3": "Syrup/Liquid"
+              },
+              {
+                "Name": "Bell's Almond Oil",
+                "Price": 12.0,
+                "Description": "Gentle and soothing oil for skin and hair.",
+                "Warnings": "For external use only. Avoid contact with eyes.",
+                "Category 1": "Skin Care",
+                "Category 2": "Dryness/Cracking",
+                "Category 3": "Oil"
+              },
+              {
+                "Name": "Nutraplus 10% Urea Cream",
+                "Price": 52.0,
+                "Description": "Intensely moisturizes and softens dry, rough skin.",
+                "Warnings": "For external use only. Avoid contact with eyes. Discontinue use if irritation occurs. Keep out of reach of children.",
+                "Category 1": "Skin Care",
+                "Category 2": "Dryness/Cracking",
+                "Category 3": "Cream/Ointment"
+              },
+              {
+                "Name": "Hansaplast Foot Protect 2in1 Spray",
+                "Price": 29.4,
+                "Description": "Protects feet from friction and blisters.",
+                "Warnings": "Avoid spraying into eyes. Keep out of reach of children.",
+                "Category 1": "Skin Care",
+                "Category 2": "Dryness/Cracking",
+                "Category 3": "Spray"
+              },
+              {
+                "Name": "Hansaplast Foot Callus Intensive Cream",
+                "Price": 42.0,
+                "Description": "Reduces calluses and softens rough skin on feet.",
+                "Warnings": "For external use only. Avoid contact with eyes.",
+                "Category 1": "Skin Care",
+                "Category 2": "Dryness/Cracking",
+                "Category 3": "Cream/Ointment"
+              },
+              {
+                "Name": "Dexeryl Cream",
+                "Price": 67.0,
+                "Description": "Moisturizes and protects dry skin.",
+                "Warnings": "For external use only. Avoid contact with eyes.",
+                "Category 1": "Skin Care",
+                "Category 2": "Dryness/Cracking",
+                "Category 3": "Cream/Ointment"
+              },
+              {
+                "Name": "Nutraderm Dry Skin Cream",
+                "Price": 45.0,
+                "Description": "Intensely moisturizes and relieves dry skin.",
+                "Warnings": "For external use only. Avoid contact with eyes.",
+                "Category 1": "Skin Care",
+                "Category 2": "Dryness/Cracking",
+                "Category 3": "Cream/Ointment"
+              },
+              {
+                "Name": "Footness Rough Skin & Callus Cream",
+                "Price": 19.5,
+                "Description": "Effectively softens rough skin and calluses on feet.",
+                "Warnings": "For external use only. Avoid contact with eyes. Keep out of reach of children.",
+                "Category 1": "Skin Care",
+                "Category 2": "Dryness/Cracking",
+                "Category 3": "Cream/Ointment"
+              },
+              {
+                "Name": "Bell Glycerine Bp",
+                "Price": 17.5,
+                "Description": "For skin care and suitable for food preparation.",
+                "Warnings": "For external use only. Keep out of reach of children.",
+                "Category 1": "Skin Care",
+                "Category 2": "Dryness/Cracking",
+                "Category 3": "Liquid"
+              },
+              {
+                "Name": "Bell Glycerine BP",
+                "Price": 12.0,
+                "Description": "Treats dry, rough, and itchy skin by providing intense moisturization.",
+                "Warnings": "For external use only. Avoid contact with eyes. Discontinue use if irritation occurs.",
+                "Category 1": "Skin Care",
+                "Category 2": "Dryness/Cracking",
+                "Category 3": "Liquid"
+              },
+              {
+                "Name": "Boiron Petroleum 30CH",
+                "Price": 33.0,
+                "Description": "Homeopathic medicine effective for chapped or cracked fingertips.",
+                "Warnings": "If symptoms persist or worsen, consult a healthcare professional. Consult a doctor before using on children under 2 years.",
+                "Category 1": "Skin Care",
+                "Category 2": "Dryness/Cracking",
+                "Category 3": "Pellets"
+              },
+              {
+                "Name": "Eucerin Atopicontrol Acute Care Cream 40ml",
+                "Price": 100.95,
+                "Description": "Soothes and cools itchy skin caused by dryness, suitable for atopic skin.",
+                "Warnings": "Suitable for adults, children, and babies three months or over. Avoid contact with eyes.",
+                "Category 1": "Skin Care",
+                "Category 2": "Dryness/Cracking",
+                "Category 3": "Cream/Ointment"
+              },
+              {
+                "Name": "Uriage Xemose Lipid Replenishing Cream",
+                "Price": 155.0,
+                "Description": "Soothes itching and dryness, providing long-lasting comfort with a non-sticky texture.",
+                "Warnings": "For external use only. Avoid contact with eyes.",
+                "Category 1": "Skin Care",
+                "Category 2": "Dryness/Cracking",
+                "Category 3": "Cream/Ointment"
+              },
+              {
+                "Name": "Isis Urelia 50 Balm",
+                "Price": 155.0,
+                "Description": "Intensely moisturizes and reduces thick, dry, scaly patches with 50% urea and AHA.",
+                "Warnings": "For external use only. Avoid contact with eyes.",
+                "Category 1": "Skin Care",
+                "Category 2": "Dryness/Cracking",
+                "Category 3": "Cream/Ointment"
+              },
+              {
+                "Name": "Isis Urelia 10 Exfoliating Moisturizing Cream",
+                "Price": 140.0,
+                "Description": "Exfoliates, moisturizes, and repairs dry, flaky skin with urea and postbiotics.",
+                "Warnings": "Avoid contact with eyes. For external use only.",
+                "Category 1": "Skin Care",
+                "Category 2": "Dryness/Cracking",
+                "Category 3": "Cream/Ointment"
+              },
+              {
+                "Name": "Allergika 5% Urea Cream",
+                "Price": 152.0,
+                "Description": "Intensive care for dry skin, strengthens the skin barrier with vegetable glycerin.",
+                "Warnings": "For external use only. Avoid contact with eyes. Discontinue use if irritation occurs.",
+                "Category 1": "Skin Care",
+                "Category 2": "Dryness/Cracking",
+                "Category 3": "Cream/Ointment"
+              },
+              {
+                "Name": "Adler Schuessler No. 11 Moisturizing Cream Gel",
+                "Price": 48.32,
+                "Description": "Hydrates and plumps skin with Silicea and antioxidants for glowing, firm skin.",
+                "Warnings": "For external use only. Avoid contact with eyes.",
+                "Category 1": "Skin Care",
+                "Category 2": "Dryness/Cracking",
+                "Category 3": "Gel"
+              }
+            ]
+          },
+          {
+            "label": "الحروق",
+            "value": "Burns",
+            "medications": [
+              {
+                "Name": "Boiron Causticum 200CH",
+                "Price": 49.0,
+                "Description": "Homeopathic remedy for skin conditions, cough, muscle tremors, urinary complaints, and burns.",
+                "Warnings": "Consult a healthcare professional before use. Keep out of reach of children.",
+                "Category 1": "Skin Care",
+                "Category 2": "Burns",
+                "Category 3": "Tablets"
+              }
+            ]
+          },
+          {
+            "label": "العناية بالبشرة",
+            "value": "Skin Care",
+            "medications": [
+              {
+                "Name": "Boiron Graphites 30CH",
+                "Price": 33.0,
+                "Description": "Homeopathic medicine for skin disorders, digestive problems, and painful corns.",
+                "Warnings": "Consult a healthcare practitioner before use. Keep out of reach of children.",
+                "Category 1": "Skin Care",
+                "Category 2": "Skin Care",
+                "Category 3": "Tablets"
+              }
+            ]
+          },
+          {
+            "label": "العناية بالجروح",
+            "value": "Wound Care",
+            "medications": [
+              {
+                "Name": "Mebo Herbal & Natural Ointment",
+                "Price": 66.0,
+                "Description": "Promotes skin healing with herbal ingredients.",
+                "Warnings": "For external use only. Avoid contact with eyes. Discontinue if irritation occurs.",
+                "Category 1": "Skin Care",
+                "Category 2": "Wound Care",
+                "Category 3": "Cream/Ointment"
+              },
+              {
+                "Name": "Mebo Ointment",
+                "Price": 35.5,
+                "Description": "Natural ointment to promote skin regeneration and wound healing.",
+                "Warnings": "For external use only. Consult a doctor for deep or infected wounds.",
+                "Category 1": "Skin Care",
+                "Category 2": "Wound Care",
+                "Category 3": "Cream/Ointment"
+              },
+              {
+                "Name": "Mebo Herbal & Natural Ointment",
+                "Price": 109.0,
+                "Description": "Promotes natural healing of burns, wounds, and skin ulcers.",
+                "Warnings": "For external use only. Consult a doctor if condition worsens.",
+                "Category 1": "Skin Care",
+                "Category 2": "Wound Care",
+                "Category 3": "Cream/Ointment"
+              },
+              {
+                "Name": "Fito Cream",
+                "Price": 66.0,
+                "Description": "Aids in wound healing and skin regeneration.",
+                "Warnings": "For external use only. Avoid contact with eyes.",
+                "Category 1": "Skin Care",
+                "Category 2": "Wound Care",
+                "Category 3": "Cream/Ointment"
+              },
+              {
+                "Name": "Sudocrem Healing Cream",
+                "Price": 74.0,
+                "Description": "Soothes and protects skin with a thin layer application.",
+                "Warnings": "For external use only. Avoid contact with eyes.",
+                "Category 1": "Skin Care",
+                "Category 2": "Wound Care",
+                "Category 3": "Cream/Ointment"
+              },
+              {
+                "Name": "Sudocrem Antiseptic Cream",
+                "Price": 32.0,
+                "Description": "Healing cream for nappy rash, eczema, wounds, burns, acne, and bed sores.",
+                "Warnings": "For external use only. Avoid contact with eyes.",
+                "Category 1": "Skin Care",
+                "Category 2": "Wound Care",
+                "Category 3": "Cream/Ointment"
+              },
+              {
+                "Name": "Mebo Ointment",
+                "Price": 66.0,
+                "Description": "Herbal ointment to regenerate and maintain skin cells, protecting from inflammation.",
+                "Warnings": "Apply a thin layer to cover the burn or wound area 3-4 times daily.",
+                "Category 1": "Skin Care",
+                "Category 2": "Wound Care",
+                "Category 3": "Cream/Ointment"
+              },
+              {
+                "Name": "Mebo Ointment",
+                "Price": 35.5,
+                "Description": "Herbal ointment to regenerate and maintain skin cells, protecting from inflammation.",
+                "Warnings": "Apply a thin layer to cover the burn or wound area 3-4 times daily.",
+                "Category 1": "Skin Care",
+                "Category 2": "Wound Care",
+                "Category 3": "Cream/Ointment"
+              },
+              {
+                "Name": "Sudocrem Antiseptic Cream",
+                "Price": 20.0,
+                "Description": "Healing cream for nappy rash, eczema, surface wounds, sunburn, minor burns, acne, bed sores, and chilblains.",
+                "Warnings": "For external use only. Avoid contact with eyes.",
+                "Category 1": "Skin Care",
+                "Category 2": "Wound Care",
+                "Category 3": "Cream/Ointment"
+              },
+              {
+                "Name": "Uriage Bariederm Cica Cream",
+                "Price": 100.0,
+                "Description": "Protects and restores weakened, irritated skin for the whole family.",
+                "Warnings": "For external use only. Avoid contact with eyes.",
+                "Category 1": "Skin Care",
+                "Category 2": "Wound Care",
+                "Category 3": "Cream/Ointment"
+              },
+              {
+                "Name": "Heel Calendula Ointment",
+                "Price": 80.0,
+                "Description": "Provides anti-inflammatory and wound-healing properties.",
+                "Warnings": "For external use only. Avoid contact with eyes. Consult a doctor if symptoms persist.",
+                "Category 1": "Skin Care",
+                "Category 2": "Wound Care",
+                "Category 3": "Cream/Ointment"
+              }
+            ]
+          },
+          {
             "label": "تهيج الجلد",
-            "value": "skin_irritation",
+            "value": "Skin Irritation",
             "medications": [
               {
                 "Name": "Sudocrem Antiseptic Cream",
@@ -10940,13 +10940,109 @@
     },
     {
       "label": "العناية بالعين",
-      "value": "eye_care",
+      "value": "Eye Care",
       "next_step": {
         "question": "حدد فئة معينة:",
         "options": [
           {
+            "label": "Infection/Inflammation",
+            "value": "Infection/Inflammation",
+            "medications": [
+              {
+                "Name": "Optidex T Sterile Ophthalmic Suspension",
+                "Price": 20.0,
+                "Description": "Treats eye inflammation and infections.",
+                "Warnings": "For ophthalmic use only. Do not use if solution changes color or becomes cloudy. Consult your doctor if symptoms worsen. Keep out of reach of children.",
+                "Category 1": "Eye Care",
+                "Category 2": "Infection/Inflammation",
+                "Category 3": "Ophthalmic Suspension"
+              },
+              {
+                "Name": "Vigamox Eye Solution",
+                "Price": 41.0,
+                "Description": "Treats bacterial eye infections.",
+                "Warnings": "For ophthalmic use only. Do not touch the dropper tip to any surface. Consult a doctor if symptoms worsen or persist.",
+                "Category 1": "Eye Care",
+                "Category 2": "Infection/Inflammation",
+                "Category 3": "Eye Drops"
+              },
+              {
+                "Name": "Tobradex Eye Drops",
+                "Price": 25.5,
+                "Description": "Treats eye infections with Tobramycin and Dexamethasone.",
+                "Warnings": "For ophthalmic use only. Consult a doctor if irritation persists.",
+                "Category 1": "Eye Care",
+                "Category 2": "Infection/Inflammation",
+                "Category 3": "Eye Drops"
+              },
+              {
+                "Name": "Tobrex Tobramycin Eye Ointment",
+                "Price": 17.0,
+                "Description": "Treats bacterial eye infections.",
+                "Warnings": "For external use only. Do not touch the tip of the tube to any surface. Consult your doctor if symptoms worsen.",
+                "Category 1": "Eye Care",
+                "Category 2": "Infection/Inflammation",
+                "Category 3": "Ointment"
+              },
+              {
+                "Name": "Tobradex Eye Ointment",
+                "Price": 19.5,
+                "Description": "Treat eye infections with Tobradex Eye Ointment.",
+                "Warnings": "For ophthalmic use only. Do not touch the tip to any surface. Consult your doctor if symptoms worsen.",
+                "Category 1": "Eye Care",
+                "Category 2": "Infection/Inflammation",
+                "Category 3": "Ointment"
+              },
+              {
+                "Name": "Tobrex Tobramycin Eye Drops",
+                "Price": 19.5,
+                "Description": "Treat bacterial eye infections with Tobrex Tobramycin Eye Drops.",
+                "Warnings": "For ophthalmic use only. Do not touch the dropper tip to any surface. Consult your doctor if symptoms worsen.",
+                "Category 1": "Eye Care",
+                "Category 2": "Infection/Inflammation",
+                "Category 3": "Eye Drops"
+              },
+              {
+                "Name": "Ciprobay HC Otic Ear Drops",
+                "Price": 47.0,
+                "Description": "Treats ear infections with antibiotic and anti-inflammatory action.",
+                "Warnings": "For ear use only. Do not use if eardrum is perforated. Consult doctor if symptoms worsen.",
+                "Category 1": "Eye Care",
+                "Category 2": "Infection/Inflammation",
+                "Category 3": "Eye Drops"
+              },
+              {
+                "Name": "Tobrin Eye Drops",
+                "Price": 7.5,
+                "Description": "Treats bacterial eye infections.",
+                "Warnings": "For external use only. Do not touch the dropper tip to any surface.",
+                "Category 1": "Eye Care",
+                "Category 2": "Infection/Inflammation",
+                "Category 3": "Eye Drops"
+              },
+              {
+                "Name": "Vyzulta Ophthalmic Solution 5ml",
+                "Price": 103.0,
+                "Description": "Reduces intraocular pressure in open-angle glaucoma or ocular hypertension.",
+                "Warnings": "Use only as directed by your doctor. May cause changes to eye color and eyelashes.",
+                "Category 1": "Eye Care",
+                "Category 2": "Infection/Inflammation",
+                "Category 3": "Solution"
+              },
+              {
+                "Name": "Tobradex Eye Drop",
+                "Price": 25.5,
+                "Description": "Treats eye infections and reduces inflammation with Tobramycin and Dexamethasone.",
+                "Warnings": "Use exactly as prescribed. Shake well before use. Consult your doctor.",
+                "Category 1": "Eye Care",
+                "Category 2": "Infection/Inflammation",
+                "Category 3": "Eye Drops"
+              }
+            ]
+          },
+          {
             "label": "احتقان الأنف",
-            "value": "nasal_congestion",
+            "value": "Nasal Congestion",
             "medications": [
               {
                 "Name": "Tonimer Lab Single Dose",
@@ -10961,7 +11057,7 @@
           },
           {
             "label": "الاحمرار",
-            "value": "redness",
+            "value": "Redness",
             "medications": [
               {
                 "Name": "Cosopt Eye Drops",
@@ -11120,7 +11216,7 @@
           },
           {
             "label": "الحساسية",
-            "value": "allergies",
+            "value": "Allergies",
             "medications": [
               {
                 "Name": "Pataday 0.2% Eye Drops",
@@ -11216,7 +11312,7 @@
           },
           {
             "label": "الصداع",
-            "value": "headache",
+            "value": "Headache",
             "medications": [
               {
                 "Name": "Boiron Argentum Nitricum 200 CH",
@@ -11230,104 +11326,8 @@
             ]
           },
           {
-            "label": "العدوى/الالتهاب",
-            "value": "infection/inflammation",
-            "medications": [
-              {
-                "Name": "Optidex T Sterile Ophthalmic Suspension",
-                "Price": 20.0,
-                "Description": "Treats eye inflammation and infections.",
-                "Warnings": "For ophthalmic use only. Do not use if solution changes color or becomes cloudy. Consult your doctor if symptoms worsen. Keep out of reach of children.",
-                "Category 1": "Eye Care",
-                "Category 2": "Infection/Inflammation",
-                "Category 3": "Ophthalmic Suspension"
-              },
-              {
-                "Name": "Vigamox Eye Solution",
-                "Price": 41.0,
-                "Description": "Treats bacterial eye infections.",
-                "Warnings": "For ophthalmic use only. Do not touch the dropper tip to any surface. Consult a doctor if symptoms worsen or persist.",
-                "Category 1": "Eye Care",
-                "Category 2": "Infection/Inflammation",
-                "Category 3": "Eye Drops"
-              },
-              {
-                "Name": "Tobradex Eye Drops",
-                "Price": 25.5,
-                "Description": "Treats eye infections with Tobramycin and Dexamethasone.",
-                "Warnings": "For ophthalmic use only. Consult a doctor if irritation persists.",
-                "Category 1": "Eye Care",
-                "Category 2": "Infection/Inflammation",
-                "Category 3": "Eye Drops"
-              },
-              {
-                "Name": "Tobrex Tobramycin Eye Ointment",
-                "Price": 17.0,
-                "Description": "Treats bacterial eye infections.",
-                "Warnings": "For external use only. Do not touch the tip of the tube to any surface. Consult your doctor if symptoms worsen.",
-                "Category 1": "Eye Care",
-                "Category 2": "Infection/Inflammation",
-                "Category 3": "Ointment"
-              },
-              {
-                "Name": "Tobradex Eye Ointment",
-                "Price": 19.5,
-                "Description": "Treat eye infections with Tobradex Eye Ointment.",
-                "Warnings": "For ophthalmic use only. Do not touch the tip to any surface. Consult your doctor if symptoms worsen.",
-                "Category 1": "Eye Care",
-                "Category 2": "Infection/Inflammation",
-                "Category 3": "Ointment"
-              },
-              {
-                "Name": "Tobrex Tobramycin Eye Drops",
-                "Price": 19.5,
-                "Description": "Treat bacterial eye infections with Tobrex Tobramycin Eye Drops.",
-                "Warnings": "For ophthalmic use only. Do not touch the dropper tip to any surface. Consult your doctor if symptoms worsen.",
-                "Category 1": "Eye Care",
-                "Category 2": "Infection/Inflammation",
-                "Category 3": "Eye Drops"
-              },
-              {
-                "Name": "Ciprobay HC Otic Ear Drops",
-                "Price": 47.0,
-                "Description": "Treats ear infections with antibiotic and anti-inflammatory action.",
-                "Warnings": "For ear use only. Do not use if eardrum is perforated. Consult doctor if symptoms worsen.",
-                "Category 1": "Eye Care",
-                "Category 2": "Infection/Inflammation",
-                "Category 3": "Eye Drops"
-              },
-              {
-                "Name": "Tobrin Eye Drops",
-                "Price": 7.5,
-                "Description": "Treats bacterial eye infections.",
-                "Warnings": "For external use only. Do not touch the dropper tip to any surface.",
-                "Category 1": "Eye Care",
-                "Category 2": "Infection/Inflammation",
-                "Category 3": "Eye Drops"
-              },
-              {
-                "Name": "Vyzulta Ophthalmic Solution 5ml",
-                "Price": 103.0,
-                "Description": "Reduces intraocular pressure in open-angle glaucoma or ocular hypertension.",
-                "Warnings": "Use only as directed by your doctor. May cause changes to eye color and eyelashes.",
-                "Category 1": "Eye Care",
-                "Category 2": "Infection/Inflammation",
-                "Category 3": "Solution"
-              },
-              {
-                "Name": "Tobradex Eye Drop",
-                "Price": 25.5,
-                "Description": "Treats eye infections and reduces inflammation with Tobramycin and Dexamethasone.",
-                "Warnings": "Use exactly as prescribed. Shake well before use. Consult your doctor.",
-                "Category 1": "Eye Care",
-                "Category 2": "Infection/Inflammation",
-                "Category 3": "Eye Drops"
-              }
-            ]
-          },
-          {
             "label": "جفاف العين",
-            "value": "dry_eyes",
+            "value": "Dry Eyes",
             "medications": [
               {
                 "Name": "Hyfresh Gel",
@@ -11963,7 +11963,7 @@
           },
           {
             "label": "حساسية العين",
-            "value": "eye_allergies",
+            "value": "Eye Allergies",
             "medications": [
               {
                 "Name": "Apisal Children Eye/Nose Drops",
@@ -11978,7 +11978,7 @@
           },
           {
             "label": "عام",
-            "value": "general",
+            "value": "General",
             "medications": [
               {
                 "Name": "3M Opticlude Comfort Mini Orthoptic Eye Patch",
@@ -12001,8 +12001,8 @@
             ]
           },
           {
-            "label": "مشاكل الجفن",
-            "value": "eyelid_problems",
+            "label": "مشاكل الجفون",
+            "value": "Eyelid Problems",
             "medications": [
               {
                 "Name": "Systane Lid Wipes",
@@ -12053,7 +12053,7 @@
           },
           {
             "label": "مشاكل متعلقة بالعدسات اللاصقة",
-            "value": "contact_lens_related_issues",
+            "value": "Contact Lens Related Issues",
             "medications": [
               {
                 "Name": "Bella Contact Lenses One Day Platinum Gray",
@@ -12467,13 +12467,13 @@
     },
     {
       "label": "الفيتامينات والمكملات الغذائية",
-      "value": "vitamins_&_supplements",
+      "value": "Vitamins & Supplements",
       "next_step": {
         "question": "حدد فئة معينة:",
         "options": [
           {
             "label": "آلام العضلات",
-            "value": "muscle_pain",
+            "value": "Muscle Pain",
             "medications": [
               {
                 "Name": "Dr. Reckeweg Thuja 30x",
@@ -12497,7 +12497,7 @@
           },
           {
             "label": "أحماض أوميغا 3 الدهنية",
-            "value": "omega-3_fatty_acids",
+            "value": "Omega-3 Fatty Acids",
             "medications": [
               {
                 "Name": "Lipanthyl 145mg Tablets",
@@ -12512,7 +12512,7 @@
           },
           {
             "label": "اختلال التوازن الهرموني",
-            "value": "hormonal_imbalance",
+            "value": "Hormonal Imbalance",
             "medications": [
               {
                 "Name": "Euthyrox 150 mcg Tablets",
@@ -12554,7 +12554,7 @@
           },
           {
             "label": "الأرق/التحريض",
-            "value": "restlessness/agitation",
+            "value": "Restlessness/Agitation",
             "medications": [
               {
                 "Name": "Boiron Ignatia Amara 30CH",
@@ -12569,7 +12569,7 @@
           },
           {
             "label": "الإرهاق العصبي",
-            "value": "nervous_exhaustion",
+            "value": "Nervous Exhaustion",
             "medications": [
               {
                 "Name": "Boiron Argentum Nitricum 30 CH",
@@ -12584,7 +12584,7 @@
           },
           {
             "label": "البروبيوتيك",
-            "value": "probiotics",
+            "value": "Probiotics",
             "medications": [
               {
                 "Name": "Hexbio Sachet",
@@ -12599,7 +12599,7 @@
           },
           {
             "label": "التهابات المسالك البولية",
-            "value": "urinary_tract_infections",
+            "value": "Urinary Tract Infections",
             "medications": [
               {
                 "Name": "Bionorica Canephron Tablets",
@@ -12614,7 +12614,7 @@
           },
           {
             "label": "الصداع",
-            "value": "headache",
+            "value": "Headache",
             "medications": [
               {
                 "Name": "Boiron Cocculus Indicus 30 CH",
@@ -12629,7 +12629,7 @@
           },
           {
             "label": "الفيتامينات المتعددة",
-            "value": "multivitamins",
+            "value": "Multivitamins",
             "medications": [
               {
                 "Name": "Pharmax Celera",
@@ -12662,7 +12662,7 @@
           },
           {
             "label": "الفيتامينات والمكملات الغذائية",
-            "value": "vitamins_&_supplements",
+            "value": "Vitamins & Supplements",
             "medications": [
               {
                 "Name": "Eltroxin 50Mcg Tablets",
@@ -12803,7 +12803,7 @@
           },
           {
             "label": "المعادن",
-            "value": "minerals",
+            "value": "Minerals",
             "medications": [
               {
                 "Name": "Tenormin Atenolol Tablets",
@@ -13205,7 +13205,7 @@
           },
           {
             "label": "المكملات العشبية",
-            "value": "herbal_supplements",
+            "value": "Herbal Supplements",
             "medications": [
               {
                 "Name": "Innermost The Rise Blend Coffee Sachets",
@@ -13427,7 +13427,7 @@
           },
           {
             "label": "صحة الجهاز الهضمي",
-            "value": "digestive_health",
+            "value": "Digestive Health",
             "medications": [
               {
                 "Name": "Herbamed Berberis Vulgaris Mother Tincture",
@@ -13442,7 +13442,7 @@
           },
           {
             "label": "عام",
-            "value": "general",
+            "value": "General",
             "medications": [
               {
                 "Name": "Nebilet",
@@ -13925,7 +13925,7 @@
           },
           {
             "label": "فيتامين ب12",
-            "value": "vitamin_b12",
+            "value": "Vitamin B12",
             "medications": [
               {
                 "Name": "Methycobal Methylcobalamin Tablets",
@@ -13985,7 +13985,7 @@
           },
           {
             "label": "فيتامين د",
-            "value": "vitamin_d",
+            "value": "Vitamin D",
             "medications": [
               {
                 "Name": "Devit-3 Injection",
@@ -14036,7 +14036,7 @@
           },
           {
             "label": "قلة التركيز والنسيان",
-            "value": "lack_of_concentration_and_forgetfulness",
+            "value": "Lack of Concentration and Forgetfulness",
             "medications": [
               {
                 "Name": "Heel Vertigoheel Tablets",
@@ -14051,7 +14051,7 @@
           },
           {
             "label": "مكملات الحديد",
-            "value": "iron_supplements",
+            "value": "Iron Supplements",
             "medications": [
               {
                 "Name": "Tardyferon",
@@ -14066,7 +14066,7 @@
           },
           {
             "label": "مكملات الكالسيوم",
-            "value": "calcium_supplements",
+            "value": "Calcium Supplements",
             "medications": [
               {
                 "Name": "Dr. Reckeweg calcarea carbonica 30x",
@@ -14081,7 +14081,7 @@
           },
           {
             "label": "منشط الكبد والمرارة",
-            "value": "liver_and_gall_bladder_stimulant",
+            "value": "Liver and Gall Bladder Stimulant",
             "medications": [
               {
                 "Name": "Adler Schussler Salt No.10 Natrium Sulfuricum 6X",
@@ -14099,13 +14099,13 @@
     },
     {
       "label": "صحة الأطفال",
-      "value": "children's_health",
+      "value": "Children's Health",
       "next_step": {
         "question": "حدد فئة معينة:",
         "options": [
           {
             "label": "ألم الأذن",
-            "value": "earache",
+            "value": "Earache",
             "medications": [
               {
                 "Name": "Kids 0-9 Earache Oral Drops",
@@ -14192,7 +14192,7 @@
           },
           {
             "label": "احتقان الأنف",
-            "value": "nasal_congestion",
+            "value": "Nasal Congestion",
             "medications": [
               {
                 "Name": "Otosan Nasal Spray for Baby",
@@ -14297,7 +14297,7 @@
           },
           {
             "label": "الأرق/التحريض",
-            "value": "restlessness/agitation",
+            "value": "Restlessness/Agitation",
             "medications": [
               {
                 "Name": "Kids 0-9 Teething",
@@ -14357,7 +14357,7 @@
           },
           {
             "label": "الإسهال",
-            "value": "diarrhea",
+            "value": "Diarrhea",
             "medications": [
               {
                 "Name": "Hidrasec Children",
@@ -14399,7 +14399,7 @@
           },
           {
             "label": "الإمساك",
-            "value": "constipation",
+            "value": "Constipation",
             "medications": [
               {
                 "Name": "Les Zamis Constipation Oral Solution",
@@ -14476,8 +14476,23 @@
             ]
           },
           {
+            "label": "الالتهابات",
+            "value": "Infections",
+            "medications": [
+              {
+                "Name": "Augmentin ES 600 Syrup",
+                "Price": 65.5,
+                "Description": "Fights bacterial infections in children.",
+                "Warnings": "Refrigerate after mixing. Follow dosage instructions carefully.",
+                "Category 1": "Children's Health",
+                "Category 2": "Infections",
+                "Category 3": "Syrup/Liquid"
+              }
+            ]
+          },
+          {
             "label": "التهاب الحلق",
-            "value": "sore_throat",
+            "value": "Sore Throat",
             "medications": [
               {
                 "Name": "Homeocan Kids Throat Ease Syrup",
@@ -14501,7 +14516,7 @@
           },
           {
             "label": "التهاب اللوزتين",
-            "value": "tonsillitis",
+            "value": "Tonsillitis",
             "medications": [
               {
                 "Name": "Boiron Baryta Carbonica 200CH",
@@ -14516,7 +14531,7 @@
           },
           {
             "label": "الجفاف",
-            "value": "dehydration",
+            "value": "Dehydration",
             "medications": [
               {
                 "Name": "Orsalit With Banana Flavour Sachet",
@@ -14630,7 +14645,7 @@
           },
           {
             "label": "الحساسية",
-            "value": "allergies",
+            "value": "Allergies",
             "medications": [
               {
                 "Name": "Children's Claritin Grape Syrup",
@@ -14699,7 +14714,7 @@
           },
           {
             "label": "الحمى",
-            "value": "fever",
+            "value": "Fever",
             "medications": [
               {
                 "Name": "Nurofen Junior Fever & Pain Relief Strawberry",
@@ -14867,7 +14882,7 @@
           },
           {
             "label": "السعال",
-            "value": "cough",
+            "value": "Cough",
             "medications": [
               {
                 "Name": "Nurse Harvey’s BabyRub Balm",
@@ -14944,23 +14959,8 @@
             ]
           },
           {
-            "label": "العدوى",
-            "value": "infections",
-            "medications": [
-              {
-                "Name": "Augmentin ES 600 Syrup",
-                "Price": 65.5,
-                "Description": "Fights bacterial infections in children.",
-                "Warnings": "Refrigerate after mixing. Follow dosage instructions carefully.",
-                "Category 1": "Children's Health",
-                "Category 2": "Infections",
-                "Category 3": "Syrup/Liquid"
-              }
-            ]
-          },
-          {
             "label": "العناية بالفم",
-            "value": "oral_care",
+            "value": "Oral Care",
             "medications": [
               {
                 "Name": "Dentinox Teething Gel",
@@ -14975,7 +14975,7 @@
           },
           {
             "label": "تهيج الجلد",
-            "value": "skin_irritation",
+            "value": "Skin Irritation",
             "medications": [
               {
                 "Name": "Nexcare Animals Kids Bandages",
@@ -15008,7 +15008,7 @@
           },
           {
             "label": "صحة الجهاز الهضمي",
-            "value": "digestive_health",
+            "value": "Digestive Health",
             "medications": [
               {
                 "Name": "Proflora Kids Plus",
@@ -15023,7 +15023,7 @@
           },
           {
             "label": "عام",
-            "value": "general",
+            "value": "General",
             "medications": [
               {
                 "Name": "NZ Health Manuka Honey for Kids UMF 8+ & MGO 180+",
@@ -15041,13 +15041,13 @@
     },
     {
       "label": "صحة الجهاز الهضمي",
-      "value": "digestive_health",
+      "value": "Digestive Health",
       "next_step": {
         "question": "حدد فئة معينة:",
         "options": [
           {
             "label": "ارتجاع الحمض/حرقة المعدة",
-            "value": "acid_reflux/heartburn",
+            "value": "Acid Reflux/Heartburn",
             "medications": [
               {
                 "Name": "Protomax MUPS 40mg Tablets",
@@ -15530,7 +15530,7 @@
           },
           {
             "label": "الإسهال",
-            "value": "diarrhea",
+            "value": "Diarrhea",
             "medications": [
               {
                 "Name": "O.R.S Hydration New Orange",
@@ -15680,7 +15680,7 @@
           },
           {
             "label": "الإمساك",
-            "value": "constipation",
+            "value": "Constipation",
             "medications": [
               {
                 "Name": "Fybogel Orange Drink Sachets",
@@ -16045,8 +16045,23 @@
             ]
           },
           {
+            "label": "الالتهاب/التهيج",
+            "value": "Inflammation/Irritation",
+            "medications": [
+              {
+                "Name": "Salazopyrin EN 500mg Tablet",
+                "Price": 50.0,
+                "Description": "Treats inflammatory bowel diseases (IBD) and rheumatoid arthritis by reducing inflammation and suppressing the immune response.",
+                "Warnings": "Take exactly as prescribed by your doctor. Do not exceed the recommended dosage.",
+                "Category 1": "Digestive Health",
+                "Category 2": "Inflammation/Irritation",
+                "Category 3": "Tablets"
+              }
+            ]
+          },
+          {
             "label": "البواسير",
-            "value": "hemorrhoids",
+            "value": "Hemorrhoids",
             "medications": [
               {
                 "Name": "Anodesyn Ointment",
@@ -16160,7 +16175,7 @@
           },
           {
             "label": "التشنجات",
-            "value": "cramps",
+            "value": "Cramps",
             "medications": [
               {
                 "Name": "Buscopan Tablets",
@@ -16237,23 +16252,8 @@
             ]
           },
           {
-            "label": "التهاب/تهيج",
-            "value": "inflammation/irritation",
-            "medications": [
-              {
-                "Name": "Salazopyrin EN 500mg Tablet",
-                "Price": 50.0,
-                "Description": "Treats inflammatory bowel diseases (IBD) and rheumatoid arthritis by reducing inflammation and suppressing the immune response.",
-                "Warnings": "Take exactly as prescribed by your doctor. Do not exceed the recommended dosage.",
-                "Category 1": "Digestive Health",
-                "Category 2": "Inflammation/Irritation",
-                "Category 3": "Tablets"
-              }
-            ]
-          },
-          {
             "label": "الجفاف",
-            "value": "dehydration",
+            "value": "Dehydration",
             "medications": [
               {
                 "Name": "ORS Lemon Soluble Tablets",
@@ -16268,7 +16268,7 @@
           },
           {
             "label": "الغازات/الانتفاخ",
-            "value": "gas/bloating",
+            "value": "Gas/Bloating",
             "medications": [
               {
                 "Name": "Lactacol 30Mg",
@@ -16499,7 +16499,7 @@
           },
           {
             "label": "الغثيان/القيء",
-            "value": "nausea/vomiting",
+            "value": "Nausea/Vomiting",
             "medications": [
               {
                 "Name": "Dompy Domperidone 10mg Tablets",
@@ -16604,7 +16604,7 @@
           },
           {
             "label": "صحة الجهاز الهضمي",
-            "value": "digestive_health",
+            "value": "Digestive Health",
             "medications": [
               {
                 "Name": "Prebiotic Soluble Powder",
@@ -16619,7 +16619,7 @@
           },
           {
             "label": "عسر الهضم",
-            "value": "indigestion",
+            "value": "Indigestion",
             "medications": [
               {
                 "Name": "Ursofalk 250mg Capsules",
@@ -16736,13 +16736,13 @@
     },
     {
       "label": "صحة المرأة والصحة الجنسية",
-      "value": "feminine_&_sexual_health",
+      "value": "Feminine & Sexual Health",
       "next_step": {
         "question": "حدد فئة معينة:",
         "options": [
           {
             "label": "اختلال التوازن الهرموني",
-            "value": "hormonal_imbalance",
+            "value": "Hormonal Imbalance",
             "medications": [
               {
                 "Name": "Nolvadex",
@@ -16801,113 +16801,8 @@
             ]
           },
           {
-            "label": "التهاب المهبل",
-            "value": "vaginal_infection",
-            "medications": [
-              {
-                "Name": "Candivast 150 Mg Capsule",
-                "Price": 20.5,
-                "Description": "Treats vaginal yeast infections.",
-                "Warnings": "Consult your doctor if symptoms persist or worsen. May interact with other medications. Keep out of reach of children.",
-                "Category 1": "Feminine & Sexual Health",
-                "Category 2": "Vaginal Infection",
-                "Category 3": "Capsule"
-              },
-              {
-                "Name": "Duracan 1 Capsule",
-                "Price": 28.0,
-                "Description": "Antifungal medication to treat fungal infections.",
-                "Warnings": "Consult a doctor before use if pregnant or breastfeeding. May cause gastrointestinal discomfort.",
-                "Category 1": "Feminine & Sexual Health",
-                "Category 2": "Vaginal Infection",
-                "Category 3": "Capsules"
-              },
-              {
-                "Name": "Monuril",
-                "Price": 50.0,
-                "Description": "Single-dose treatment for urinary tract infections.",
-                "Warnings": "Dissolve in water before taking. Consult a doctor if symptoms persist.",
-                "Category 1": "Feminine & Sexual Health",
-                "Category 2": "Vaginal Infection",
-                "Category 3": "Sachets"
-              },
-              {
-                "Name": "Dalacin Vaginal Ovule",
-                "Price": 77.0,
-                "Description": "Treats vaginal infections.",
-                "Warnings": "For vaginal use only. Consult your doctor if symptoms persist or worsen. Keep out of reach of children.",
-                "Category 1": "Feminine & Sexual Health",
-                "Category 2": "Vaginal Infection",
-                "Category 3": "Ovules"
-              },
-              {
-                "Name": "Lomexin Fenticonazole Ovules",
-                "Price": 21.5,
-                "Description": "Treatment for vaginal yeast infections.",
-                "Warnings": "For vaginal use only. Consult a doctor if symptoms persist.",
-                "Category 1": "Feminine & Sexual Health",
-                "Category 2": "Vaginal Infection",
-                "Category 3": "Ovules"
-              },
-              {
-                "Name": "Lomexin Ovules",
-                "Price": 21.5,
-                "Description": "Treats vaginal yeast infections with a single-dose ovule.",
-                "Warnings": "For vaginal use only. Consult a doctor if symptoms persist or worsen after treatment.",
-                "Category 1": "Feminine & Sexual Health",
-                "Category 2": "Vaginal Infection",
-                "Category 3": "Ovules"
-              },
-              {
-                "Name": "Canesten Vaginal Tablets",
-                "Price": 21.5,
-                "Description": "Effective antifungal treatment for vaginal yeast infections.",
-                "Warnings": "For vaginal use only. Consult a doctor if symptoms persist or worsen after treatment.",
-                "Category 1": "Feminine & Sexual Health",
-                "Category 2": "Vaginal Infection",
-                "Category 3": "Tablets"
-              },
-              {
-                "Name": "Lomexin T Vaginal Ovules",
-                "Price": 34.0,
-                "Description": "Treats vaginal yeast infections.",
-                "Warnings": "For vaginal use only. Consult doctor if symptoms persist.",
-                "Category 1": "Feminine & Sexual Health",
-                "Category 2": "Vaginal Infection",
-                "Category 3": "Ovules"
-              },
-              {
-                "Name": "Canesten 500mg Clotrimazole Vaginal Tablet",
-                "Price": 21.5,
-                "Description": "Treats vaginal yeast infections.",
-                "Warnings": "For vaginal use only. Consult your doctor if symptoms persist or worsen.",
-                "Category 1": "Feminine & Sexual Health",
-                "Category 2": "Vaginal Infection",
-                "Category 3": "Tablets"
-              },
-              {
-                "Name": "Flugenil Vaginal Ovules",
-                "Price": 120.0,
-                "Description": "Restores and maintains the vaginal flora.",
-                "Warnings": "Consult a doctor if symptoms persist. Keep out of reach of children.",
-                "Category 1": "Feminine & Sexual Health",
-                "Category 2": "Vaginal Infection",
-                "Category 3": "Ovules"
-              },
-              {
-                "Name": "Gynagyn BV Vaginal Gel",
-                "Price": 114.0,
-                "Description": "Provides relief and prevents symptoms of Bacterial Vaginosis.",
-                "Warnings": "Consult a healthcare professional for diagnosis and treatment of Bacterial Vaginosis.",
-                "Category 1": "Feminine & Sexual Health",
-                "Category 2": "Vaginal Infection",
-                "Category 3": "Gel"
-              }
-            ]
-          },
-          {
             "label": "جفاف المهبل",
-            "value": "vaginal_dryness",
+            "value": "Vaginal Dryness",
             "medications": [
               {
                 "Name": "Vaginom Vaginal Moisturiser Gel",
@@ -16931,7 +16826,7 @@
           },
           {
             "label": "ضعف الانتصاب",
-            "value": "erectile_dysfunction",
+            "value": "Erectile Dysfunction",
             "medications": [
               {
                 "Name": "Wafi",
@@ -17071,8 +16966,113 @@
             ]
           },
           {
-            "label": "منع الحمل",
-            "value": "contraception",
+            "label": "عدوى المهبل",
+            "value": "Vaginal Infection",
+            "medications": [
+              {
+                "Name": "Candivast 150 Mg Capsule",
+                "Price": 20.5,
+                "Description": "Treats vaginal yeast infections.",
+                "Warnings": "Consult your doctor if symptoms persist or worsen. May interact with other medications. Keep out of reach of children.",
+                "Category 1": "Feminine & Sexual Health",
+                "Category 2": "Vaginal Infection",
+                "Category 3": "Capsule"
+              },
+              {
+                "Name": "Duracan 1 Capsule",
+                "Price": 28.0,
+                "Description": "Antifungal medication to treat fungal infections.",
+                "Warnings": "Consult a doctor before use if pregnant or breastfeeding. May cause gastrointestinal discomfort.",
+                "Category 1": "Feminine & Sexual Health",
+                "Category 2": "Vaginal Infection",
+                "Category 3": "Capsules"
+              },
+              {
+                "Name": "Monuril",
+                "Price": 50.0,
+                "Description": "Single-dose treatment for urinary tract infections.",
+                "Warnings": "Dissolve in water before taking. Consult a doctor if symptoms persist.",
+                "Category 1": "Feminine & Sexual Health",
+                "Category 2": "Vaginal Infection",
+                "Category 3": "Sachets"
+              },
+              {
+                "Name": "Dalacin Vaginal Ovule",
+                "Price": 77.0,
+                "Description": "Treats vaginal infections.",
+                "Warnings": "For vaginal use only. Consult your doctor if symptoms persist or worsen. Keep out of reach of children.",
+                "Category 1": "Feminine & Sexual Health",
+                "Category 2": "Vaginal Infection",
+                "Category 3": "Ovules"
+              },
+              {
+                "Name": "Lomexin Fenticonazole Ovules",
+                "Price": 21.5,
+                "Description": "Treatment for vaginal yeast infections.",
+                "Warnings": "For vaginal use only. Consult a doctor if symptoms persist.",
+                "Category 1": "Feminine & Sexual Health",
+                "Category 2": "Vaginal Infection",
+                "Category 3": "Ovules"
+              },
+              {
+                "Name": "Lomexin Ovules",
+                "Price": 21.5,
+                "Description": "Treats vaginal yeast infections with a single-dose ovule.",
+                "Warnings": "For vaginal use only. Consult a doctor if symptoms persist or worsen after treatment.",
+                "Category 1": "Feminine & Sexual Health",
+                "Category 2": "Vaginal Infection",
+                "Category 3": "Ovules"
+              },
+              {
+                "Name": "Canesten Vaginal Tablets",
+                "Price": 21.5,
+                "Description": "Effective antifungal treatment for vaginal yeast infections.",
+                "Warnings": "For vaginal use only. Consult a doctor if symptoms persist or worsen after treatment.",
+                "Category 1": "Feminine & Sexual Health",
+                "Category 2": "Vaginal Infection",
+                "Category 3": "Tablets"
+              },
+              {
+                "Name": "Lomexin T Vaginal Ovules",
+                "Price": 34.0,
+                "Description": "Treats vaginal yeast infections.",
+                "Warnings": "For vaginal use only. Consult doctor if symptoms persist.",
+                "Category 1": "Feminine & Sexual Health",
+                "Category 2": "Vaginal Infection",
+                "Category 3": "Ovules"
+              },
+              {
+                "Name": "Canesten 500mg Clotrimazole Vaginal Tablet",
+                "Price": 21.5,
+                "Description": "Treats vaginal yeast infections.",
+                "Warnings": "For vaginal use only. Consult your doctor if symptoms persist or worsen.",
+                "Category 1": "Feminine & Sexual Health",
+                "Category 2": "Vaginal Infection",
+                "Category 3": "Tablets"
+              },
+              {
+                "Name": "Flugenil Vaginal Ovules",
+                "Price": 120.0,
+                "Description": "Restores and maintains the vaginal flora.",
+                "Warnings": "Consult a doctor if symptoms persist. Keep out of reach of children.",
+                "Category 1": "Feminine & Sexual Health",
+                "Category 2": "Vaginal Infection",
+                "Category 3": "Ovules"
+              },
+              {
+                "Name": "Gynagyn BV Vaginal Gel",
+                "Price": 114.0,
+                "Description": "Provides relief and prevents symptoms of Bacterial Vaginosis.",
+                "Warnings": "Consult a healthcare professional for diagnosis and treatment of Bacterial Vaginosis.",
+                "Category 1": "Feminine & Sexual Health",
+                "Category 2": "Vaginal Infection",
+                "Category 3": "Gel"
+              }
+            ]
+          },
+          {
+            "label": "موانع الحمل",
+            "value": "Contraception",
             "medications": [
               {
                 "Name": "Gynera Tablet",
