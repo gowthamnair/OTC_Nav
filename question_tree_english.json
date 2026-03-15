@@ -1,0 +1,2915 @@
+{
+  "step": 1,
+  "question": "What is your main symptom?",
+  "options": [
+    {
+      "label": "Allergies & Sinus",
+      "value": "Allergies & Sinus",
+      "description": "",
+      "next_step": {
+        "step": 2,
+        "question": "Select an option",
+        "options": [
+          {
+            "label": "Allergies",
+            "value": "Allergies",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Drops",
+                  "value": "Drops",
+                  "is_final": true
+                },
+                {
+                  "label": "Syrup/Liquid",
+                  "value": "Syrup/Liquid",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Hay Fever (Allergic Rhinitis)",
+            "value": "Hay Fever (Allergic Rhinitis)",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Pellets",
+                  "value": "Pellets",
+                  "is_final": true
+                },
+                {
+                  "label": "Spray",
+                  "value": "Spray",
+                  "is_final": true
+                },
+                {
+                  "label": "Syrup/Liquid",
+                  "value": "Syrup/Liquid",
+                  "is_final": true
+                },
+                {
+                  "label": "Tablets",
+                  "value": "Tablets",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Hives (Urticaria)",
+            "value": "Hives (Urticaria)",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Pellets",
+                  "value": "Pellets",
+                  "is_final": true
+                },
+                {
+                  "label": "Tablets",
+                  "value": "Tablets",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Itchy Eyes (Allergic Conjunctivitis)",
+            "value": "Itchy Eyes (Allergic Conjunctivitis)",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Drops",
+                  "value": "Drops",
+                  "is_final": true
+                },
+                {
+                  "label": "Syrup/Liquid",
+                  "value": "Syrup/Liquid",
+                  "is_final": true
+                },
+                {
+                  "label": "Tablets",
+                  "value": "Tablets",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Nasal Congestion",
+            "value": "Nasal Congestion",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Cream/Ointment",
+                  "value": "Cream/Ointment",
+                  "is_final": true
+                },
+                {
+                  "label": "Drops",
+                  "value": "Drops",
+                  "is_final": true
+                },
+                {
+                  "label": "Gel",
+                  "value": "Gel",
+                  "is_final": true
+                },
+                {
+                  "label": "Sachets",
+                  "value": "Sachets",
+                  "is_final": true
+                },
+                {
+                  "label": "Solution",
+                  "value": "Solution",
+                  "is_final": true
+                },
+                {
+                  "label": "Spray",
+                  "value": "Spray",
+                  "is_final": true
+                },
+                {
+                  "label": "Tablets",
+                  "value": "Tablets",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Runny Nose (Rhinorrhea)",
+            "value": "Runny Nose (Rhinorrhea)",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Pellets",
+                  "value": "Pellets",
+                  "is_final": true
+                },
+                {
+                  "label": "Syrup/Liquid",
+                  "value": "Syrup/Liquid",
+                  "is_final": true
+                },
+                {
+                  "label": "Tablets",
+                  "value": "Tablets",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Sinus Pressure/Pain",
+            "value": "Sinus Pressure/Pain",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Spray",
+                  "value": "Spray",
+                  "is_final": true
+                },
+                {
+                  "label": "Tablets",
+                  "value": "Tablets",
+                  "is_final": true
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "label": "Children's Health",
+      "value": "Children's Health",
+      "description": "",
+      "next_step": {
+        "step": 2,
+        "question": "Select an option",
+        "options": [
+          {
+            "label": "Allergies",
+            "value": "Allergies",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Drops",
+                  "value": "Drops",
+                  "is_final": true
+                },
+                {
+                  "label": "Oral Solution",
+                  "value": "Oral Solution",
+                  "is_final": true
+                },
+                {
+                  "label": "Spray",
+                  "value": "Spray",
+                  "is_final": true
+                },
+                {
+                  "label": "Syrup/Liquid",
+                  "value": "Syrup/Liquid",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Constipation",
+            "value": "Constipation",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Enema",
+                  "value": "Enema",
+                  "is_final": true
+                },
+                {
+                  "label": "Sachets",
+                  "value": "Sachets",
+                  "is_final": true
+                },
+                {
+                  "label": "Suppositories",
+                  "value": "Suppositories",
+                  "is_final": true
+                },
+                {
+                  "label": "Syrup/Liquid",
+                  "value": "Syrup/Liquid",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Cough",
+            "value": "Cough",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Cream/Ointment",
+                  "value": "Cream/Ointment",
+                  "is_final": true
+                },
+                {
+                  "label": "Drops",
+                  "value": "Drops",
+                  "is_final": true
+                },
+                {
+                  "label": "Syrup/Liquid",
+                  "value": "Syrup/Liquid",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Dehydration",
+            "value": "Dehydration",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Kids/Infant",
+                  "value": "Kids/Infant",
+                  "is_final": true
+                },
+                {
+                  "label": "Sachets",
+                  "value": "Sachets",
+                  "is_final": true
+                },
+                {
+                  "label": "Syrup/Liquid",
+                  "value": "Syrup/Liquid",
+                  "is_final": true
+                },
+                {
+                  "label": "Tablets",
+                  "value": "Tablets",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Diarrhea",
+            "value": "Diarrhea",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Sachets",
+                  "value": "Sachets",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Digestive Health",
+            "value": "Digestive Health",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Sachets",
+                  "value": "Sachets",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Earache",
+            "value": "Earache",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Drops",
+                  "value": "Drops",
+                  "is_final": true
+                },
+                {
+                  "label": "Syrup/Liquid",
+                  "value": "Syrup/Liquid",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Fever",
+            "value": "Fever",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Drops",
+                  "value": "Drops",
+                  "is_final": true
+                },
+                {
+                  "label": "Pellets",
+                  "value": "Pellets",
+                  "is_final": true
+                },
+                {
+                  "label": "Spray",
+                  "value": "Spray",
+                  "is_final": true
+                },
+                {
+                  "label": "Suppositories",
+                  "value": "Suppositories",
+                  "is_final": true
+                },
+                {
+                  "label": "Syrup/Liquid",
+                  "value": "Syrup/Liquid",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Infections",
+            "value": "Infections",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Syrup/Liquid",
+                  "value": "Syrup/Liquid",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Nasal Congestion",
+            "value": "Nasal Congestion",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Drops",
+                  "value": "Drops",
+                  "is_final": true
+                },
+                {
+                  "label": "Spray",
+                  "value": "Spray",
+                  "is_final": true
+                },
+                {
+                  "label": "Syrup/Liquid",
+                  "value": "Syrup/Liquid",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Oral Care",
+            "value": "Oral Care",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Gel",
+                  "value": "Gel",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Restlessness/Agitation",
+            "value": "Restlessness/Agitation",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Drops",
+                  "value": "Drops",
+                  "is_final": true
+                },
+                {
+                  "label": "Oral Solution",
+                  "value": "Oral Solution",
+                  "is_final": true
+                },
+                {
+                  "label": "Pellets",
+                  "value": "Pellets",
+                  "is_final": true
+                },
+                {
+                  "label": "Syrup/Liquid",
+                  "value": "Syrup/Liquid",
+                  "is_final": true
+                },
+                {
+                  "label": "Tablets",
+                  "value": "Tablets",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Skin Irritation",
+            "value": "Skin Irritation",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Cream/Ointment",
+                  "value": "Cream/Ointment",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Sore Throat",
+            "value": "Sore Throat",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Syrup/Liquid",
+                  "value": "Syrup/Liquid",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Tonsillitis",
+            "value": "Tonsillitis",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Pellets",
+                  "value": "Pellets",
+                  "is_final": true
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "label": "Cough, Cold & Flu",
+      "value": "Cough, Cold & Flu",
+      "description": "",
+      "next_step": {
+        "step": 2,
+        "question": "Select an option",
+        "options": [
+          {
+            "label": "Cold",
+            "value": "Cold",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Pellets",
+                  "value": "Pellets",
+                  "is_final": true
+                },
+                {
+                  "label": "Sachets",
+                  "value": "Sachets",
+                  "is_final": true
+                },
+                {
+                  "label": "Spray",
+                  "value": "Spray",
+                  "is_final": true
+                },
+                {
+                  "label": "Syrup/Liquid",
+                  "value": "Syrup/Liquid",
+                  "is_final": true
+                },
+                {
+                  "label": "Tablets",
+                  "value": "Tablets",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Cough",
+            "value": "Cough",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Capsules",
+                  "value": "Capsules",
+                  "is_final": true
+                },
+                {
+                  "label": "Cream/Ointment",
+                  "value": "Cream/Ointment",
+                  "is_final": true
+                },
+                {
+                  "label": "Drops",
+                  "value": "Drops",
+                  "is_final": true
+                },
+                {
+                  "label": "Lozenges",
+                  "value": "Lozenges",
+                  "is_final": true
+                },
+                {
+                  "label": "Pellets",
+                  "value": "Pellets",
+                  "is_final": true
+                },
+                {
+                  "label": "Sachets",
+                  "value": "Sachets",
+                  "is_final": true
+                },
+                {
+                  "label": "Solution",
+                  "value": "Solution",
+                  "is_final": true
+                },
+                {
+                  "label": "Syrup/Liquid",
+                  "value": "Syrup/Liquid",
+                  "is_final": true
+                },
+                {
+                  "label": "Tablets",
+                  "value": "Tablets",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Flu",
+            "value": "Flu",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Capsules",
+                  "value": "Capsules",
+                  "is_final": true
+                },
+                {
+                  "label": "Lozenges",
+                  "value": "Lozenges",
+                  "is_final": true
+                },
+                {
+                  "label": "Pellets",
+                  "value": "Pellets",
+                  "is_final": true
+                },
+                {
+                  "label": "Sachets",
+                  "value": "Sachets",
+                  "is_final": true
+                },
+                {
+                  "label": "Tablets",
+                  "value": "Tablets",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Nasal Congestion",
+            "value": "Nasal Congestion",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Capsules",
+                  "value": "Capsules",
+                  "is_final": true
+                },
+                {
+                  "label": "Cream/Ointment",
+                  "value": "Cream/Ointment",
+                  "is_final": true
+                },
+                {
+                  "label": "Drops",
+                  "value": "Drops",
+                  "is_final": true
+                },
+                {
+                  "label": "Oil",
+                  "value": "Oil",
+                  "is_final": true
+                },
+                {
+                  "label": "Sachets",
+                  "value": "Sachets",
+                  "is_final": true
+                },
+                {
+                  "label": "Spray",
+                  "value": "Spray",
+                  "is_final": true
+                },
+                {
+                  "label": "Syrup/Liquid",
+                  "value": "Syrup/Liquid",
+                  "is_final": true
+                },
+                {
+                  "label": "Vials",
+                  "value": "Vials",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Sinus Pressure",
+            "value": "Sinus Pressure",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Capsules",
+                  "value": "Capsules",
+                  "is_final": true
+                },
+                {
+                  "label": "Oil",
+                  "value": "Oil",
+                  "is_final": true
+                },
+                {
+                  "label": "Tablets",
+                  "value": "Tablets",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Sore Throat",
+            "value": "Sore Throat",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Drops",
+                  "value": "Drops",
+                  "is_final": true
+                },
+                {
+                  "label": "Gel",
+                  "value": "Gel",
+                  "is_final": true
+                },
+                {
+                  "label": "Lozenges",
+                  "value": "Lozenges",
+                  "is_final": true
+                },
+                {
+                  "label": "Pellets",
+                  "value": "Pellets",
+                  "is_final": true
+                },
+                {
+                  "label": "Spray",
+                  "value": "Spray",
+                  "is_final": true
+                },
+                {
+                  "label": "Syrup/Liquid",
+                  "value": "Syrup/Liquid",
+                  "is_final": true
+                },
+                {
+                  "label": "Tablets",
+                  "value": "Tablets",
+                  "is_final": true
+                },
+                {
+                  "label": "Tea Bags",
+                  "value": "Tea Bags",
+                  "is_final": true
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "label": "Digestive Health",
+      "value": "Digestive Health",
+      "description": "",
+      "next_step": {
+        "step": 2,
+        "question": "Select an option",
+        "options": [
+          {
+            "label": "Acid Reflux/Heartburn",
+            "value": "Acid Reflux/Heartburn",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Capsules",
+                  "value": "Capsules",
+                  "is_final": true
+                },
+                {
+                  "label": "Gel",
+                  "value": "Gel",
+                  "is_final": true
+                },
+                {
+                  "label": "Sachets",
+                  "value": "Sachets",
+                  "is_final": true
+                },
+                {
+                  "label": "Suspension",
+                  "value": "Suspension",
+                  "is_final": true
+                },
+                {
+                  "label": "Syrup/Liquid",
+                  "value": "Syrup/Liquid",
+                  "is_final": true
+                },
+                {
+                  "label": "Tablets",
+                  "value": "Tablets",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Constipation",
+            "value": "Constipation",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Capsules",
+                  "value": "Capsules",
+                  "is_final": true
+                },
+                {
+                  "label": "Enema",
+                  "value": "Enema",
+                  "is_final": true
+                },
+                {
+                  "label": "Sachets",
+                  "value": "Sachets",
+                  "is_final": true
+                },
+                {
+                  "label": "Suppositories",
+                  "value": "Suppositories",
+                  "is_final": true
+                },
+                {
+                  "label": "Syrup/Liquid",
+                  "value": "Syrup/Liquid",
+                  "is_final": true
+                },
+                {
+                  "label": "Tablets",
+                  "value": "Tablets",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Cramps",
+            "value": "Cramps",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Syrup/Liquid",
+                  "value": "Syrup/Liquid",
+                  "is_final": true
+                },
+                {
+                  "label": "Tablets",
+                  "value": "Tablets",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Dehydration",
+            "value": "Dehydration",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Tablets",
+                  "value": "Tablets",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Diarrhea",
+            "value": "Diarrhea",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Capsules",
+                  "value": "Capsules",
+                  "is_final": true
+                },
+                {
+                  "label": "Sachets",
+                  "value": "Sachets",
+                  "is_final": true
+                },
+                {
+                  "label": "Syrup/Liquid",
+                  "value": "Syrup/Liquid",
+                  "is_final": true
+                },
+                {
+                  "label": "Tablets",
+                  "value": "Tablets",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Digestive Health",
+            "value": "Digestive Health",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Sachets",
+                  "value": "Sachets",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Gas/Bloating",
+            "value": "Gas/Bloating",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Capsules",
+                  "value": "Capsules",
+                  "is_final": true
+                },
+                {
+                  "label": "Chewable Tablets",
+                  "value": "Chewable Tablets",
+                  "is_final": true
+                },
+                {
+                  "label": "Pastilles",
+                  "value": "Pastilles",
+                  "is_final": true
+                },
+                {
+                  "label": "Pellets",
+                  "value": "Pellets",
+                  "is_final": true
+                },
+                {
+                  "label": "Suspension",
+                  "value": "Suspension",
+                  "is_final": true
+                },
+                {
+                  "label": "Syrup/Liquid",
+                  "value": "Syrup/Liquid",
+                  "is_final": true
+                },
+                {
+                  "label": "Tablets",
+                  "value": "Tablets",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Hemorrhoids",
+            "value": "Hemorrhoids",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Capsules",
+                  "value": "Capsules",
+                  "is_final": true
+                },
+                {
+                  "label": "Cream/Ointment",
+                  "value": "Cream/Ointment",
+                  "is_final": true
+                },
+                {
+                  "label": "Gel",
+                  "value": "Gel",
+                  "is_final": true
+                },
+                {
+                  "label": "Suppositories",
+                  "value": "Suppositories",
+                  "is_final": true
+                },
+                {
+                  "label": "Tablets",
+                  "value": "Tablets",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Indigestion",
+            "value": "Indigestion",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Capsules",
+                  "value": "Capsules",
+                  "is_final": true
+                },
+                {
+                  "label": "Drops",
+                  "value": "Drops",
+                  "is_final": true
+                },
+                {
+                  "label": "Pellets",
+                  "value": "Pellets",
+                  "is_final": true
+                },
+                {
+                  "label": "Sachets",
+                  "value": "Sachets",
+                  "is_final": true
+                },
+                {
+                  "label": "Tablets",
+                  "value": "Tablets",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Inflammation/Irritation",
+            "value": "Inflammation/Irritation",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Tablets",
+                  "value": "Tablets",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Nausea/Vomiting",
+            "value": "Nausea/Vomiting",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Capsules",
+                  "value": "Capsules",
+                  "is_final": true
+                },
+                {
+                  "label": "Syrup/Liquid",
+                  "value": "Syrup/Liquid",
+                  "is_final": true
+                },
+                {
+                  "label": "Tablets",
+                  "value": "Tablets",
+                  "is_final": true
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "label": "Eye Care",
+      "value": "Eye Care",
+      "description": "",
+      "next_step": {
+        "step": 2,
+        "question": "Select an option",
+        "options": [
+          {
+            "label": "Allergies",
+            "value": "Allergies",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Drops",
+                  "value": "Drops",
+                  "is_final": true
+                },
+                {
+                  "label": "Eye Drops",
+                  "value": "Eye Drops",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Contact Lens Related Issues",
+            "value": "Contact Lens Related Issues",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Contact Lens Solution Type",
+                  "value": "Contact Lens Solution Type",
+                  "is_final": true
+                },
+                {
+                  "label": "Contact Lenses",
+                  "value": "Contact Lenses",
+                  "is_final": true
+                },
+                {
+                  "label": "Contact Lenses Solution Type",
+                  "value": "Contact Lenses Solution Type",
+                  "is_final": true
+                },
+                {
+                  "label": "Eye Drops",
+                  "value": "Eye Drops",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Dry Eyes",
+            "value": "Dry Eyes",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Eye Drops",
+                  "value": "Eye Drops",
+                  "is_final": true
+                },
+                {
+                  "label": "Eye Gel",
+                  "value": "Eye Gel",
+                  "is_final": true
+                },
+                {
+                  "label": "Ointment",
+                  "value": "Ointment",
+                  "is_final": true
+                },
+                {
+                  "label": "Solution",
+                  "value": "Solution",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Eye Allergies",
+            "value": "Eye Allergies",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Eye Drops",
+                  "value": "Eye Drops",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Eyelid Problems",
+            "value": "Eyelid Problems",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Drops",
+                  "value": "Drops",
+                  "is_final": true
+                },
+                {
+                  "label": "Other",
+                  "value": "Other",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Headache",
+            "value": "Headache",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Pellets",
+                  "value": "Pellets",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Infection/Inflammation",
+            "value": "Infection/Inflammation",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Eye Drops",
+                  "value": "Eye Drops",
+                  "is_final": true
+                },
+                {
+                  "label": "Ointment",
+                  "value": "Ointment",
+                  "is_final": true
+                },
+                {
+                  "label": "Ophthalmic Suspension",
+                  "value": "Ophthalmic Suspension",
+                  "is_final": true
+                },
+                {
+                  "label": "Solution",
+                  "value": "Solution",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Nasal Congestion",
+            "value": "Nasal Congestion",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Vials",
+                  "value": "Vials",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Redness",
+            "value": "Redness",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Contact Lenses",
+                  "value": "Contact Lenses",
+                  "is_final": true
+                },
+                {
+                  "label": "Contact Lenses Solution Type",
+                  "value": "Contact Lenses Solution Type",
+                  "is_final": true
+                },
+                {
+                  "label": "Eye Drops",
+                  "value": "Eye Drops",
+                  "is_final": true
+                },
+                {
+                  "label": "Other",
+                  "value": "Other",
+                  "is_final": true
+                },
+                {
+                  "label": "Solution",
+                  "value": "Solution",
+                  "is_final": true
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "label": "Feminine & Sexual Health",
+      "value": "Feminine & Sexual Health",
+      "description": "",
+      "next_step": {
+        "step": 2,
+        "question": "Select an option",
+        "options": [
+          {
+            "label": "Contraception",
+            "value": "Contraception",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Tablets",
+                  "value": "Tablets",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Erectile Dysfunction",
+            "value": "Erectile Dysfunction",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Tablets",
+                  "value": "Tablets",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Hormonal Imbalance",
+            "value": "Hormonal Imbalance",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Pellets",
+                  "value": "Pellets",
+                  "is_final": true
+                },
+                {
+                  "label": "Tablets",
+                  "value": "Tablets",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Vaginal Dryness",
+            "value": "Vaginal Dryness",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Gel",
+                  "value": "Gel",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Vaginal Infection",
+            "value": "Vaginal Infection",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Capsule",
+                  "value": "Capsule",
+                  "is_final": true
+                },
+                {
+                  "label": "Capsules",
+                  "value": "Capsules",
+                  "is_final": true
+                },
+                {
+                  "label": "Gel",
+                  "value": "Gel",
+                  "is_final": true
+                },
+                {
+                  "label": "Ovules",
+                  "value": "Ovules",
+                  "is_final": true
+                },
+                {
+                  "label": "Sachets",
+                  "value": "Sachets",
+                  "is_final": true
+                },
+                {
+                  "label": "Tablets",
+                  "value": "Tablets",
+                  "is_final": true
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "label": "First Aid",
+      "value": "First Aid",
+      "description": "",
+      "next_step": {
+        "step": 2,
+        "question": "Select an option",
+        "options": [
+          {
+            "label": "Burn Relief",
+            "value": "Burn Relief",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Cream/Ointment",
+                  "value": "Cream/Ointment",
+                  "is_final": true
+                },
+                {
+                  "label": "Gel",
+                  "value": "Gel",
+                  "is_final": true
+                },
+                {
+                  "label": "Liquid",
+                  "value": "Liquid",
+                  "is_final": true
+                },
+                {
+                  "label": "Spray",
+                  "value": "Spray",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Dehydration",
+            "value": "Dehydration",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Syrup/Liquid",
+                  "value": "Syrup/Liquid",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Earache",
+            "value": "Earache",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Drops",
+                  "value": "Drops",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "First Aid",
+            "value": "First Aid",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Spray",
+                  "value": "Spray",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "General Antiseptic",
+            "value": "General Antiseptic",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Capsules",
+                  "value": "Capsules",
+                  "is_final": true
+                },
+                {
+                  "label": "Conditioner",
+                  "value": "Conditioner",
+                  "is_final": true
+                },
+                {
+                  "label": "Gloves",
+                  "value": "Gloves",
+                  "is_final": true
+                },
+                {
+                  "label": "Liquid",
+                  "value": "Liquid",
+                  "is_final": true
+                },
+                {
+                  "label": "Lotion",
+                  "value": "Lotion",
+                  "is_final": true
+                },
+                {
+                  "label": "Other",
+                  "value": "Other",
+                  "is_final": true
+                },
+                {
+                  "label": "Powder",
+                  "value": "Powder",
+                  "is_final": true
+                },
+                {
+                  "label": "Shampoo",
+                  "value": "Shampoo",
+                  "is_final": true
+                },
+                {
+                  "label": "Solution",
+                  "value": "Solution",
+                  "is_final": true
+                },
+                {
+                  "label": "Spray",
+                  "value": "Spray",
+                  "is_final": true
+                },
+                {
+                  "label": "Suspension",
+                  "value": "Suspension",
+                  "is_final": true
+                },
+                {
+                  "label": "Syrup/Liquid",
+                  "value": "Syrup/Liquid",
+                  "is_final": true
+                },
+                {
+                  "label": "Tablets",
+                  "value": "Tablets",
+                  "is_final": true
+                },
+                {
+                  "label": "Vials",
+                  "value": "Vials",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Hearing Assistance",
+            "value": "Hearing Assistance",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Drops",
+                  "value": "Drops",
+                  "is_final": true
+                },
+                {
+                  "label": "Other",
+                  "value": "Other",
+                  "is_final": true
+                },
+                {
+                  "label": "Spray",
+                  "value": "Spray",
+                  "is_final": true
+                },
+                {
+                  "label": "Tablets",
+                  "value": "Tablets",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Hemorrhoids",
+            "value": "Hemorrhoids",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Cream/Ointment",
+                  "value": "Cream/Ointment",
+                  "is_final": true
+                },
+                {
+                  "label": "Suppository",
+                  "value": "Suppository",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Infections",
+            "value": "Infections",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Capsules",
+                  "value": "Capsules",
+                  "is_final": true
+                },
+                {
+                  "label": "Tablets",
+                  "value": "Tablets",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Insect Repellent",
+            "value": "Insect Repellent",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Cream/Ointment",
+                  "value": "Cream/Ointment",
+                  "is_final": true
+                },
+                {
+                  "label": "Spray",
+                  "value": "Spray",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Muscle Pain",
+            "value": "Muscle Pain",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Cream/Ointment",
+                  "value": "Cream/Ointment",
+                  "is_final": true
+                },
+                {
+                  "label": "Gel",
+                  "value": "Gel",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Oral Care",
+            "value": "Oral Care",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Gel",
+                  "value": "Gel",
+                  "is_final": true
+                },
+                {
+                  "label": "Lozenges",
+                  "value": "Lozenges",
+                  "is_final": true
+                },
+                {
+                  "label": "Oil",
+                  "value": "Oil",
+                  "is_final": true
+                },
+                {
+                  "label": "Spray",
+                  "value": "Spray",
+                  "is_final": true
+                },
+                {
+                  "label": "Syrup/Liquid",
+                  "value": "Syrup/Liquid",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Wound Care",
+            "value": "Wound Care",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Bandages",
+                  "value": "Bandages",
+                  "is_final": true
+                },
+                {
+                  "label": "Box",
+                  "value": "Box",
+                  "is_final": true
+                },
+                {
+                  "label": "Comb",
+                  "value": "Comb",
+                  "is_final": true
+                },
+                {
+                  "label": "Cream/Ointment",
+                  "value": "Cream/Ointment",
+                  "is_final": true
+                },
+                {
+                  "label": "Dressing",
+                  "value": "Dressing",
+                  "is_final": true
+                },
+                {
+                  "label": "Gel",
+                  "value": "Gel",
+                  "is_final": true
+                },
+                {
+                  "label": "Kids/Infant",
+                  "value": "Kids/Infant",
+                  "is_final": true
+                },
+                {
+                  "label": "Liquid",
+                  "value": "Liquid",
+                  "is_final": true
+                },
+                {
+                  "label": "Ointment",
+                  "value": "Ointment",
+                  "is_final": true
+                },
+                {
+                  "label": "Other",
+                  "value": "Other",
+                  "is_final": true
+                },
+                {
+                  "label": "Patch",
+                  "value": "Patch",
+                  "is_final": true
+                },
+                {
+                  "label": "Patch/Plaster",
+                  "value": "Patch/Plaster",
+                  "is_final": true
+                },
+                {
+                  "label": "Plaster",
+                  "value": "Plaster",
+                  "is_final": true
+                },
+                {
+                  "label": "Powder",
+                  "value": "Powder",
+                  "is_final": true
+                },
+                {
+                  "label": "Shampoo",
+                  "value": "Shampoo",
+                  "is_final": true
+                },
+                {
+                  "label": "Solution",
+                  "value": "Solution",
+                  "is_final": true
+                },
+                {
+                  "label": "Spray",
+                  "value": "Spray",
+                  "is_final": true
+                },
+                {
+                  "label": "Syrup/Liquid",
+                  "value": "Syrup/Liquid",
+                  "is_final": true
+                },
+                {
+                  "label": "Tablets",
+                  "value": "Tablets",
+                  "is_final": true
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "label": "Pain & Fever",
+      "value": "Pain & Fever",
+      "description": "",
+      "next_step": {
+        "step": 2,
+        "question": "Select an option",
+        "options": [
+          {
+            "label": "Back Pain",
+            "value": "Back Pain",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Patch",
+                  "value": "Patch",
+                  "is_final": true
+                },
+                {
+                  "label": "Tablets",
+                  "value": "Tablets",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Fever Type",
+            "value": "Fever Type",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Patch/Plaster",
+                  "value": "Patch/Plaster",
+                  "is_final": true
+                },
+                {
+                  "label": "Pellets",
+                  "value": "Pellets",
+                  "is_final": true
+                },
+                {
+                  "label": "Suppositories",
+                  "value": "Suppositories",
+                  "is_final": true
+                },
+                {
+                  "label": "Syrup/Liquid",
+                  "value": "Syrup/Liquid",
+                  "is_final": true
+                },
+                {
+                  "label": "Tablets",
+                  "value": "Tablets",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Headache",
+            "value": "Headache",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Capsules",
+                  "value": "Capsules",
+                  "is_final": true
+                },
+                {
+                  "label": "Cream/Ointment",
+                  "value": "Cream/Ointment",
+                  "is_final": true
+                },
+                {
+                  "label": "Drops",
+                  "value": "Drops",
+                  "is_final": true
+                },
+                {
+                  "label": "Sachets",
+                  "value": "Sachets",
+                  "is_final": true
+                },
+                {
+                  "label": "Spray",
+                  "value": "Spray",
+                  "is_final": true
+                },
+                {
+                  "label": "Tablets",
+                  "value": "Tablets",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Joint Pain",
+            "value": "Joint Pain",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Capsules",
+                  "value": "Capsules",
+                  "is_final": true
+                },
+                {
+                  "label": "Cream/Ointment",
+                  "value": "Cream/Ointment",
+                  "is_final": true
+                },
+                {
+                  "label": "Gel",
+                  "value": "Gel",
+                  "is_final": true
+                },
+                {
+                  "label": "Pellets",
+                  "value": "Pellets",
+                  "is_final": true
+                },
+                {
+                  "label": "Tablets",
+                  "value": "Tablets",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Menstrual Pain",
+            "value": "Menstrual Pain",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Pellets",
+                  "value": "Pellets",
+                  "is_final": true
+                },
+                {
+                  "label": "Sachets",
+                  "value": "Sachets",
+                  "is_final": true
+                },
+                {
+                  "label": "Tablets",
+                  "value": "Tablets",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Muscle Pain",
+            "value": "Muscle Pain",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Cream/Ointment",
+                  "value": "Cream/Ointment",
+                  "is_final": true
+                },
+                {
+                  "label": "Drops",
+                  "value": "Drops",
+                  "is_final": true
+                },
+                {
+                  "label": "Gel",
+                  "value": "Gel",
+                  "is_final": true
+                },
+                {
+                  "label": "Liquid",
+                  "value": "Liquid",
+                  "is_final": true
+                },
+                {
+                  "label": "Oil",
+                  "value": "Oil",
+                  "is_final": true
+                },
+                {
+                  "label": "Patch",
+                  "value": "Patch",
+                  "is_final": true
+                },
+                {
+                  "label": "Patch/Plaster",
+                  "value": "Patch/Plaster",
+                  "is_final": true
+                },
+                {
+                  "label": "Pellets",
+                  "value": "Pellets",
+                  "is_final": true
+                },
+                {
+                  "label": "Sachets",
+                  "value": "Sachets",
+                  "is_final": true
+                },
+                {
+                  "label": "Spray",
+                  "value": "Spray",
+                  "is_final": true
+                },
+                {
+                  "label": "Suppositories",
+                  "value": "Suppositories",
+                  "is_final": true
+                },
+                {
+                  "label": "Suppository",
+                  "value": "Suppository",
+                  "is_final": true
+                },
+                {
+                  "label": "Supps",
+                  "value": "Supps",
+                  "is_final": true
+                },
+                {
+                  "label": "Tablets",
+                  "value": "Tablets",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Toothache",
+            "value": "Toothache",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Spray",
+                  "value": "Spray",
+                  "is_final": true
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "label": "Skin Care",
+      "value": "Skin Care",
+      "description": "",
+      "next_step": {
+        "step": 2,
+        "question": "Select an option",
+        "options": [
+          {
+            "label": "Burns",
+            "value": "Burns",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Tablets",
+                  "value": "Tablets",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Dryness/Cracking",
+            "value": "Dryness/Cracking",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Cream/Ointment",
+                  "value": "Cream/Ointment",
+                  "is_final": true
+                },
+                {
+                  "label": "Gel",
+                  "value": "Gel",
+                  "is_final": true
+                },
+                {
+                  "label": "Liquid",
+                  "value": "Liquid",
+                  "is_final": true
+                },
+                {
+                  "label": "Oil",
+                  "value": "Oil",
+                  "is_final": true
+                },
+                {
+                  "label": "Pellets",
+                  "value": "Pellets",
+                  "is_final": true
+                },
+                {
+                  "label": "Spray",
+                  "value": "Spray",
+                  "is_final": true
+                },
+                {
+                  "label": "Syrup/Liquid",
+                  "value": "Syrup/Liquid",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Infections",
+            "value": "Infections",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Capsules",
+                  "value": "Capsules",
+                  "is_final": true
+                },
+                {
+                  "label": "Cream/Ointment",
+                  "value": "Cream/Ointment",
+                  "is_final": true
+                },
+                {
+                  "label": "Gel",
+                  "value": "Gel",
+                  "is_final": true
+                },
+                {
+                  "label": "Liquid",
+                  "value": "Liquid",
+                  "is_final": true
+                },
+                {
+                  "label": "Lotion",
+                  "value": "Lotion",
+                  "is_final": true
+                },
+                {
+                  "label": "Nail Lacquer",
+                  "value": "Nail Lacquer",
+                  "is_final": true
+                },
+                {
+                  "label": "Ointment",
+                  "value": "Ointment",
+                  "is_final": true
+                },
+                {
+                  "label": "Patch/Plaster",
+                  "value": "Patch/Plaster",
+                  "is_final": true
+                },
+                {
+                  "label": "Solution",
+                  "value": "Solution",
+                  "is_final": true
+                },
+                {
+                  "label": "Spray",
+                  "value": "Spray",
+                  "is_final": true
+                },
+                {
+                  "label": "Tablets",
+                  "value": "Tablets",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Inflammation/Irritation",
+            "value": "Inflammation/Irritation",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Cream/Ointment",
+                  "value": "Cream/Ointment",
+                  "is_final": true
+                },
+                {
+                  "label": "Gel",
+                  "value": "Gel",
+                  "is_final": true
+                },
+                {
+                  "label": "Liquid",
+                  "value": "Liquid",
+                  "is_final": true
+                },
+                {
+                  "label": "Lotion",
+                  "value": "Lotion",
+                  "is_final": true
+                },
+                {
+                  "label": "Ointment",
+                  "value": "Ointment",
+                  "is_final": true
+                },
+                {
+                  "label": "Pellets",
+                  "value": "Pellets",
+                  "is_final": true
+                },
+                {
+                  "label": "Solution/Suspension",
+                  "value": "Solution/Suspension",
+                  "is_final": true
+                },
+                {
+                  "label": "Spray",
+                  "value": "Spray",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Scarring",
+            "value": "Scarring",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Cream/Ointment",
+                  "value": "Cream/Ointment",
+                  "is_final": true
+                },
+                {
+                  "label": "Gel",
+                  "value": "Gel",
+                  "is_final": true
+                },
+                {
+                  "label": "Liquid",
+                  "value": "Liquid",
+                  "is_final": true
+                },
+                {
+                  "label": "Lotion",
+                  "value": "Lotion",
+                  "is_final": true
+                },
+                {
+                  "label": "Oil",
+                  "value": "Oil",
+                  "is_final": true
+                },
+                {
+                  "label": "Patch/Plaster",
+                  "value": "Patch/Plaster",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Skin Care",
+            "value": "Skin Care",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Tablets",
+                  "value": "Tablets",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Skin Irritation",
+            "value": "Skin Irritation",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Cream/Ointment",
+                  "value": "Cream/Ointment",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Wound Care",
+            "value": "Wound Care",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Cream/Ointment",
+                  "value": "Cream/Ointment",
+                  "is_final": true
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "label": "Vitamins & Supplements",
+      "value": "Vitamins & Supplements",
+      "description": "",
+      "next_step": {
+        "step": 2,
+        "question": "Select an option",
+        "options": [
+          {
+            "label": "Calcium Supplements",
+            "value": "Calcium Supplements",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Drops",
+                  "value": "Drops",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Digestive Health",
+            "value": "Digestive Health",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Liquid",
+                  "value": "Liquid",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Headache",
+            "value": "Headache",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Pellets",
+                  "value": "Pellets",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Herbal Supplements",
+            "value": "Herbal Supplements",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Capsules",
+                  "value": "Capsules",
+                  "is_final": true
+                },
+                {
+                  "label": "Drops",
+                  "value": "Drops",
+                  "is_final": true
+                },
+                {
+                  "label": "Liquid",
+                  "value": "Liquid",
+                  "is_final": true
+                },
+                {
+                  "label": "Lozenges",
+                  "value": "Lozenges",
+                  "is_final": true
+                },
+                {
+                  "label": "Oil",
+                  "value": "Oil",
+                  "is_final": true
+                },
+                {
+                  "label": "Patch/Plaster",
+                  "value": "Patch/Plaster",
+                  "is_final": true
+                },
+                {
+                  "label": "Pellets",
+                  "value": "Pellets",
+                  "is_final": true
+                },
+                {
+                  "label": "Sachets",
+                  "value": "Sachets",
+                  "is_final": true
+                },
+                {
+                  "label": "Syrup/Liquid",
+                  "value": "Syrup/Liquid",
+                  "is_final": true
+                },
+                {
+                  "label": "Tablets",
+                  "value": "Tablets",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Hormonal Imbalance",
+            "value": "Hormonal Imbalance",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Tablets",
+                  "value": "Tablets",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Iron Supplements",
+            "value": "Iron Supplements",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Tablets",
+                  "value": "Tablets",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Lack of Concentration and Forgetfulness",
+            "value": "Lack of Concentration and Forgetfulness",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Tablets",
+                  "value": "Tablets",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Liver and Gall Bladder Stimulant",
+            "value": "Liver and Gall Bladder Stimulant",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Tablets",
+                  "value": "Tablets",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Minerals",
+            "value": "Minerals",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Capsules",
+                  "value": "Capsules",
+                  "is_final": true
+                },
+                {
+                  "label": "Granules",
+                  "value": "Granules",
+                  "is_final": true
+                },
+                {
+                  "label": "Injection",
+                  "value": "Injection",
+                  "is_final": true
+                },
+                {
+                  "label": "Lozenges",
+                  "value": "Lozenges",
+                  "is_final": true
+                },
+                {
+                  "label": "Sachets",
+                  "value": "Sachets",
+                  "is_final": true
+                },
+                {
+                  "label": "Tablets",
+                  "value": "Tablets",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Multivitamins",
+            "value": "Multivitamins",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Tablets",
+                  "value": "Tablets",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Muscle Pain",
+            "value": "Muscle Pain",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Liquid",
+                  "value": "Liquid",
+                  "is_final": true
+                },
+                {
+                  "label": "Tablets",
+                  "value": "Tablets",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Nervous Exhaustion",
+            "value": "Nervous Exhaustion",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Pellets",
+                  "value": "Pellets",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Omega-3 Fatty Acids",
+            "value": "Omega-3 Fatty Acids",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Tablets",
+                  "value": "Tablets",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Probiotics",
+            "value": "Probiotics",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Sachets",
+                  "value": "Sachets",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Restlessness/Agitation",
+            "value": "Restlessness/Agitation",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Pellets",
+                  "value": "Pellets",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Urinary Tract Infections",
+            "value": "Urinary Tract Infections",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Tablets",
+                  "value": "Tablets",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Vitamin B12",
+            "value": "Vitamin B12",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Injection",
+                  "value": "Injection",
+                  "is_final": true
+                },
+                {
+                  "label": "Tablets",
+                  "value": "Tablets",
+                  "is_final": true
+                },
+                {
+                  "label": "Vials",
+                  "value": "Vials",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Vitamin D",
+            "value": "Vitamin D",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Injection",
+                  "value": "Injection",
+                  "is_final": true
+                },
+                {
+                  "label": "Syrup/Liquid",
+                  "value": "Syrup/Liquid",
+                  "is_final": true
+                },
+                {
+                  "label": "Tablets",
+                  "value": "Tablets",
+                  "is_final": true
+                }
+              ]
+            }
+          },
+          {
+            "label": "Vitamins & Supplements",
+            "value": "Vitamins & Supplements",
+            "description": "",
+            "next_step": {
+              "step": 3,
+              "question": "Select a type",
+              "options": [
+                {
+                  "label": "Syrup/Liquid",
+                  "value": "Syrup/Liquid",
+                  "is_final": true
+                },
+                {
+                  "label": "Tablets",
+                  "value": "Tablets",
+                  "is_final": true
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
