@@ -47,7 +47,6 @@
             -webkit-font-smoothing: antialiased;
         }
 
-        /* --- UI COMPONENTS --- */
         .glass-card {
             background: var(--glass-bg);
             backdrop-filter: blur(16px);
@@ -72,7 +71,6 @@
         h2 { font-size: 18px; font-weight: 600; color: var(--text-main); letter-spacing: -0.2px; }
         p { font-size: 14px; line-height: 1.6; color: var(--text-sec); font-weight: 300; }
 
-        /* --- BUTTONS --- */
         .btn-primary {
             background: var(--primary);
             color: white;
@@ -92,7 +90,6 @@
         }
         .btn-primary:active { transform: scale(0.98); }
 
-        /* --- LANGUAGE SCREEN --- */
         .lang-grid {
             display: grid;
             grid-template-columns: 1fr;
@@ -118,7 +115,6 @@
         .lang-name { font-weight: 500; font-size: 16px; }
         .lang-sub { font-size: 12px; color: var(--text-sec); font-weight: 400; letter-spacing: 0.5px; text-transform: uppercase; }
 
-        /* --- MODALS --- */
         .modal-overlay {
             position: fixed; top: 0; left: 0; right: 0; bottom: 0;
             z-index: 2000;
@@ -147,7 +143,6 @@
             opacity: 1;
         }
 
-        /* --- HEADER & NAVIGATION --- */
         .step-header { margin-top: 16px; margin-bottom: 24px; display: flex; flex-direction: column; gap: 16px; }
         .header-top { display: flex; justify-content: space-between; align-items: center; }
         
@@ -188,7 +183,6 @@
         .service-btn.share i { color: var(--primary); }
         .service-btn span { font-size: 12px; font-weight: 500; color: var(--text-sec); }
 
-        /* --- WIZARD --- */
         .option-card {
             display: flex;
             align-items: center;
@@ -220,7 +214,6 @@
             color: white;
         }
 
-        /* --- RESULTS --- */
         .med-item { margin-bottom: 12px; overflow: hidden; background: rgba(255,255,255,0.01); }
         .med-header {
             display: flex; justify-content: space-between; align-items: center;
@@ -251,7 +244,6 @@
             border: 1px solid rgba(239, 68, 68, 0.15);
         }
 
-        /* --- FOOTER --- */
         .sticky-footer {
             position: sticky; bottom: 24px; left: 0; right: 0;
             margin-top: auto;
@@ -286,7 +278,6 @@
         .fade-in { animation: fadeIn 0.4s cubic-bezier(0.25, 0.8, 0.25, 1) forwards; }
         @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
 
-        /* Notification Toast */
         #toast {
             position: fixed; bottom: 80px; left: 50%; transform: translateX(-50%) translateY(20px);
             background: rgba(30, 41, 59, 0.95); border: 1px solid var(--glass-border);
@@ -307,7 +298,7 @@
                 <i class="fas fa-microscope" style="color: var(--primary); font-size: 24px;"></i>
             </div>
             <h1>Clinical Taxonomy</h1>
-            <p style="margin-bottom: 24px;">OTC Navigator (OTCN) utilizes a 4-step intuitive categorization model to filter standardized pharmaceutical data. Data output does not constitute prescriptive medical advice.</p>
+            <p style="margin-bottom: 24px;">OTC Navigator (OTCN) utilizes a 3-step hierarchical categorization model to filter standardized pharmaceutical data. Data output does not constitute prescriptive medical advice.</p>
             <button class="btn-primary" onclick="closeIntro()">Acknowledge</button>
         </div>
     </div>
@@ -405,7 +396,7 @@
             english: {
                 json: 'question_tree_english.json', csvValue: 'English',
                 disclaimerTitle: "Data Constraint Notice",
-                disclaimerText: "Data provided by this interface is standard taxonomic reference. It is <strong>not</strong> diagnostic or prescriptive. Refer severe symptomatology to a licensed clinician.",
+                disclaimerText: "Data provided by this interface is standard taxonomic reference. It is <strong>not</strong> diagnostic or prescriptive.",
                 btnText: "Acknowledge", showResultsText: "View Formularies", backText: "Back", resultsTitle: "Filtered Entities",
                 nearPharmacyText: "Pharmacy", nearHospitalText: "Hospital", shareText: "Export", shareCopied: "Data copied to clipboard."
             },
@@ -414,7 +405,7 @@
                 disclaimerTitle: "डेटा प्रतिबंध सूचना",
                 disclaimerText: "यह इंटरफ़ेस मानक टैक्सोनोमिक संदर्भ प्रदान करता है। यह नैदानिक या नुस्खे संबंधी नहीं है।",
                 btnText: "स्वीकार करें", showResultsText: "डेटा देखें", backText: "पीछे", resultsTitle: "फ़िल्टर की गई संस्थाएं",
-                nearPharmacyText: "फार्मेसी", nearHospitalText: "अस्पताल", shareText: "निर्यात करें", shareCopied: "डेटा क्लिपबोर्ड पर कॉपी किया गया।"
+                nearPharmacyText: "फार्मेसी", nearHospitalText: "अस्पताल", shareText: "निर्यात करें", shareCopied: "डेटा कॉपी किया गया।"
             },
             arabic: {
                 json: 'question_tree_arabic.json', csvValue: 'Arabic',
@@ -425,10 +416,10 @@
             },
             malayalam: {
                 json: 'question_tree_malayalam.json', csvValue: 'Malayalam',
-                disclaimerTitle: "ഡാറ്റ നിയന്ത്രണ അറിയിപ്പ്",
+                disclaimerTitle: "ഡാറ്റ അറിയിപ്പ്",
                 disclaimerText: "ഈ ഡാറ്റ സ്റ്റാൻഡേർഡ് റഫറൻസ് മാത്രമാണ്. ഇത് ഡയഗ്നോസ്റ്റിക് അല്ല.",
-                btnText: "അംഗീകരിക്കുക", showResultsText: "ഡാറ്റ കാണുക", backText: "തിരികെ", resultsTitle: "ഫിൽട്ടർ ചെയ്ത ഫലങ്ങൾ",
-                nearPharmacyText: "ഫാർമസി", nearHospitalText: "ആശുപത്രി", shareText: "കയറ്റുമതി ചെയ്യുക", shareCopied: "ഡാറ്റ പകർത്തി."
+                btnText: "അംഗീകരിക്കുക", showResultsText: "ഡാറ്റ കാണുക", backText: "തിരികെ", resultsTitle: "ഫലങ്ങൾ",
+                nearPharmacyText: "ഫാർമസി", nearHospitalText: "ആശുപത്രി", shareText: "കയറ്റുമതി", shareCopied: "പകർത്തി."
             },
             tagalog: {
                 json: 'question_tree_tagalog.json', csvValue: 'Tagalog',
@@ -444,9 +435,7 @@
         let questionTree = {};
         let currentStepNode = null;
         let historyStack = [];
-        
-        // Tracking 4-axis intuitive parameters
-        let currentFilters = { q1: null, q2: null, q3: null, q4: null };
+        let currentFilters = { cat1: null, cat2: null, cat3: null };
 
         function showToast(msg) {
             const toast = document.getElementById('toast');
@@ -499,22 +488,19 @@
                     download: true,
                     header: true,
                     complete: function(results) {
-                        // Map standardized columns based on 4-step pipeline
                         csvData = results.data.filter(r => 
-                            (r.clean_name || r.name || r.Name) && r.Language === config.csvValue
+                            (r.Name || r.clean_name) && r.Language === config.csvValue
                         );
                         initWizard();
                     }
                 });
             } catch (e) {
                 document.getElementById('question-text').innerText = "System Fault: Unable to retrieve taxonomy files.";
-                console.error(e);
             }
         }
 
         function initWizard() {
-            const rootNode = questionTree.options ? questionTree : questionTree;
-            renderStep(rootNode);
+            renderStep(questionTree);
             updateFooter();
             document.getElementById('footer-bar').classList.remove('hidden');
         }
@@ -554,13 +540,11 @@
 
         function handleSelection(option) {
             historyStack.push({ node: currentStepNode, filters: { ...currentFilters } });
-            const depth = historyStack.length;
+            const step = currentStepNode.step;
             
-            // Map depth to 4-step model
-            if (depth === 1) currentFilters.q1 = option.label;
-            if (depth === 2) currentFilters.q2 = option.label;
-            if (depth === 3) currentFilters.q3 = option.label;
-            if (depth === 4) currentFilters.q4 = option.label;
+            if (step === 1) currentFilters.cat1 = option.value;
+            if (step === 2) currentFilters.cat2 = option.value;
+            if (step === 3) currentFilters.cat3 = option.value;
 
             if (option.is_final || !option.next_step) {
                 showResults();
@@ -595,17 +579,16 @@
             
             if (prevCount !== newCount) {
                 btn.classList.remove('pulse-active');
-                void btn.offsetWidth; // trigger reflow
+                void btn.offsetWidth;
                 btn.classList.add('pulse-active');
             }
         }
 
         function getFilteredData() {
             return csvData.filter(row => {
-                if (currentFilters.q1 && row['Q1_Where'] !== currentFilters.q1) return false;
-                if (currentFilters.q2 && row['Q2_Problem'] !== currentFilters.q2) return false;
-                if (currentFilters.q3 && row['Q3_Context'] !== currentFilters.q3) return false;
-                if (currentFilters.q4 && row['Q4_UserForm'] !== currentFilters.q4) return false;
+                if (currentFilters.cat1 && row['Category 1'] !== currentFilters.cat1) return false;
+                if (currentFilters.cat2 && row['Category 2'] !== currentFilters.cat2) return false;
+                if (currentFilters.cat3 && row['Category 3'] !== currentFilters.cat3) return false;
                 return true;
             });
         }
@@ -624,11 +607,9 @@
 
         function showResults() {
             const results = getFilteredData();
-            
-            // Sort by numerical price if available
             results.sort((a, b) => {
-                const pA = parseFloat((a.price || a.Price || '0').replace(/[^0-9.]/g, '')) || 0;
-                const pB = parseFloat((b.price || b.Price || '0').replace(/[^0-9.]/g, '')) || 0;
+                const pA = parseFloat((a.Price || '0').replace(/[^0-9.]/g, '')) || 0;
+                const pB = parseFloat((b.Price || '0').replace(/[^0-9.]/g, '')) || 0;
                 return pA - pB;
             });
 
@@ -636,7 +617,7 @@
             listContainer.innerHTML = '';
 
             if (results.length === 0) {
-                listContainer.innerHTML = '<div class="glass-card" style="text-align:center; padding:32px; color:var(--text-sec); font-size: 14px;">No parameters matched.</div>';
+                listContainer.innerHTML = '<div class="glass-card" style="text-align:center; padding:32px; color:var(--text-sec); font-size: 14px;">No matches.</div>';
             } else {
                 results.forEach((item, index) => {
                     const li = document.createElement('li');
@@ -644,14 +625,13 @@
                     li.style.animation = `fadeIn 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) ${index * 0.05}s forwards`;
                     li.style.opacity = '0';
                     
-                    const warnings = item.warnings || item.Warnings;
-                    const desc = item.one_liner_desc || item.Description || 'No description available.';
-                    const name = item.clean_name || item.name || item.Name;
-                    const priceRaw = item.price || item.Price;
-                    const priceText = priceRaw ? `AED ${priceRaw}` : '--';
-                    const hierarchy = `${item.Q1_Where || ''} > ${item.Q2_Problem || ''}`;
+                    const warnings = item.Warnings;
+                    const desc = item.Description || 'No description.';
+                    const name = item.Name;
+                    const price = item.Price ? `AED ${item.Price}` : '--';
+                    const hierarchy = `${item['Category 1'] || ''} > ${item['Category 2'] || ''}`;
 
-                    const warningHtml = (warnings && warnings.trim() !== 'None' && warnings.trim() !== '') 
+                    const warningHtml = (warnings && warnings !== 'null' && warnings.trim() !== '') 
                         ? `<span class="warning-text"><i class="fas fa-triangle-exclamation" style="margin-top:2px;"></i> <span>${warnings}</span></span>` 
                         : '';
 
@@ -662,7 +642,7 @@
                                 <span class="med-name">${name}</span>
                             </div>
                             <div style="text-align:right; flex-shrink:0;">
-                                <div class="med-price">${priceText}</div>
+                                <div class="med-price">${price}</div>
                                 <i class="fas fa-chevron-down" style="font-size:10px; color:var(--text-sec); margin-top:6px; transition: transform 0.3s ease;"></i>
                             </div>
                         </div>
@@ -681,7 +661,6 @@
             document.getElementById('wizard-view').classList.add('hidden');
             document.getElementById('footer-bar').classList.add('hidden');
             document.getElementById('list-view').classList.remove('hidden');
-            
             toggleShareButtonVisibility(results.length > 0);
         }
 
@@ -691,47 +670,30 @@
 
             let shareText = `*Clinical Entity Export*\n\n`;
             results.forEach((item, index) => {
-                const name = item.clean_name || item.name || item.Name;
-                const price = item.price || item.Price || 'N/A';
-                const desc = item.one_liner_desc || item.Description;
-                const warnings = item.warnings || item.Warnings;
-
-                shareText += `${index + 1}. *${name}* - AED ${price}\n`;
-                if(desc) shareText += `Ind: ${desc}\n`;
-                if (warnings && warnings !== 'None') shareText += `⚠️ Contra: ${warnings}\n`;
-                shareText += `\n`;
+                shareText += `${index + 1}. *${item.Name}* - AED ${item.Price}\nInd: ${item.Description}\n\n`;
             });
 
             if (navigator.share) {
-                navigator.share({
-                    title: 'Data Export',
-                    text: shareText.replace(/\\n/g, '\n')
-                }).catch(err => console.log('Share error:', err));
+                navigator.share({ title: 'OTCN Data', text: shareText.replace(/\\n/g, '\n') });
             } else {
                 const textArea = document.createElement("textarea");
                 textArea.value = shareText.replace(/\\n/g, '\n');
                 document.body.appendChild(textArea);
                 textArea.select();
-                try {
-                    document.execCommand('copy');
-                    showToast(LANG_CONFIG[currentLanguage].shareCopied);
-                } catch (err) {
-                    console.error('Copy failure', err);
-                }
+                document.execCommand('copy');
+                showToast(LANG_CONFIG[currentLanguage].shareCopied);
                 document.body.removeChild(textArea);
             }
         }
 
         function navigateTo(type) {
             const query = type === 'pharmacy' ? 'pharmacy+near+me' : 'hospital+near+me';
-            const url = `https://www.google.com/maps/search/?api=1&query=$${query}`;
-            window.open(url, '_blank');
+            window.open(`https://www.google.com/maps/search/${query}`, '_blank');
         }
 
         function toggleDetails(headerEl) {
             const details = headerEl.nextElementSibling;
             const icon = headerEl.querySelector('.fa-chevron-down');
-            
             if (details.style.maxHeight) {
                 details.style.maxHeight = null;
                 details.classList.remove('open');
@@ -745,25 +707,21 @@
 
         function resetApp() {
             historyStack = [];
-            currentFilters = { q1: null, q2: null, q3: null, q4: null };
+            currentFilters = { cat1: null, cat2: null, cat3: null };
             document.getElementById('list-view').classList.add('hidden');
             document.getElementById('wizard-view').classList.remove('hidden');
             document.getElementById('app-container').classList.add('hidden');
             document.getElementById('footer-bar').classList.add('hidden');
             document.getElementById('language-view').classList.remove('hidden');
-            toggleShareButtonVisibility(false);
         }
 
         function getIconForLabel(label) {
             const l = label.toLowerCase();
-            if (l.includes('fever') || l.includes('temp') || l.includes('बुखार')) return 'fas fa-temperature-arrow-up';
-            if (l.includes('pain') || l.includes('head') || l.includes('दर्द')) return 'fas fa-head-side-virus';
-            if (l.includes('stomach') || l.includes('digest') || l.includes('पेट')) return 'fas fa-stomach';
-            if (l.includes('skin') || l.includes('rash') || l.includes('त्वचा')) return 'fas fa-allergies';
-            if (l.includes('cough') || l.includes('cold') || l.includes('खांसी')) return 'fas fa-lungs';
-            if (l.includes('baby') || l.includes('kid') || l.includes('बच्चा')) return 'fas fa-baby';
-            if (l.includes('eye') || l.includes('आंख')) return 'fas fa-eye';
-            if (l.includes('muscle') || l.includes('joint')) return 'fas fa-bone';
+            if (l.includes('pain') || l.includes('दर्द')) return 'fas fa-head-side-virus';
+            if (l.includes('cough') || l.includes('खांसी')) return 'fas fa-lungs';
+            if (l.includes('digest') || l.includes('पेट')) return 'fas fa-stomach';
+            if (l.includes('skin') || l.includes('त्वचा')) return 'fas fa-allergies';
+            if (l.includes('eye')) return 'fas fa-eye';
             return 'fas fa-capsules'; 
         }
     </script>
