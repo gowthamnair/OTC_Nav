@@ -3,24 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>OTCN | OTC Navigator</title>
+    <title>OTCN | Clinical Navigator</title>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
         :root {
             --primary: #818cf8;
             --primary-dark: #6366f1;
             --primary-light: rgba(129, 140, 248, 0.15);
             --bg-surface: #0f172a;
-            --glass-bg: rgba(30, 41, 59, 0.7);
-            --glass-border: rgba(255, 255, 255, 0.1);
+            --glass-bg: rgba(30, 41, 59, 0.65);
+            --glass-border: rgba(255, 255, 255, 0.08);
             --text-main: #f8fafc;
             --text-sec: #94a3b8;
             --danger: #f87171;
             --success: #34d399;
-            --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+            --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 25px -5px rgba(0, 0, 0, 0.3), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+            --transition-smooth: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
         }
 
         * { 
@@ -42,17 +44,18 @@
             display: flex;
             flex-direction: column;
             overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
         }
 
         /* --- UI COMPONENTS --- */
         .glass-card {
             background: var(--glass-bg);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            border-radius: 24px;
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-radius: 20px;
             border: 1px solid var(--glass-border);
-            box-shadow: var(--shadow);
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition-smooth);
         }
 
         .container {
@@ -61,27 +64,33 @@
             margin: 0 auto;
             padding: 24px;
             flex: 1;
+            display: flex;
+            flex-direction: column;
         }
 
-        h1 { font-size: 28px; font-weight: 700; letter-spacing: -0.5px; color: var(--text-main); }
-        h2 { font-size: 20px; font-weight: 600; color: var(--text-main); }
-        p { font-size: 15px; line-height: 1.6; color: var(--text-sec); }
+        h1 { font-size: 26px; font-weight: 700; letter-spacing: -0.5px; color: var(--text-main); margin-bottom: 8px; }
+        h2 { font-size: 18px; font-weight: 600; color: var(--text-main); letter-spacing: -0.2px; }
+        p { font-size: 14px; line-height: 1.6; color: var(--text-sec); font-weight: 300; }
 
         /* --- BUTTONS --- */
         .btn-primary {
             background: var(--primary);
             color: white;
             border: none;
-            padding: 16px;
-            border-radius: 16px;
-            font-size: 16px;
+            padding: 14px;
+            border-radius: 14px;
+            font-size: 15px;
             font-weight: 600;
             width: 100%;
             cursor: pointer;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-            transition: all 0.2s ease;
+            box-shadow: 0 4px 12px rgba(99, 102, 241, 0.2);
+            transition: var(--transition-smooth);
         }
-        .btn-primary:active { transform: scale(0.97); background: var(--primary-dark); }
+        .btn-primary:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 6px 16px rgba(99, 102, 241, 0.3);
+        }
+        .btn-primary:active { transform: scale(0.98); }
 
         /* --- LANGUAGE SCREEN --- */
         .lang-grid {
@@ -91,150 +100,162 @@
             margin-top: 30px;
         }
         .lang-btn {
-            background: rgba(255, 255, 255, 0.05);
-            padding: 18px 24px;
-            border-radius: 18px;
+            background: rgba(255, 255, 255, 0.03);
+            padding: 16px 20px;
+            border-radius: 16px;
             display: flex;
             justify-content: space-between;
             align-items: center;
             cursor: pointer;
             border: 1px solid var(--glass-border);
-            transition: all 0.2s ease;
+            transition: var(--transition-smooth);
         }
-        .lang-btn:hover { border-color: var(--primary); background: rgba(255, 255, 255, 0.1); }
-        .lang-name { font-weight: 600; font-size: 17px; }
-        .lang-sub { font-size: 13px; color: var(--text-sec); font-weight: 400; }
+        .lang-btn:hover { 
+            border-color: var(--primary); 
+            background: rgba(255, 255, 255, 0.06); 
+            transform: translateX(4px);
+        }
+        .lang-name { font-weight: 500; font-size: 16px; }
+        .lang-sub { font-size: 12px; color: var(--text-sec); font-weight: 400; letter-spacing: 0.5px; text-transform: uppercase; }
 
         /* --- MODALS --- */
         .modal-overlay {
             position: fixed; top: 0; left: 0; right: 0; bottom: 0;
             z-index: 2000;
-            background: rgba(0, 0, 0, 0.8);
+            background: rgba(15, 23, 42, 0.85);
             display: flex; align-items: center; justify-content: center;
             padding: 24px;
-            backdrop-filter: blur(12px);
+            backdrop-filter: blur(8px);
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+        .modal-overlay.active {
+            opacity: 1;
+            visibility: visible;
         }
         .modal-content {
-            padding: 32px;
+            padding: 32px 24px;
             text-align: center;
-            max-width: 400px;
-            animation: modalPop 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+            max-width: 380px;
+            transform: translateY(20px) scale(0.95);
+            opacity: 0;
+            transition: var(--transition-smooth);
         }
-        @keyframes modalPop { from { opacity: 0; transform: scale(0.9); } to { opacity: 1; transform: scale(1); } }
+        .modal-overlay.active .modal-content {
+            transform: translateY(0) scale(1);
+            opacity: 1;
+        }
 
         /* --- HEADER & NAVIGATION --- */
-        .step-header {
-            margin-top: 20px;
-            margin-bottom: 24px;
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-        }
-        .header-top {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        #main-header {
-            cursor: pointer;
-            user-select: none;
-            transition: opacity 0.2s;
-        }
+        .step-header { margin-top: 16px; margin-bottom: 24px; display: flex; flex-direction: column; gap: 16px; }
+        .header-top { display: flex; justify-content: space-between; align-items: center; }
+        
+        #main-header { cursor: pointer; user-select: none; transition: opacity 0.2s; margin: 0; }
         #main-header:hover { opacity: 0.8; }
         
         .back-btn {
-            background: rgba(255, 255, 255, 0.1);
-            border: none;
-            color: var(--text-main);
-            font-size: 14px;
-            font-weight: 600;
-            padding: 8px 14px;
-            border-radius: 10px;
-            cursor: pointer;
-            display: inline-flex; align-items: center; gap: 8px;
-        }
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
-            transition: all 0.3s ease;
-        }
-        .services-grid.sharing {
-            grid-template-columns: 1fr 1fr 1fr;
-        }
-        .service-btn {
             background: rgba(255, 255, 255, 0.05);
             border: 1px solid var(--glass-border);
+            color: var(--text-sec);
+            font-size: 13px;
+            font-weight: 500;
+            padding: 8px 12px;
+            border-radius: 10px;
+            cursor: pointer;
+            display: inline-flex; align-items: center; gap: 6px;
+            transition: var(--transition-smooth);
+        }
+        .back-btn:hover { background: rgba(255, 255, 255, 0.1); color: var(--text-main); }
+
+        .services-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; transition: var(--transition-smooth); }
+        .services-grid.sharing { grid-template-columns: 1fr 1fr 1fr; }
+        .service-btn {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--glass-border);
             padding: 10px;
-            border-radius: 14px;
+            border-radius: 12px;
             text-align: center;
             cursor: pointer;
-            transition: all 0.2s ease;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
+            transition: var(--transition-smooth);
+            display: flex; align-items: center; justify-content: center; gap: 8px;
         }
-        .service-btn:active { transform: scale(0.95); }
-        .service-btn i { font-size: 14px; }
-        .service-btn.pharmacy i { color: #34d399; }
-        .service-btn.hospital i { color: #f87171; }
-        .service-btn.share i { color: #818cf8; }
-        .service-btn span { font-size: 11px; font-weight: 600; color: var(--text-sec); }
+        .service-btn:hover { background: rgba(255, 255, 255, 0.06); transform: translateY(-1px); }
+        .service-btn:active { transform: scale(0.97); }
+        .service-btn i { font-size: 13px; }
+        .service-btn.pharmacy i { color: var(--success); }
+        .service-btn.hospital i { color: var(--danger); }
+        .service-btn.share i { color: var(--primary); }
+        .service-btn span { font-size: 12px; font-weight: 500; color: var(--text-sec); }
 
         /* --- WIZARD --- */
         .option-card {
             display: flex;
             align-items: center;
-            padding: 16px;
-            margin-bottom: 12px;
+            padding: 14px 16px;
+            margin-bottom: 10px;
             cursor: pointer;
-            border: 1px solid var(--glass-border);
-            background: rgba(255, 255, 255, 0.03);
+            background: rgba(255, 255, 255, 0.02);
         }
-        .option-card:hover { border-color: var(--primary); background: rgba(255, 255, 255, 0.07); }
+        .option-card:hover { 
+            border-color: rgba(129, 140, 248, 0.4); 
+            background: rgba(255, 255, 255, 0.05);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
         
         .icon-box {
-            width: 48px; height: 48px;
-            border-radius: 14px;
+            width: 42px; height: 42px;
+            border-radius: 12px;
             background: var(--primary-light);
             color: var(--primary);
             display: flex; align-items: center; justify-content: center;
-            font-size: 20px;
-            margin-right: 16px;
+            font-size: 18px;
+            margin-right: 14px;
             flex-shrink: 0;
+            transition: var(--transition-smooth);
+        }
+        .option-card:hover .icon-box {
+            background: var(--primary);
+            color: white;
         }
 
         /* --- RESULTS --- */
-        .med-item { margin-bottom: 12px; border: 1px solid var(--glass-border); overflow: hidden; background: rgba(255,255,255,0.02); }
+        .med-item { margin-bottom: 12px; overflow: hidden; background: rgba(255,255,255,0.01); }
         .med-header {
             display: flex; justify-content: space-between; align-items: center;
-            padding: 18px;
+            padding: 16px;
             cursor: pointer;
+            transition: background 0.2s ease;
         }
-        .med-name { font-weight: 600; font-size: 16px; color: var(--text-main); display: block; }
-        .med-cat { font-size: 11px; color: var(--text-sec); text-transform: uppercase; font-weight: 700; letter-spacing: 0.8px; }
-        .med-price { font-weight: 700; color: var(--primary); font-size: 15px; }
+        .med-header:hover { background: rgba(255,255,255,0.03); }
+        .med-name { font-weight: 600; font-size: 15px; color: var(--text-main); display: block; margin-top: 2px;}
+        .med-cat { font-size: 10px; color: var(--text-sec); text-transform: uppercase; font-weight: 600; letter-spacing: 0.5px; }
+        .med-price { font-weight: 600; color: var(--primary); font-size: 14px; }
         
         .med-details {
             max-height: 0; overflow: hidden;
-            transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            background: rgba(0, 0, 0, 0.2);
+            transition: max-height 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), opacity 0.3s ease;
+            background: rgba(0, 0, 0, 0.15);
+            opacity: 0;
         }
-        .med-details-inner { padding: 20px; font-size: 14px; border-top: 1px solid var(--glass-border); }
+        .med-details.open {
+            opacity: 1;
+        }
+        .med-details-inner { padding: 16px; font-size: 13px; border-top: 1px solid var(--glass-border); line-height: 1.5; color: #cbd5e1; }
         .warning-text { 
             color: #fca5a5; 
-            background: rgba(239, 68, 68, 0.1);
-            padding: 12px; border-radius: 10px;
-            margin-top: 12px; display: block; font-weight: 500;
-            border: 1px solid rgba(239, 68, 68, 0.2);
+            background: rgba(239, 68, 68, 0.08);
+            padding: 10px 12px; border-radius: 8px;
+            margin-top: 12px; display: flex; gap: 8px; align-items: flex-start; font-weight: 400; font-size: 12px;
+            border: 1px solid rgba(239, 68, 68, 0.15);
         }
 
         /* --- FOOTER --- */
         .sticky-footer {
-            position: fixed; bottom: 24px; left: 24px; right: 24px;
-            max-width: 452px; margin: 0 auto;
+            position: sticky; bottom: 24px; left: 0; right: 0;
+            margin-top: auto;
+            padding-top: 20px;
             z-index: 1000;
         }
         .result-count-btn {
@@ -242,47 +263,59 @@
             color: white;
             border: none;
             width: 100%;
-            padding: 18px 24px;
-            border-radius: 20px;
-            font-size: 15px;
+            padding: 16px 20px;
+            border-radius: 16px;
+            font-size: 14px;
             font-weight: 600;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+            box-shadow: var(--shadow-lg);
             cursor: pointer;
             display: flex; justify-content: space-between; align-items: center;
+            transition: var(--transition-smooth);
         }
-        .count-badge { background: white; color: var(--primary); padding: 4px 10px; border-radius: 8px; font-size: 12px; font-weight: 700; }
+        .result-count-btn:hover { transform: translateY(-2px); background: var(--primary-dark); }
+        .count-badge { background: white; color: var(--primary-dark); padding: 4px 10px; border-radius: 8px; font-size: 12px; font-weight: 700; transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1); }
+        
+        @keyframes pulseAlert {
+            0% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4); }
+            70% { box-shadow: 0 0 0 8px rgba(255, 255, 255, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0); }
+        }
+        .pulse-active .count-badge { animation: pulseAlert 1.5s infinite; transform: scale(1.05); }
 
         .hidden { display: none !important; }
-        .fade-in { animation: fadeIn 0.4s ease-out forwards; }
-        @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+        .fade-in { animation: fadeIn 0.4s cubic-bezier(0.25, 0.8, 0.25, 1) forwards; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
 
         /* Notification Toast */
         #toast {
-            position: fixed; bottom: 100px; left: 50%; transform: translateX(-50%);
-            background: #334155; color: white; padding: 12px 24px; border-radius: 12px;
-            font-size: 14px; font-weight: 500; z-index: 3000; transition: opacity 0.3s;
+            position: fixed; bottom: 80px; left: 50%; transform: translateX(-50%) translateY(20px);
+            background: rgba(30, 41, 59, 0.95); border: 1px solid var(--glass-border);
+            color: white; padding: 12px 20px; border-radius: 10px;
+            font-size: 13px; font-weight: 500; z-index: 3000; 
+            opacity: 0; visibility: hidden; transition: var(--transition-smooth);
+            box-shadow: var(--shadow-lg);
         }
+        #toast.show { opacity: 1; visibility: visible; transform: translateX(-50%) translateY(0); }
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
 </head>
 <body>
 
-    <!-- STARTUP INTRO MODAL -->
-    <div id="intro-modal" class="modal-overlay">
+    <div id="intro-modal" class="modal-overlay active">
         <div class="modal-content glass-card">
-            <div style="background: var(--primary-light); width: 64px; height: 64px; border-radius: 20px; display: inline-flex; align-items: center; justify-content: center; margin-bottom: 20px;">
-                <i class="fas fa-shield-virus" style="color: var(--primary); font-size: 28px;"></i>
+            <div style="background: var(--primary-light); width: 56px; height: 56px; border-radius: 16px; display: inline-flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                <i class="fas fa-microscope" style="color: var(--primary); font-size: 24px;"></i>
             </div>
-            <h1>OTC Navigator</h1>
-            <p style="margin-bottom: 24px;">OTC Navigator (OTCN) is a multilingual assistant designed to help access information regarding over-the-counter medications. It provides symptom-based guidance but doesnt constitute medical advice.</p>
-            <button class="btn-primary" onclick="closeIntro()">Get Started</button>
+            <h1>Clinical Taxonomy</h1>
+            <p style="margin-bottom: 24px;">OTC Navigator (OTCN) utilizes a 5-axis clinical categorization model to filter standardized pharmaceutical data. Data output does not constitute prescriptive medical advice.</p>
+            <button class="btn-primary" onclick="closeIntro()">Acknowledge</button>
         </div>
     </div>
 
-    <div id="language-view" class="container fade-in hidden">
-        <div style="text-align:center; margin-top:60px;">
-            <h1>Select Language</h1>
-            <p>Choose your preferred language to begin</p>
+    <div id="language-view" class="container hidden fade-in">
+        <div style="text-align:center; margin-top:40px; margin-bottom: 30px;">
+            <h1>Localization</h1>
+            <p>Select interface language</p>
         </div>
         
         <div class="lang-grid">
@@ -309,14 +342,14 @@
         </div>
     </div>
 
-    <div id="disclaimer-modal" class="modal-overlay hidden">
+    <div id="disclaimer-modal" class="modal-overlay">
         <div class="modal-content glass-card">
-            <div style="width: 50px; height: 50px; background: rgba(249, 115, 22, 0.1); color: #f97316; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; font-size: 20px;">
+            <div style="width: 48px; height: 48px; background: rgba(249, 115, 22, 0.1); color: #f97316; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; font-size: 20px;">
                 <i class="fas fa-exclamation-triangle"></i>
             </div>
-            <h2 id="disclaimer-title">Medical Disclaimer</h2>
-            <p id="disclaimer-text" style="font-size: 14px; margin-bottom: 24px;"></p>
-            <button id="disclaimer-btn" class="btn-primary" onclick="acceptDisclaimer()">I Understand</button>
+            <h2 id="disclaimer-title">Protocol Disclaimer</h2>
+            <p id="disclaimer-text" style="font-size: 13px; margin-bottom: 24px; color: var(--text-sec);"></p>
+            <button id="disclaimer-btn" class="btn-primary" onclick="acceptDisclaimer()">Proceed</button>
         </div>
     </div>
 
@@ -325,7 +358,7 @@
             <div class="header-top">
                 <h1 id="main-header" onclick="resetApp()">OTCN</h1>
                 <button id="back-btn" class="back-btn hidden" onclick="goBack()">
-                    <i class="fas fa-arrow-left"></i> <span id="back-text">Back</span>
+                    <i class="fas fa-chevron-left" style="font-size: 10px;"></i> <span id="back-text">Back</span>
                 </button>
             </div>
             <div class="services-grid" id="header-nav">
@@ -338,71 +371,71 @@
                     <span id="near-hospital-text">Hospital</span>
                 </div>
                 <div class="service-btn share hidden" id="share-btn" onclick="shareResults()">
-                    <i class="fas fa-share-alt"></i>
-                    <span id="share-text">Share</span>
+                    <i class="fas fa-share-nodes"></i>
+                    <span id="share-text">Export</span>
                 </div>
             </div>
         </div>
 
-        <div id="wizard-view" class="fade-in">
-            <h2 id="question-text" style="margin-bottom: 24px; line-height: 1.3;">Loading...</h2>
+        <div id="wizard-view" class="fade-in" style="flex: 1;">
+            <h2 id="question-text" style="margin-bottom: 20px; font-weight: 500;">Initializing dataset...</h2>
             <div id="options-container"></div>
         </div>
 
-        <div id="list-view" class="hidden fade-in">
-            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px;">
-                <h2 id="results-title">Results</h2>
-                <button onclick="resetApp()" style="background:none; border:none; color:var(--primary); font-weight:600; cursor:pointer;">Restart</button>
+        <div id="list-view" class="hidden fade-in" style="flex: 1; padding-bottom: 20px;">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:16px;">
+                <h2 id="results-title">Extracted Entities</h2>
+                <button onclick="resetApp()" style="background:none; border:none; color:var(--text-sec); font-size: 13px; cursor:pointer; transition: color 0.2s;"><i class="fas fa-rotate-right"></i> Reset</button>
             </div>
             <ul id="medication-list" style="list-style: none; padding: 0; margin: 0;"></ul>
         </div>
+        
+        <div class="sticky-footer hidden" id="footer-bar">
+            <button class="result-count-btn" id="show-results-btn" onclick="showResults()">
+                <span id="show-results-text">View Filtered Data</span>
+                <span id="count-badge" class="count-badge">0</span>
+            </button>
+        </div>
     </div>
 
-    <div class="sticky-footer hidden" id="footer-bar">
-        <button class="result-count-btn" onclick="showResults()">
-            <span id="show-results-text">Show Medications</span>
-            <span id="count-badge" class="count-badge">0</span>
-        </button>
-    </div>
-
-    <div id="toast" class="hidden"></div>
+    <div id="toast"></div>
 
     <script>
         const LANG_CONFIG = {
             english: {
                 json: 'question_tree_english.json', csvValue: 'English',
-                disclaimerTitle: "Important Notice",
-                disclaimerText: "This information is for educational purposes only and does <strong>not</strong> constitute medical advice. Always consult a doctor for serious symptoms.",
-                btnText: "I Understand", showResultsText: "Show Medications", backText: "Back", resultsTitle: "Recommended OTC",
-                nearPharmacyText: "Pharmacy", nearHospitalText: "Hospital", shareText: "Share", shareCopied: "List copied to clipboard!"
+                disclaimerTitle: "Data Constraint Notice",
+                disclaimerText: "Data provided by this interface is standard taxonomic reference. It is <strong>not</strong> diagnostic or prescriptive. Refer severe symptomatology to a licensed clinician.",
+                btnText: "Acknowledge", showResultsText: "View Formularies", backText: "Back", resultsTitle: "Filtered Entities",
+                nearPharmacyText: "Pharmacy", nearHospitalText: "Hospital", shareText: "Export", shareCopied: "Data copied to clipboard."
             },
             hindi: {
                 json: 'question_tree_hindi.json', csvValue: 'Hindi',
-                disclaimerTitle: "महत्वपूर्ण सूचना",
-                disclaimerText: "यह जानकारी केवल शैक्षिक उद्देश्यों के लिए है और चिकित्सा सलाह नहीं है। गंभीर लक्षणों के लिए हमेशा डॉक्टर से परामर्श लें।",
-                btnText: "मैं समझता हूँ", showResultsText: "दवाएं देखें", backText: "पीछे", resultsTitle: "परिणाम",
-                nearPharmacyText: "फार्मेसी", nearHospitalText: "अस्पताल", shareText: "साझा करें", shareCopied: "सूची क्लिपबोर्ड पर कॉपी की गई!"
+                disclaimerTitle: "डेटा प्रतिबंध सूचना",
+                disclaimerText: "यह इंटरफ़ेस मानक टैक्सोनोमिक संदर्भ प्रदान करता है। यह नैदानिक या नुस्खे संबंधी नहीं है।",
+                btnText: "स्वीकार करें", showResultsText: "डेटा देखें", backText: "पीछे", resultsTitle: "फ़िल्टर की गई संस्थाएं",
+                nearPharmacyText: "फार्मेसी", nearHospitalText: "अस्पताल", shareText: "निर्यात करें", shareCopied: "डेटा क्लिपबोर्ड पर कॉपी किया गया।"
             },
             arabic: {
                 json: 'question_tree_arabic.json', csvValue: 'Arabic',
-                disclaimerTitle: "ملاحظة هامة",
-                disclaimerText: "هذه المعلومات للأغراض التعليمية فقط ولا تعتبر نصيحة طبية. استشر الطبيب دائمًا في حالة وجود أعراض خطيرة.",
-                btnText: "أنا أفهم", showResultsText: "عرض الأدوية", backText: "عودة", resultsTitle: "النتائج",
-                nearPharmacyText: "صيدلية", nearHospitalText: "مستشفى", shareText: "مشاركة", shareCopied: "تم نسخ القائمة!"
+                disclaimerTitle: "إشعار قيود البيانات",
+                disclaimerText: "البيانات المقدمة هي مرجع تصنيفي قياسي. وهي ليست تشخيصية أو وصفية.",
+                btnText: "أقر بذلك", showResultsText: "عرض البيانات", backText: "عودة", resultsTitle: "الكيانات المصفاة",
+                nearPharmacyText: "صيدلية", nearHospitalText: "مستشفى", shareText: "تصدير", shareCopied: "تم نسخ البيانات."
             },
             malayalam: {
                 json: 'question_tree_malayalam.json', csvValue: 'Malayalam',
-                disclaimerTitle: "പ്രധാന അറിയിപ്പ്",
-                disclaimerText: "ഈ വിവരങ്ങൾ വിദ്യാഭ്യാസപരമായ ആവശ്യങ്ങൾക്ക് മാത്രമുള്ളതാണ്, വൈദ്യോപദേശമല്ല. ഗുരുതരമായ ലക്ഷണങ്ങൾ ഉണ്ടെങ്കിൽ ഡോക്ടറെ സമീപിക്കുക.",
-                btnText: "എനിക്ക് മനസ്സിലായി", showResultsText: "മരുന്നുകൾ കാണുക", backText: "തിരികെ", resultsTitle: "ഫലങ്ങൾ",
-                nearPharmacyText: "ഫാർമസി", nearHospitalText: "ആശുപത്രി", shareText: "പങ്കിടുക", shareCopied: "പട്ടിക പകർത്തി!"
+                disclaimerTitle: "ഡാറ്റ നിയന്ത്രണ അറിയിപ്പ്",
+                disclaimerText: "ഈ ഡാറ്റ സ്റ്റാൻഡേർഡ് റഫറൻസ് മാത്രമാണ്. ഇത് ഡയഗ്നോസ്റ്റിക് അല്ല.",
+                btnText: "അംഗീകരിക്കുക", showResultsText: "ഡാറ്റ കാണുക", backText: "തിരികെ", resultsTitle: "ഫിൽട്ടർ ചെയ്ത ഫലങ്ങൾ",
+                nearPharmacyText: "ഫാർമസി", nearHospitalText: "ആശുപത്രി", shareText: "കയറ്റുമതി ചെയ്യുക", shareCopied: "ഡാറ്റ പകർത്തി."
             },
             tagalog: {
                 json: 'question_tree_tagalog.json', csvValue: 'Tagalog',
-                disclaimerTitle: "Mahalagang Paunawa",
-                disclaimerText: "Ang impormasyong ito ay para sa layuning pang-edukasyon lamang at hindi medikal na payo. Laging kumunsulta sa doktor para sa malubhang sintomas.",
-                btnText: "Naiintindihan ko", showResultsText: "Ipakita ang mga Gamot", backText: "Bumalik", resultsTitle: "Mga Resulta",
-                nearPharmacyText: "Botika", nearHospitalText: "Ospital", shareText: "Ibahagi", shareCopied: "Listahan ay nakopya!"
+                disclaimerTitle: "Paunawa sa Limitasyon",
+                disclaimerText: "Ang data na ito ay karaniwang sanggunian lamang at hindi diagnostic.",
+                btnText: "Sumasang-ayon ako", showResultsText: "Tingnan ang Data", backText: "Bumalik", resultsTitle: "Na-filter na Data",
+                nearPharmacyText: "Botika", nearHospitalText: "Ospital", shareText: "I-export", shareCopied: "Nakopya ang data."
             }
         };
 
@@ -411,18 +444,23 @@
         let questionTree = {};
         let currentStepNode = null;
         let historyStack = [];
-        let currentFilters = { cat1: null, cat2: null, cat3: null };
+        
+        // Tracking 5-axis clinical parameters
+        let currentFilters = { l1: null, l2: null, l3: null, l4: null, l5: null };
 
         function showToast(msg) {
             const toast = document.getElementById('toast');
             toast.innerText = msg;
-            toast.classList.remove('hidden');
-            setTimeout(() => toast.classList.add('hidden'), 2000);
+            toast.classList.add('show');
+            setTimeout(() => toast.classList.remove('show'), 2500);
         }
 
         function closeIntro() {
-            document.getElementById('intro-modal').classList.add('hidden');
-            document.getElementById('language-view').classList.remove('hidden');
+            document.getElementById('intro-modal').classList.remove('active');
+            setTimeout(() => {
+                document.getElementById('intro-modal').style.display = 'none';
+                document.getElementById('language-view').classList.remove('hidden');
+            }, 300);
         }
 
         function selectLanguage(lang) {
@@ -439,13 +477,16 @@
             document.getElementById('share-text').innerText = config.shareText;
 
             document.getElementById('language-view').classList.add('hidden');
-            document.getElementById('disclaimer-modal').classList.remove('hidden');
+            document.getElementById('disclaimer-modal').classList.add('active');
         }
 
         function acceptDisclaimer() {
-            document.getElementById('disclaimer-modal').classList.add('hidden');
-            document.getElementById('app-container').classList.remove('hidden');
-            loadData();
+            document.getElementById('disclaimer-modal').classList.remove('active');
+            setTimeout(() => {
+                document.getElementById('disclaimer-modal').style.display = 'none';
+                document.getElementById('app-container').classList.remove('hidden');
+                loadData();
+            }, 300);
         }
 
         async function loadData() {
@@ -458,14 +499,15 @@
                     download: true,
                     header: true,
                     complete: function(results) {
+                        // Map standardized 5-axis columns
                         csvData = results.data.filter(r => 
-                            r.Name && r.Price && r.Language === config.csvValue
+                            (r.clean_name || r.name || r.Name) && r.Language === config.csvValue
                         );
                         initWizard();
                     }
                 });
             } catch (e) {
-                document.getElementById('question-text').innerText = "Error loading files. Check connectivity and file names.";
+                document.getElementById('question-text').innerText = "System Fault: Unable to retrieve taxonomy files.";
                 console.error(e);
             }
         }
@@ -479,23 +521,26 @@
 
         function renderStep(nodeData) {
             currentStepNode = nodeData;
-            document.getElementById('question-text').innerText = nodeData.question || "Select an option";
+            document.getElementById('question-text').innerText = nodeData.question || "Select parameter:";
             const container = document.getElementById('options-container');
             container.innerHTML = '';
 
             if (nodeData.options) {
-                nodeData.options.forEach(opt => {
+                nodeData.options.forEach((opt, index) => {
                     const card = document.createElement('div');
-                    card.className = 'glass-card option-card fade-in';
+                    card.className = 'glass-card option-card';
+                    card.style.animation = `fadeIn 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) ${index * 0.05}s forwards`;
+                    card.style.opacity = '0';
+                    card.style.transform = 'translateY(10px)';
+                    
                     const iconClass = getIconForLabel(opt.label);
                     
                     card.innerHTML = `
                         <div class="icon-box"><i class="${iconClass}"></i></div>
                         <div style="flex:1">
-                            <div style="font-weight:600; font-size:16px; color:var(--text-main)">${opt.label}</div>
-                            <div style="font-size:13px; color:var(--text-sec); margin-top:2px;">${opt.description || ""}</div>
+                            <div style="font-weight:500; font-size:15px; color:var(--text-main)">${opt.label}</div>
                         </div>
-                        <i class="fas fa-chevron-right" style="color:#475569; font-size:14px"></i>
+                        <i class="fas fa-chevron-right" style="color:var(--text-sec); font-size:12px"></i>
                     `;
                     card.onclick = () => handleSelection(opt);
                     container.appendChild(card);
@@ -504,17 +549,19 @@
 
             const backBtn = document.getElementById('back-btn');
             historyStack.length > 0 ? backBtn.classList.remove('hidden') : backBtn.classList.add('hidden');
-            
-            // Hide share button when moving back/away from results
             toggleShareButtonVisibility(false);
         }
 
         function handleSelection(option) {
             historyStack.push({ node: currentStepNode, filters: { ...currentFilters } });
             const depth = historyStack.length;
-            if (depth === 1) currentFilters.cat1 = option.value;
-            if (depth === 2) currentFilters.cat2 = option.value;
-            if (depth === 3) currentFilters.cat3 = option.value;
+            
+            // Map depth to 5-axis model
+            if (depth === 1) currentFilters.l1 = option.label;
+            if (depth === 2) currentFilters.l2 = option.label;
+            if (depth === 3) currentFilters.l3 = option.label;
+            if (depth === 4) currentFilters.l4 = option.label;
+            if (depth === 5) currentFilters.l5 = option.label;
 
             if (option.is_final || !option.next_step) {
                 showResults();
@@ -529,23 +576,38 @@
             const prevState = historyStack.pop();
             currentStepNode = prevState.node;
             currentFilters = prevState.filters;
+            
             document.getElementById('list-view').classList.add('hidden');
             document.getElementById('wizard-view').classList.remove('hidden');
+            document.getElementById('footer-bar').classList.remove('hidden');
+            
             renderStep(currentStepNode);
             updateFooter();
             toggleShareButtonVisibility(false);
         }
 
         function updateFooter() {
-            const count = getFilteredData().length;
-            document.getElementById('count-badge').innerText = count;
+            const prevCount = parseInt(document.getElementById('count-badge').innerText) || 0;
+            const newCount = getFilteredData().length;
+            const badge = document.getElementById('count-badge');
+            const btn = document.getElementById('show-results-btn');
+            
+            badge.innerText = newCount;
+            
+            if (prevCount !== newCount) {
+                btn.classList.remove('pulse-active');
+                void btn.offsetWidth; // trigger reflow
+                btn.classList.add('pulse-active');
+            }
         }
 
         function getFilteredData() {
             return csvData.filter(row => {
-                if (currentFilters.cat1 && row['Category 1'] !== currentFilters.cat1) return false;
-                if (currentFilters.cat2 && row['Category 2'] !== currentFilters.cat2) return false;
-                if (currentFilters.cat3 && row['Category 3'] !== currentFilters.cat3) return false;
+                if (currentFilters.l1 && row['L1_System'] !== currentFilters.l1) return false;
+                if (currentFilters.l2 && row['L2_Symptom'] !== currentFilters.l2) return false;
+                if (currentFilters.l3 && row['L3_SpecificType'] !== currentFilters.l3) return false;
+                if (currentFilters.l4 && row['L4_Demographic'] !== currentFilters.l4) return false;
+                if (currentFilters.l5 && row['L5_Form'] !== currentFilters.l5) return false;
                 return true;
             });
         }
@@ -564,9 +626,11 @@
 
         function showResults() {
             const results = getFilteredData();
+            
+            // Sort by numerical price if available
             results.sort((a, b) => {
-                const pA = parseFloat(a.Price.replace(/[^0-9.]/g, '')) || 0;
-                const pB = parseFloat(b.Price.replace(/[^0-9.]/g, '')) || 0;
+                const pA = parseFloat((a.price || a.Price || '0').replace(/[^0-9.]/g, '')) || 0;
+                const pB = parseFloat((b.price || b.Price || '0').replace(/[^0-9.]/g, '')) || 0;
                 return pA - pB;
             });
 
@@ -574,27 +638,40 @@
             listContainer.innerHTML = '';
 
             if (results.length === 0) {
-                listContainer.innerHTML = '<div style="text-align:center; padding:40px; color:var(--text-sec)">No medications found.</div>';
+                listContainer.innerHTML = '<div class="glass-card" style="text-align:center; padding:32px; color:var(--text-sec); font-size: 14px;">No parameters matched.</div>';
             } else {
-                results.forEach(item => {
+                results.forEach((item, index) => {
                     const li = document.createElement('li');
-                    li.className = 'glass-card med-item fade-in';
-                    const warningHtml = item.Warnings ? `<span class="warning-text"><i class="fas fa-exclamation-circle"></i> ${item.Warnings}</span>` : '';
+                    li.className = 'glass-card med-item';
+                    li.style.animation = `fadeIn 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) ${index * 0.05}s forwards`;
+                    li.style.opacity = '0';
+                    
+                    const warnings = item.warnings || item.Warnings;
+                    const desc = item.one_liner_desc || item.Description || 'No description available.';
+                    const name = item.clean_name || item.name || item.Name;
+                    const priceRaw = item.price || item.Price;
+                    const priceText = priceRaw ? `AED ${priceRaw}` : '--';
+                    const hierarchy = `${item.L1_System || ''} > ${item.L2_Symptom || ''}`;
+
+                    const warningHtml = (warnings && warnings.trim() !== 'None' && warnings.trim() !== '') 
+                        ? `<span class="warning-text"><i class="fas fa-triangle-exclamation" style="margin-top:2px;"></i> <span>${warnings}</span></span>` 
+                        : '';
 
                     li.innerHTML = `
                         <div class="med-header" onclick="toggleDetails(this)">
-                            <div>
-                                <span class="med-cat">${item['Category 1']}</span>
-                                <span class="med-name">${item.Name}</span>
+                            <div style="flex:1; padding-right:12px;">
+                                <span class="med-cat">${hierarchy}</span>
+                                <span class="med-name">${name}</span>
                             </div>
-                            <div style="text-align:right">
-                                <div class="med-price">AED ${item.Price}</div>
-                                <i class="fas fa-chevron-down" style="font-size:12px; color:#475569; margin-top:4px"></i>
+                            <div style="text-align:right; flex-shrink:0;">
+                                <div class="med-price">${priceText}</div>
+                                <i class="fas fa-chevron-down" style="font-size:10px; color:var(--text-sec); margin-top:6px; transition: transform 0.3s ease;"></i>
                             </div>
                         </div>
                         <div class="med-details">
                             <div class="med-details-inner">
-                                <p style="margin-bottom:10px"><strong>Indications:</strong><br>${item.Description}</p>
+                                <span style="display:block; margin-bottom:4px; color:var(--text-main); font-weight:500;">Clinical Indication:</span>
+                                ${desc}
                                 ${warningHtml}
                             </div>
                         </div>
@@ -604,9 +681,9 @@
             }
 
             document.getElementById('wizard-view').classList.add('hidden');
+            document.getElementById('footer-bar').classList.add('hidden');
             document.getElementById('list-view').classList.remove('hidden');
             
-            // Show share button when results are visible
             toggleShareButtonVisibility(results.length > 0);
         }
 
@@ -614,22 +691,25 @@
             const results = getFilteredData();
             if (results.length === 0) return;
 
-            let shareText = `*OTCN - Medication Recommendations*\n\n`;
+            let shareText = `*Clinical Entity Export*\n\n`;
             results.forEach((item, index) => {
-                shareText += `${index + 1}. *${item.Name}* - AED ${item.Price}\n`;
-                shareText += `Indications: ${item.Description}\n`;
-                if (item.Warnings) shareText += `⚠️ Warning: ${item.Warnings}\n`;
+                const name = item.clean_name || item.name || item.Name;
+                const price = item.price || item.Price || 'N/A';
+                const desc = item.one_liner_desc || item.Description;
+                const warnings = item.warnings || item.Warnings;
+
+                shareText += `${index + 1}. *${name}* - AED ${price}\n`;
+                if(desc) shareText += `Ind: ${desc}\n`;
+                if (warnings && warnings !== 'None') shareText += `⚠️ Contra: ${warnings}\n`;
                 shareText += `\n`;
             });
-            shareText += `_Provided by OTC Navigator_`;
 
             if (navigator.share) {
                 navigator.share({
-                    title: 'OTCN Recommendations',
+                    title: 'Data Export',
                     text: shareText.replace(/\\n/g, '\n')
                 }).catch(err => console.log('Share error:', err));
             } else {
-                // Fallback: Copy to clipboard
                 const textArea = document.createElement("textarea");
                 textArea.value = shareText.replace(/\\n/g, '\n');
                 document.body.appendChild(textArea);
@@ -638,7 +718,7 @@
                     document.execCommand('copy');
                     showToast(LANG_CONFIG[currentLanguage].shareCopied);
                 } catch (err) {
-                    console.error('Fallback copy error', err);
+                    console.error('Copy failure', err);
                 }
                 document.body.removeChild(textArea);
             }
@@ -646,17 +726,20 @@
 
         function navigateTo(type) {
             const query = type === 'pharmacy' ? 'pharmacy+near+me' : 'hospital+near+me';
-            const url = `https://www.google.com/maps/search/?api=1&query=${query}`;
+            const url = `https://www.google.com/maps/search/?api=1&query=$${query}`;
             window.open(url, '_blank');
         }
 
         function toggleDetails(headerEl) {
             const details = headerEl.nextElementSibling;
             const icon = headerEl.querySelector('.fa-chevron-down');
+            
             if (details.style.maxHeight) {
                 details.style.maxHeight = null;
+                details.classList.remove('open');
                 icon.style.transform = 'rotate(0deg)';
             } else {
+                details.classList.add('open');
                 details.style.maxHeight = details.scrollHeight + "px";
                 icon.style.transform = 'rotate(180deg)';
             }
@@ -664,7 +747,7 @@
 
         function resetApp() {
             historyStack = [];
-            currentFilters = { cat1: null, cat2: null, cat3: null };
+            currentFilters = { l1: null, l2: null, l3: null, l4: null, l5: null };
             document.getElementById('list-view').classList.add('hidden');
             document.getElementById('wizard-view').classList.remove('hidden');
             document.getElementById('app-container').classList.add('hidden');
@@ -675,14 +758,15 @@
 
         function getIconForLabel(label) {
             const l = label.toLowerCase();
-            if (l.includes('fever') || l.includes('temp') || l.includes('बुखार')) return 'fas fa-thermometer-half';
+            if (l.includes('fever') || l.includes('temp') || l.includes('बुखार')) return 'fas fa-temperature-arrow-up';
             if (l.includes('pain') || l.includes('head') || l.includes('दर्द')) return 'fas fa-head-side-virus';
-            if (l.includes('stomach') || l.includes('digest') || l.includes('पेट')) return 'fas fa-bacteria';
+            if (l.includes('stomach') || l.includes('digest') || l.includes('पेट')) return 'fas fa-stomach';
             if (l.includes('skin') || l.includes('rash') || l.includes('त्वचा')) return 'fas fa-allergies';
-            if (l.includes('cough') || l.includes('cold') || l.includes('खांसी')) return 'fas fa-wind';
-            if (l.includes('baby') || l.includes('kid') || l.includes('बच्चा')) return 'fas fa-child';
+            if (l.includes('cough') || l.includes('cold') || l.includes('खांसी')) return 'fas fa-lungs';
+            if (l.includes('baby') || l.includes('kid') || l.includes('बच्चा')) return 'fas fa-baby';
             if (l.includes('eye') || l.includes('आंख')) return 'fas fa-eye';
-            return 'fas fa-pills'; 
+            if (l.includes('muscle') || l.includes('joint')) return 'fas fa-bone';
+            return 'fas fa-capsules'; 
         }
     </script>
 </body>
