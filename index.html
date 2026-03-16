@@ -307,7 +307,7 @@
                 <i class="fas fa-microscope" style="color: var(--primary); font-size: 24px;"></i>
             </div>
             <h1>Clinical Taxonomy</h1>
-            <p style="margin-bottom: 24px;">OTC Navigator (OTCN) utilizes a 5-axis clinical categorization model to filter standardized pharmaceutical data. Data output does not constitute prescriptive medical advice.</p>
+            <p style="margin-bottom: 24px;">OTC Navigator (OTCN) utilizes a 4-step intuitive categorization model to filter standardized pharmaceutical data. Data output does not constitute prescriptive medical advice.</p>
             <button class="btn-primary" onclick="closeIntro()">Acknowledge</button>
         </div>
     </div>
@@ -445,8 +445,8 @@
         let currentStepNode = null;
         let historyStack = [];
         
-        // Tracking 5-axis clinical parameters
-        let currentFilters = { l1: null, l2: null, l3: null, l4: null, l5: null };
+        // Tracking 4-axis intuitive parameters
+        let currentFilters = { q1: null, q2: null, q3: null, q4: null };
 
         function showToast(msg) {
             const toast = document.getElementById('toast');
@@ -499,7 +499,7 @@
                     download: true,
                     header: true,
                     complete: function(results) {
-                        // Map standardized 5-axis columns
+                        // Map standardized columns based on 4-step pipeline
                         csvData = results.data.filter(r => 
                             (r.clean_name || r.name || r.Name) && r.Language === config.csvValue
                         );
@@ -556,12 +556,11 @@
             historyStack.push({ node: currentStepNode, filters: { ...currentFilters } });
             const depth = historyStack.length;
             
-            // Map depth to 5-axis model
-            if (depth === 1) currentFilters.l1 = option.label;
-            if (depth === 2) currentFilters.l2 = option.label;
-            if (depth === 3) currentFilters.l3 = option.label;
-            if (depth === 4) currentFilters.l4 = option.label;
-            if (depth === 5) currentFilters.l5 = option.label;
+            // Map depth to 4-step model
+            if (depth === 1) currentFilters.q1 = option.label;
+            if (depth === 2) currentFilters.q2 = option.label;
+            if (depth === 3) currentFilters.q3 = option.label;
+            if (depth === 4) currentFilters.q4 = option.label;
 
             if (option.is_final || !option.next_step) {
                 showResults();
@@ -603,11 +602,10 @@
 
         function getFilteredData() {
             return csvData.filter(row => {
-                if (currentFilters.l1 && row['L1_System'] !== currentFilters.l1) return false;
-                if (currentFilters.l2 && row['L2_Symptom'] !== currentFilters.l2) return false;
-                if (currentFilters.l3 && row['L3_SpecificType'] !== currentFilters.l3) return false;
-                if (currentFilters.l4 && row['L4_Demographic'] !== currentFilters.l4) return false;
-                if (currentFilters.l5 && row['L5_Form'] !== currentFilters.l5) return false;
+                if (currentFilters.q1 && row['Q1_Where'] !== currentFilters.q1) return false;
+                if (currentFilters.q2 && row['Q2_Problem'] !== currentFilters.q2) return false;
+                if (currentFilters.q3 && row['Q3_Context'] !== currentFilters.q3) return false;
+                if (currentFilters.q4 && row['Q4_UserForm'] !== currentFilters.q4) return false;
                 return true;
             });
         }
@@ -651,7 +649,7 @@
                     const name = item.clean_name || item.name || item.Name;
                     const priceRaw = item.price || item.Price;
                     const priceText = priceRaw ? `AED ${priceRaw}` : '--';
-                    const hierarchy = `${item.L1_System || ''} > ${item.L2_Symptom || ''}`;
+                    const hierarchy = `${item.Q1_Where || ''} > ${item.Q2_Problem || ''}`;
 
                     const warningHtml = (warnings && warnings.trim() !== 'None' && warnings.trim() !== '') 
                         ? `<span class="warning-text"><i class="fas fa-triangle-exclamation" style="margin-top:2px;"></i> <span>${warnings}</span></span>` 
@@ -747,7 +745,7 @@
 
         function resetApp() {
             historyStack = [];
-            currentFilters = { l1: null, l2: null, l3: null, l4: null, l5: null };
+            currentFilters = { q1: null, q2: null, q3: null, q4: null };
             document.getElementById('list-view').classList.add('hidden');
             document.getElementById('wizard-view').classList.remove('hidden');
             document.getElementById('app-container').classList.add('hidden');
